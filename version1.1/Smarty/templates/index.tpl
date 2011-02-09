@@ -2,7 +2,7 @@
 	
 	<div class="contents">
 		<div class="message" style="color:white; font-size: 20px; text-align:center ; padding: 20px;">
-		  First project has been winded up at Stalk Ninja
+		  Awesome projects are up for grab. Click on a project below for details.
 		</div>
 
 		<div style="height:200px; overflow-y: auto; overflow-x: hidden" id="project-container">
