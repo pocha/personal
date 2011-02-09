@@ -1,0 +1,27 @@
+array (
+  0 => '/tmp/test.php',
+  1 => '-f',
+  2 => '__FILE__',
+)array (
+  0 => '/tmp/test.php',
+  1 => '-f',
+  2 => '__FILE__',
+)array (
+  0 => '/tmp/test.php',
+  1 => '-f',
+  2 => '__FILE__',
+)array (
+  0 => '/tmp/test.php',
+)array (
+  0 => '/tmp/test.php',
+  1 => 'hi',
+  2 => 'my',
+  3 => 'name',
+  4 => 'is',
+)array (
+  0 => '/tmp/test.php',
+  1 => 'hi',
+  2 => 'my',
+  3 => 'name',
+  4 => 'is',
+)
