@@ -12,8 +12,8 @@
 	<tr><td>Phone</td><td><input name="Phone" value="{$data.Phone}"/></td></tr>
 	<tr><td>Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	<tr class="message"><td colspan="2">This would be displayed on your ninja profile page on the top</td></tr>
-	<tr><td>Facebook Id</td><td><input name="FacebookId" value="{$data.FacebookId}"/></td></tr>
-	<tr class="message"><td colspan="2">Remember the facebook page challenge you did :). This would be used to show your pic on your profile page.</td></tr>
+	<tr><td>Facebook UID</td><td><input name="FacebookId" value="{$data.FacebookId}"/></td></tr>
+	<tr class="message"><td colspan="2">Remember the facebook page challenge you did :). This would be used to show your pic on your profile page. Eg. Ashish UID is 100000642976729</td></tr>
 	<tr><td>About You</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
 	<tr class="message"><td colspan="2">This would be shown as your description on your ninja page. You can use html tags to make it jazzy</td></tr>
 	<tr><td>Skills you have</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>

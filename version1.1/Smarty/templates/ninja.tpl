@@ -1,7 +1,7 @@
 <div class="wrapper1" style="padding:0 100px;">
    	<h2>Ninja Profile: {$ninja.Name}</h2>
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
-			<table>
+			<table style="text-align:left">
 				<tr>
 					<td><img src="img/gaurav.jpg" width="100px"/></td>
 					<td>{$ninja.Description}

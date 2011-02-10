@@ -20,7 +20,7 @@
 			else {
 				$update_param = array();
 				foreach ($_POST as $key=>$value) {
-					if ($key != "Image") {
+					if ($value) {
 						$update_param[] = "$key='".mysql_real_escape_string($value)."'";
 					}
 				}
