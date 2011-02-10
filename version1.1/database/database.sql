@@ -7,6 +7,7 @@ CREATE TABLE IF NOT EXISTS `Ninja` (
 		Email varchar(255) NOT NULL,
 		Phone int(10) NOT NULL,
     Heading varchar(255) NOT NULL ,
+		FacebookId varchar(255) NOT NULL,
     Description text NOT NULL ,
 		Rating float(3,2) NOT NULL DEFAULT 0,
 		Skills varchar(255),
@@ -27,6 +28,7 @@ CREATE TABLE IF NOT EXISTS `Startup` (
 		Phone int(10) NOT NULL,
     Heading varchar(255) NOT NULL ,
     Description text NOT NULL ,
+		FacebookId varchar(255) NOT NULL,
 		Rating float(3,2) NOT NULL DEFAULT 0,
 		RegisteredOn Date NOT NULL,
 		PRIMARY KEY (Id)

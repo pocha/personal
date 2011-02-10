@@ -866,3 +866,11 @@ margin-top: 40px;
 .in-progress { background-color: #90A623; color: #141414;}
 .completed { background-color: #ABABAB; color: #141414; }
 .incomplete { background-color: red; color: #141414; }
+
+.project_desc ul li {
+	list-style-image: none;
+	list-style-position: outside;
+	list-style-type: disc;
+	margin-left: 30px;
+	padding-top: 10px;
+}
