@@ -175,8 +175,10 @@
 
 </div>
 					{/if}
+<div style="text-align:left">					
+<h3> Project Discussion Board: </h3>
 				<div id="disqus_thread"></div>
-						<h3> Project Discussion Board </h3>
+</div>
 					<script type="text/javascript">
 {literal}
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -184,7 +186,8 @@
 
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
      var disqus_identifier = '{/literal}{$project.Id}{literal}';
-    var disqus_url = '{/literal}http://stalkninja.com/project.php?id={$project.Id}{literal}';
+    //var disqus_url = '{/literal}http://stalkninja.com/project.php?id={$project.Id}{literal}';
+    var disqus_url = '{/literal}http://sharedexpensetracker.com/personal/version1.1/project.php?id={$project.Id}{literal}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
