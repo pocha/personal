@@ -82,13 +82,16 @@
                         <td><label>Budget: Rs. {$project.Budget}</label></td>
                         <td><label>Duration: {$project.Duration} days</label></td>
                         <td><label>Floated by: <a href="startup.php?id={$project.StartupId}">{$project.Startup.Name}</a>(Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)</label></td>
-                    </tr>
+                    </tr></table>
+                  <table class="project_table" width="1000" height="50">
                    <tr>
-                        <td><label>Created: {$project.DateCreated}</label></td>
+                        <td width="180"><label>Created: {$project.DateCreated}</label></td>
                         <td><label>Awarded on: {if $project.DateAwarded} {$project.DateAwarded } { else }-{/if}</label></td>
                         <td><label>Completed on: {if $project.DateCompleted} {$project.DateCompleted } { else }-{/if}</label></td>
+                        
                     </tr>
-                </table>
+                </table> 
+
                 <table class="project_table">
                     <tr>
                         <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$ninja item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
