@@ -11,7 +11,7 @@
 
 
 	$projects = "";
-	$result = mysql_query("SELECT * FROM Project WHERE StartupId=".mysql_escape_string($_GET['id'])."");
+	$result = mysql_query("SELECT * FROM Project WHERE StartupId=".mysql_escape_string($_GET['id'])." ORDER BY DateCreated DESC");
 
 	while ($line = mysql_fetch_assoc($result)){
 		$result1 = mysql_query("SELECT * FROM Project_Ninja WHERE ProjectId = ".$line['Id']."");
