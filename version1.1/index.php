@@ -18,5 +18,6 @@
 	//$smarty->assign("top_message", "Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "index.tpl");
 	
+
 	$smarty->display("main.tpl")
 ?>
