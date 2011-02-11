@@ -41,7 +41,7 @@
 					</tr>
 					<tr>
 						<td>
-							<table>
+							<table style="text-align:left; font-size: small;">
 							{foreach from=$p.Ninja item=n}
 								{if $n.NinjaReview && $n.StartupReview }
 							<tr>

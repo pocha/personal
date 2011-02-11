@@ -42,7 +42,7 @@
 					</tr>
 					<tr>
 						<td>
-							<table>
+							<table  style="text-align:left; font-size: small;">
 								{if $p.NinjaReview && $p.StartupReview }
 							<tr>
 								<td style="width:50%">
