@@ -111,7 +111,6 @@
                 <div style="border-top: 1px solid black;"></div>
 									<h3 style="float:left">Takers: </h3>
 									<div style="padding-top: 30px">
-										<div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-board">&nbsp;Project Discussion Board&nbsp;</div>
 										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
 									</div>
 									<div style="clear:both"></div>
@@ -177,7 +176,7 @@
 </div>
 					{/if}
 				<div id="disqus_thread"></div>
-
+						<h3> Project Discussion Board </h3>
 					<script type="text/javascript">
 {literal}
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
