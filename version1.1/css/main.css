@@ -96,8 +96,7 @@ button.link span {
 
 a:visited {
 	text-decoration: none;
-	font-weight: bold;;
-	border-bottom: 1px solid #8fa52d;
+	font-weight: bold;
 	color: black;
 }
 
@@ -108,15 +107,13 @@ button.link:focus span {
 	color: #fff; 
 	text-decoration: none;
 	font-weight: bold;
-	border-bottom: 1px solid #8fa52d;
 	background-color: #8fa52d;
 }
 a:active,
 button.link:active span {
 	color: #fff;
 	text-decoration: none;
-	font-weight: bold;;
-	border-bottom: 1px solid #8fa52d;
+	font-weight: bold;
 	background-color: #8fa52d;
 }
 
@@ -861,6 +858,14 @@ margin-top: 40px;
 #project-container div:hover {
 	color: #FFFFFF;
 }
+#ninja-container div {
+	width: 97%;
+}
+
+#ninja-container div:hover {
+	color: #FFFFFF;
+}
+
 
 .open { background-color: #90B623; color: #141414;}
 .in-progress { background-color: #90A623; color: #141414;}
@@ -874,3 +879,4 @@ margin-top: 40px;
 	margin-left: 30px;
 	padding-top: 10px;
 }
+

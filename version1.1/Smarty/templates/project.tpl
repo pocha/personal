@@ -46,10 +46,50 @@
 		top: 1em;
 		right : 1em;
 	}
+.popup-close1 {
+		
+	}
+{/literal}
+</style>
+<style>
+{literal}
+		#popup1 {
+                display: none;
+		position: fixed;
+		z-index: 10;
+		background-color: white;
+		top: 20%;
+		left: 15%;
+		width: 70%;
+		max-height: 80%;
+		overflow-y:auto;
+	border:1px solid rgba(0,0,0,0.4);
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	padding: 1em;
+	padding-top: 0;
+	}
+
+		#backgroundPopup1{
+			display:none;
+			position:fixed;
+			_position:absolute; /* hack for internet explorer 6*/
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			background:#000000;
+			border:1px solid #cecece;
+			z-index:1;
+			opacity: 0.7;
+		}
+
 
 {/literal}
 </style>
-	<div id="backgroundPopup"></div>
+	<!-- <div id="backgroundPopup"></div>
 
 	<div id="popup">
 		<a class="popup-close" href="javascript:void(0)">x</a>
@@ -68,7 +108,27 @@
 		</pre>
 		</div>
 		<div style="margin-top: 10px; color: red">You are not allowed to post on the discussion board</div>
-	</div>			
+	</div>	-->
+
+<div id="backgroundPopup1"></div>
+
+	<div id="popup1">
+		<a class="popup-close" href="javascript:void(0)">x</a>
+		<div class="popup-heading">{if $project.Status == "open"}Want to be a taker! {else} Oops.. the project has already been completed{/if}</div>
+		<div style="position:relative; border: 1px solid black; width: 80%; height: 210px; margin: 0 auto; overflow-y:auto; text-align:left; font-size:small; margin-top: 5px">
+<pre>
+ Want to grab this project? Fill the <a href="#">Ninja Profile Form</a> if you have already taken
+ Ninja Challenge and we will create a profile for you and then in a mail to
+ <b style="color: #000;">admin@stalkninja</b> tell us why we should select you for this task. Remember, while
+ sending mail use same mail id that you used while submitting Ninja Challenege.
+
+ For others, what are you waiting for?
+
+                <a href="student.html" class="btn blue" style="font-size:25px; padding: 5px; margin-left: 40px">Take the Ninja challenge</a>
+		</pre>
+		</div>
+		<div style="margin-top: 10px; color: red">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>
+	</div>
 
 
 <div style="padding: 0 100px">
@@ -96,7 +156,7 @@
                     <tr>
                         <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$ninja item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
                         <td><label>
-													<div class="btn {$project.Status}" style="font-size:26px;" align="center">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
+													<div class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
 													</label></td>
                       
                     </tr>
@@ -111,7 +171,8 @@
                 <div style="border-top: 1px solid black;"></div>
 									<h3 style="float:left">Takers: </h3>
 									<div style="padding-top: 30px">
-										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
+										<a href="project.php?id={$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
+										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
 									</div>
 									<div style="clear:both"></div>
 								</div>
@@ -175,10 +236,8 @@
 
 </div>
 					{/if}
-<div style="text-align:left">					
-<h3> Project Discussion Board: </h3>
 				<div id="disqus_thread"></div>
-</div>
+
 					<script type="text/javascript">
 {literal}
     /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
@@ -186,8 +245,7 @@
 
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
      var disqus_identifier = '{/literal}{$project.Id}{literal}';
-    //var disqus_url = '{/literal}http://stalkninja.com/project.php?id={$project.Id}{literal}';
-    var disqus_url = '{/literal}http://sharedexpensetracker.com/personal/version1.1/project.php?id={$project.Id}{literal}';
+    var disqus_url = '{/literal}http://stalkninja.com/project.php?id={$project.Id}{literal}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -209,6 +267,32 @@
 	$(".popup-close").click(function(){
 		$("#backgroundPopup").hide();
 		$("#popup").hide();
+	})
+{/literal}
+{literal}
+	$("#be-a-taker").click(function(){
+		$("#backgroundPopup1").show();
+		$("#popup1").show();
+	})
+
+	$(".popup-close").click(function(){
+		$("#backgroundPopup1").hide();
+		$("#popup1").hide();
+	})
+{/literal}
+{literal}
+	$("#be-a-taker1").click(function(){
+		$("#backgroundPopup1").show();
+		$("#popup1").show();
+	})
+
+	$(".popup-close").click(function(){
+		$("#backgroundPopup1").hide();
+		$("#popup1").hide();
+	})
+$(".popup-close1").click(function(){
+		$("#backgroundPopup1").hide();
+		$("#popup1").hide();
 	})
 {/literal}
 </script>

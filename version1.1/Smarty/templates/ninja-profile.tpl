@@ -14,8 +14,6 @@
 	<tr class="message"><td colspan="2">This would be displayed on your ninja profile page on the top</td></tr>
 	<tr><td>Facebook UID</td><td><input name="FacebookId" value="{$data.FacebookId}"/></td></tr>
 	<tr class="message"><td colspan="2">Remember the facebook page challenge you did :). This would be used to show your pic on your profile page. Eg. Ashish UID is 100000642976729</td></tr>
-	<tr><td>Facebook profile pic url</td><td><input name="FacebookPicUrl" value="{$data.FacebookPicUrl}"/></td></tr>
-	<tr class="message"><td colspan="2">Go to your home page & then view your profile pic on a separate tab. Eg. Ashish's profile pic url is <a target="_blank" href="http://profile.ak.fbcdn.net/hprofile-ak-snc4/70601_100000642976729_7032846_n.jpg">http://profile.ak.fbcdn.net/hprofile-ak-snc4/70601_100000642976729_7032846_n.jpg</a></td></tr>
 	<tr><td>About You</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
 	<tr class="message"><td colspan="2">This would be shown as your description on your ninja page. You can use html tags to make it jazzy</td></tr>
 	<tr><td>Skills you have</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>

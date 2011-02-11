@@ -1,12 +1,14 @@
-<?php /* Smarty version 2.6.26, created on 2011-02-09 17:40:15
+<?php /* Smarty version 2.6.26, created on 2011-02-12 00:27:40
          compiled from ninja.tpl */ ?>
 <div class="wrapper1" style="padding:0 100px;">
    	<h2>Ninja Profile: <?php echo $this->_tpl_vars['ninja']['Name']; ?>
 </h2>
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
-			<table>
+			<table style="text-align:left">
 				<tr>
-					<td><img src="img/gaurav.jpg" width="100px"/></td>
+					<td><a href="http://facebook.com?uid=<?php echo $this->_tpl_vars['ninja']['FacebookId']; ?>
+" target="_blank"><img src="<?php echo $this->_tpl_vars['ninja']['FacebookPicUrl']; ?>
+"  width="100px"/></a></td>
 					<td><?php echo $this->_tpl_vars['ninja']['Description']; ?>
 
 					</td>
@@ -97,3 +99,4 @@
 
 </div>
 
+

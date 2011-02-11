@@ -1,10 +1,10 @@
-<?php /* Smarty version 2.6.26, created on 2011-02-09 17:33:23
+<?php /* Smarty version 2.6.26, created on 2011-02-11 13:55:24
          compiled from index.tpl */ ?>
 <div id="header" class="section" style="height: 300px">
 	
 	<div class="contents">
 		<div class="message" style="color:white; font-size: 20px; text-align:center ; padding: 20px;">
-		  First project has been winded up at Stalk Ninja
+		  Awesome projects are up for grab. Click on a project below for details.
 		</div>
 
 		<div style="height:200px; overflow-y: auto; overflow-x: hidden" id="project-container">
@@ -143,4 +143,4 @@
 </div><!-- /.section .separator .postamble .info -->
 </div>
 <div style="clear:both"></div>
-</div>
+</div>
