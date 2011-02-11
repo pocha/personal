@@ -1,0 +1,4 @@
+#!/usr/bin/php
+<?php
+	shell_exec("git pull");
+?>
