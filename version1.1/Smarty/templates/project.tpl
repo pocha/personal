@@ -79,15 +79,15 @@
                    
                     <tr>
                         <td><label class="btn {$project.Status}">Status: {$project.Status}</label></td>
-                        <td><label>Budget: Rs. {$project.Budget}</label></td>
-                        <td><label>Duration: {$project.Duration} days</label></td>
-                        <td><label>Floated by: <a href="startup.php?id={$project.StartupId}">{$project.Startup.Name}</a>(Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)</label></td>
+                        <td><label>Budget:</label> Rs. {$project.Budget}</td>
+                        <td><label>Duration:</label> {$project.Duration} days</td>
+                        <td><label>Floated by:</label> <a href="startup.php?id={$project.StartupId}">{$project.Startup.Name}</a>(Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)</td>
                     </tr></table>
                   <table class="project_table" width="1000" height="50">
                    <tr>
-                        <td width="180"><label>Created: {$project.DateCreated}</label></td>
-                        <td><label>Awarded on: {if $project.DateAwarded} {$project.DateAwarded } { else }-{/if}</label></td>
-                        <td><label>Completed on: {if $project.DateCompleted} {$project.DateCompleted } { else }-{/if}</label></td>
+                        <td width="180"><label>Created:</label> {$project.DateCreated}</td>
+                        <td><label>Awarded on:</label> {if $project.DateAwarded} {$project.DateAwarded } { else }-{/if}</td>
+                        <td><label>Completed on:</label> {if $project.DateCompleted} {$project.DateCompleted } { else }-{/if}</td>
                         
                     </tr>
                 </table> 
@@ -123,9 +123,9 @@
 										{else}
 										{foreach from=$ninja item=n}
                     <tr class="{$n.Status}">
-                        <td><label><a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.BidDate}</label></td>
-                        <td><label>Rated {$n.Ninja.Rating}/10 in {$n.Ninja.projectCount} Project(s)</label></td>
-                        <td><label>{$n.Bid}</label></td>
+                        <td><a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.BidDate}</td>
+                        <td>Rated {$n.Ninja.Rating}/10 in {$n.Ninja.projectCount} Project(s)</td>
+                        <td>{$n.Bid}</td>
 
                     </tr>
 										{/foreach}
