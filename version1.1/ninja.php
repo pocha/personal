@@ -10,8 +10,8 @@
 	$ninja['liveProjectCount'] = $tmp['count'];
 
 
-	$projects = array();
-	$result = mysql_query("SELECT * FROM Project JOIN Project_Ninja ON Project.Id = Project_Ninja.ProjectId WHERE Project_Ninja.NinjaId=".mysql_escape_string($_GET['id'])." ORDER BY Project.DateCreated DESC");
+	$projects = "";
+	$result = mysql_query("SELECT * FROM Project JOIN Project_Ninja ON Project.Id = Project_Ninja.ProjectId WHERE Project_Ninja.NinjaId=".mysql_escape_string($_GET['id'])."");
 
 	while ($line = mysql_fetch_assoc($result)){
 		
