@@ -10,7 +10,7 @@
 	$startup['liveProjectCount'] = $tmp['count'];
 
 
-	$projects = "";
+	$projects = array();
 	$result = mysql_query("SELECT * FROM Project WHERE StartupId=".mysql_escape_string($_GET['id'])." ORDER BY DateCreated DESC");
 
 	while ($line = mysql_fetch_assoc($result)){
