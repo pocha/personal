@@ -7,6 +7,6 @@
 	$smarty->cache_dir = "Smarty/cache";
 	$smarty->config_dir = "Smarty/configs";
 	$smarty->compile_check = true;
-	$smarty->debugging = true;
+	//$smarty->debugging = true;
 
 ?>
