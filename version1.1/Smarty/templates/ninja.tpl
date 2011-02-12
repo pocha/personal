@@ -7,7 +7,7 @@
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
 			<table style="text-align:left">
 				<tr>
-					<td><a href="{$n.FacebookProfileUrl}" target="_blank"><img src="{$ninja.FacebookPicUrl}"  width="100px"/></a></td>
+					<td><a href="{$ninja.FacebookProfileUrl}" target="_blank"><img src="{$ninja.FacebookPicUrl}"  width="100px"/></a></td>
 					<td>{$ninja.Description}
 					</td>
 				</tr>
