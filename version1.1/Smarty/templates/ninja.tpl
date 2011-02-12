@@ -2,12 +2,13 @@
 		<div> 
    		<h2 style="float:left; margin-left:200px">Ninja Profile: {$ninja.Name}</h2>
 			<a style="float:left; margin-left: 100px; margin-top:40px" href="ninja-list.php"><div class="btn open" style="text-align:center;">View All Ninja(s)</div></a>
-			<div style="float:clear"></div>
+			<div style=""></div>
+			<p>{$ninja.Heading}</p>
 		</div>
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
 			<table style="text-align:left">
 				<tr>
-					<td><a href="http://facebook.com?uid={$ninja.FacebookId}" target="_blank"><img src="{$ninja.FacebookPicUrl}"  width="100px"/></a></td>
+					<td><a href="{$n.FacebookProfileUrl}" target="_blank"><img src="{$ninja.FacebookPicUrl}"  width="100px"/></a></td>
 					<td>{$ninja.Description}
 					</td>
 				</tr>
