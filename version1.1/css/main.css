@@ -25,11 +25,12 @@ body {
     margin: 0 auto;
     position: relative;
     background-color: #ffffff;
-	font-family: "Trebuchet MS","Helvetica Neue", Arial, Helvetica, sans-serif;
+		font-family: "Trebuchet MS","Helvetica Neue", Arial, Helvetica, sans-serif;
     font-size: 18px;
 		color: gray;
     line-height: 1.5; /* Baseline grid of 21px */
     text-align: center;
+		min-width: 1200px;
 }
 
 ul {
