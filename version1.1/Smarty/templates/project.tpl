@@ -232,13 +232,13 @@
 						</table>
 
 					</div>
-					
-
-</div>
 					{/if}
+					
 <div id="project_discussion" style="text-align:left">
-	<h3>Project Discussion Board</h3>
+	<h3>Project Discussion Board :</h3>
 				<div id="disqus_thread"></div>
+</div>
+
 </div>
 
 					<script type="text/javascript">
@@ -299,3 +299,4 @@ $(".popup-close1").click(function(){
 	})
 {/literal}
 </script>
+	
