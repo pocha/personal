@@ -2,8 +2,7 @@
 		<div> 
    		<h2 style="float:left; margin-left:200px">Ninja Profile: {$ninja.Name}</h2>
 			<a style="float:left; margin-left: 100px; margin-top:40px" href="ninja-list.php"><div class="btn open" style="text-align:center;">View All Ninja(s)</div></a>
-			<div style=""></div>
-			<p>{$ninja.Heading}</p>
+			<div style="clear:both"></div>
 		</div>
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
 			<table style="text-align:left">
