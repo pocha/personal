@@ -1,4 +1,4 @@
-<?php
-$link = mysql_connect("localhost","root","");
-mysql_select_db("temp");
+<?
+$link = mysql_connect("localhost","root","pochastalkninja");
+mysql_select_db("stalkninja");
 ?>
