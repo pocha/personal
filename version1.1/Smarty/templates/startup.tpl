@@ -23,7 +23,7 @@
 			<div class="btn {$p.Status}" style="text-align:center;">
 				<table style="width:100%; font-size: medium">
 					<tr>
-						<td>{$p.Heading}</td>
+						<td> <a href="project.php?id={$p.Id}">{$p.Heading}</a></td>
 					</tr>
 					<tr>
 						<td>
@@ -37,11 +37,11 @@
 					</tr>
 						{if $p.Status == "completed" }
 					<tr>
-						<td>Reviews :-</td>
+						<td style="text-align:left">Reviews :-</td>
 					</tr>
 					<tr>
 						<td>
-							<table>
+							<table style="text-align:left">
 							{foreach from=$p.Ninja item=n}
 								{if $n.NinjaReview && $n.StartupReview }
 							<tr>
@@ -65,7 +65,7 @@
 					</tr>
 						{/if}
 						</table>
-			</div>
+			</div></a>
 			{/foreach}
 	
 	</div>

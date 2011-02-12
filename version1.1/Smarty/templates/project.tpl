@@ -38,7 +38,8 @@
 		width: 90%;
 		border-bottom: 1px solid black;
 		padding: 0.5em ;
-		font-size: 1em;
+		font-size: x-large;
+		color:black;
 	}
 
 	.popup-close {
@@ -112,23 +113,16 @@
 
 <div id="backgroundPopup1"></div>
 
-	<div id="popup1">
+	<div id="popup1" style="text-align:left">
 		<a class="popup-close" href="javascript:void(0)">x</a>
-		<div class="popup-heading">{if $project.Status == "open"}Want to be a taker! {else} Oops.. the project has already been completed{/if}</div>
-		<div style="position:relative; border: 1px solid black; width: 80%; height: 210px; margin: 0 auto; overflow-y:auto; text-align:left; font-size:small; margin-top: 5px">
-<pre>
- Want to grab this project? Fill the <a href="#">Ninja Profile Form</a> if you have already taken
- Ninja Challenge and we will create a profile for you and then in a mail to
- <b style="color: #000;">admin@stalkninja</b> tell us why we should select you for this task. Remember, while
- sending mail use same mail id that you used while submitting Ninja Challenege.
+		<div class="popup-heading">Only registered Ninja(s) can pick the project</div>
+		<p>If you are a registered Ninja, write a mail to <strong>admin@stalkninja.com from the mail with which we have registered you,</strong> telling us why you should be selected for the project. It would be published on the project page against your name so that others including the project creator would know that you are interested to pick the project</p>
 
- For others, what are you waiting for?
-
-                <a href="student.html" class="btn blue" style="font-size:25px; padding: 5px; margin-left: 40px">Take the Ninja challenge</a>
-		</pre>
-		</div>
-		<div style="margin-top: 10px; color: red">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>
-	</div>
+		<p>If you are not a registered Ninja but think that you have everything to do this project,</p>
+    <p><a href="student.html" class="btn blue" style="font-size:25px; padding: 5px; margin-left: 40px">Take the Ninja challenge</a></p>
+		<p>&amp; we would register you so that you can be a taker too. <strong>Hurry before the project is closed</strong></p>
+		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
+</div>
 
 
 <div style="padding: 0 100px">
@@ -156,7 +150,7 @@
                     <tr>
                         <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$ninja item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
                         <td><label>
-													<div class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
+													<div class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
 													</label></td>
                       
                     </tr>
@@ -172,7 +166,7 @@
 									<h3 style="float:left">Takers: </h3>
 									<div style="padding-top: 30px">
 										<a href="project.php?id={$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
-										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; {if $project.Status == "open"} Click to be taker {else} The project is closed {/if}&nbsp;</div>
+										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
 									</div>
 									<div style="clear:both"></div>
 								</div>
@@ -299,4 +293,4 @@ $(".popup-close1").click(function(){
 	})
 {/literal}
 </script>
-	
+</div>

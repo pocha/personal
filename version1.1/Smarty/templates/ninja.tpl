@@ -1,5 +1,9 @@
 <div class="wrapper1" style="padding:0 100px;">
-   	<h2>Ninja Profile: {$ninja.Name}</h2>
+		<div> 
+   		<h2 style="float:left; margin-left:200px">Ninja Profile: {$ninja.Name}</h2>
+			<a style="float:left; margin-left: 100px; margin-top:40px" href="ninja-list.php"><div class="btn open" style="text-align:center;">View All Ninja(s)</div></a>
+			<div style="float:clear"></div>
+		</div>
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
 			<table style="text-align:left">
 				<tr>
@@ -23,7 +27,7 @@
 			<div class="btn {$p.Status}" style="text-align:center;">
 				<table style="width:100%; font-size: medium">
 					<tr>
-						<td>{$p.Heading}</td>
+						<td><a href="project.php?id={$p.Id}">{$p.Heading}</a></td>
 					</tr>
 					<tr>
 						<td>
@@ -38,11 +42,11 @@
 					</tr>
 						{if $p.Status == "completed" }
 					<tr>
-						<td>Reviews :-</td>
+						<td style="text-align:left">Reviews :-</td>
 					</tr>
 					<tr>
 						<td>
-							<table>
+							<table style="text-align:left">
 								{if $p.NinjaReview && $p.StartupReview }
 							<tr>
 								<td style="width:50%">

@@ -1,7 +1,8 @@
 
 <br/>
 	<div class="contents">
-            <h3 style="margin-top: 5px;">List of Ninja's available to be engaged.</h3>
+            <h3 style="margin-top: 5px;">Total {$ninjas|@count} Ninja's available to be engaged.</h3>
+						<p style="text-align:center">Click on the Ninja picture to check his/her facebook profile</p>
 
 		<div  id="ninja-container">
 			{foreach from=$ninjas item=n}
@@ -9,7 +10,7 @@
 				
 				<table style="width:100%; font-size: medium">
 					<tr style="text-align:left">
-                                            <td style="width: 100px; padding-left: 25px;"><img src="{if $n.FacebookPicUrl}{$n.FacebookPicUrl}{else}img/ninja-image.jpg{/if}" width="75px" height="75px"></img><p style="font-size:small">{$n.Name}</td>
+                                            <td style="width: 100px; padding-left: 25px;">{if $n.FacebookProfileUrl}<a target="_blank" href="{$n.FacebookProfileUrl}">{/if}<img src="{if $n.FacebookPicUrl}{$n.FacebookPicUrl}{else}img/ninja-image.jpg{/if}" width="100px"></img><p style="font-size:small; color:black;">{$n.Name}</p>{if $n.FacebookProfileUrl}</a>{/if}</td>
 						<td style="width: 700px;">{if $n.Description}{$n.Description}{else}The Ninja has not given any description yet{/if}</td>
                                                 <td><a href="ninja.php?id={$n.Id}"><div class="btn open" style="text-align:center; width: 145px; padding-right: 25px;">Visit Ninja Profile</div></a></td>
                                                 
@@ -20,9 +21,9 @@
 						<td>
 							 <table>
 								<tr>
-                                                                        <td>Total Project(s) Count:</td>
+                  <td>Total Project(s) Completed: {$n.completedProjectCount}</td>
 									<td>Rating: {$n.Rating}</td>
-									<td>Registered on: {$n.RegisteredOn}</td>
+									<td>Current Active Projects: {$n.liveProjectCount}</td>
 									
 								</tr>
                                                          </table>

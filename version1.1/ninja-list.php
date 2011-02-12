@@ -6,6 +6,12 @@ include("mysql.php");
 	while ($line = mysql_fetch_assoc($result)){
 		$data = mysql_fetch_assoc(mysql_query("SELECT * FROM Ninja WHERE Id=".$line['Id'].""));
 		$line['NinjaName'] = $data['Name'];
+
+	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project_Ninja WHERE NinjaId= ".$line['Id']." AND Status='completed'"));
+	$line['completedProjectCount'] = $tmp['count'];
+	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project_Ninja WHERE NinjaId= ".$line['Id']." AND Status='open'"));
+	$line['liveProjectCount'] = $tmp['count'];
+
 		$ninjas[] = $line;
 	}
 
