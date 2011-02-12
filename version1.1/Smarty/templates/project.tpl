@@ -236,7 +236,10 @@
 
 </div>
 					{/if}
+<div id="project_discussion" style="text-align:left">
+	<h3>Project Discussion Board</h3>
 				<div id="disqus_thread"></div>
+</div>
 
 					<script type="text/javascript">
 {literal}
