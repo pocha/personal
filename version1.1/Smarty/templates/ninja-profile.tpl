@@ -10,13 +10,17 @@
 	<tr class="message"><td colspan="2">Do not enter space &amp; special characters although we dont check for it now</td></tr>
 	<tr><td>Name</td><td><input name="Name" value="{$data.Name}"/></td></tr>
 	<tr><td>Phone</td><td><input name="Phone" value="{$data.Phone}"/></td></tr>
-	<tr><td>Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
-	<tr class="message"><td colspan="2">This would be displayed on your ninja profile page on the top</td></tr>
+	<!--<tr><td>Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
+	<tr class="message"><td colspan="2">This would be displayed on your ninja profile page on the top</td></tr>-->
 	<tr><td>Facebook UID</td><td><input name="FacebookId" value="{$data.FacebookId}"/></td></tr>
 	<tr class="message"><td colspan="2">Remember the facebook page challenge you did :). This would be used to show your pic on your profile page. Eg. Ashish UID is 100000642976729</td></tr>
+	<tr><td>Facebook Profile URL</td><td><input name="FacebookProfileUrl" value="{$data.FacebookProfileUrl}"/></td></tr>
+	<tr><td>Facebook Profile Picture URL</td><td><input name="FacebookPicUrl" value="{$data.FacebookProfileUrl}"/></td></tr>
+	<tr class="message"><td colspan="2">Go to your facebook home, right click on the pic, say open in new tab & then copy the url of the pic here</td></tr>
 	<tr><td>About You</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
 	<tr class="message"><td colspan="2">This would be shown as your description on your ninja page. You can use html tags to make it jazzy</td></tr>
 	<tr><td>Skills you have</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
+	<tr class="message"><td colspan="2">Like HTML, Design, problem solving. Name anything you think you are good at</td></tr>
 	<tr><td>Date you solved the challenge (YYYY-MM-DD format)</td><td><input name="RegisteredOn" value="{$data.RegisteredOn}"/></td></tr>
 	<tr><td colspan="2"><input type="submit" value="Submit"/></td></tr>
 </table>
