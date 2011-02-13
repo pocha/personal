@@ -132,7 +132,6 @@
 
 
 </body>
-<!--
 <script type="text/javascript">
 {literal}
   var _gaq = _gaq || [];
@@ -146,7 +145,6 @@
   })();
 {/literal}
 </script>
--->
 
 </html>
 
