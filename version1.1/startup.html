@@ -1,0 +1,180 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<!-- layouts/application.html.erb -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+	
+
+
+<head>
+	
+	<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+	
+	<script type="text/javascript" src="jquery-1.4.4.min.js"></script>
+	<script type="text/javascript">
+		$(document).ready( function() {
+			//put auto-populate 
+			for(var i=1; i<=5; i++) {
+				$("input[name = 'job_" + i + "']").bind("change", function() {
+					var elem = $("input[name='" + $(this).attr('name') + "_money']").prev();
+					$(elem).html($(this).val());
+					var elem = $("input[name='" + $(this).attr('name') + "_time']").prev();
+					$(elem).html($(this).val() + $(elem).html());
+				});
+			}
+		});
+
+		function checkFields() {
+			var error = 0;
+			$("p.underline").each(function(){
+				if (  $(this).find("input[type=text][value!='']").length + $(this).find("input:checked").length + $(this).find("textarea[value!='']").length == 0 ) { //no input field with any value 
+					error = 1;
+					$(this).find("label").css({ 'color': 'red'});
+				}
+				else {
+					$(this).find("label").css({ 'color': 'black'});
+				}
+			});
+			if (error == 1) return false;
+			return true;
+		}
+	</script>
+
+</head>
+	<body>
+	  
+	  			  
+	  	  
+	  <div class="container_16">
+		  <div id="content" class="clearfix">
+    
+  
+    
+  <div class="centered-form">
+  <div class="section-header">
+    
+    
+    <h2>8 question survey for <span class="highlight">Startups. All questions are compulsory.</span> </h2>
+    
+    
+    
+  </div>
+  
+	<div class="standard-form">
+  <div class="padding">
+
+    
+
+   <style type="text/css">
+	 		span.border {
+				margin-left: 50px;
+				padding: 5px;
+			}
+			label {
+				font-weight: bold;
+			}
+	 </style>
+    
+    <form action="survey-startup.php" method="post" onSubmit="return checkFields()">
+
+      <p class="underline">
+				<label>1. Do you have small jobs in the company which you would like to outsource. Mention top 5.</label>
+			  <span class="messsage">This is a compulsory question, you would need to specify one job at least.</span>
+      	<span class="border">1. <input class="text"  name="job_1" size="30" type="text" /></span>
+      	<span class="border">2. <input class="text"  name="job_2" size="30" type="text" /></span>
+      	<span class="border">3. <input class="text"  name="job_3" size="30" type="text" /></span>
+      	<span class="border">4. <input class="text"  name="job_4" size="30" type="text" /></span>
+      	<span class="border">5. <input class="text"  name="job_5" size="30" type="text" /></span>
+			</p>
+		
+       <p class="underline">
+				<label>2. Would you like to outsource the jobs to students / fresh graduates. They would either be experienced or would work under a mentor who is experienced.</label>
+      	<span class="border"> <input class="text"  name="has_job" size="30" type="radio" value="willing_to_outsource"/> Yes I am willing to outsource </span>
+      	<span class="border"> <input class="text"  name="has_job" size="30" type="radio" value="unwilling_to_outsource"/> No I dont think they can do a good job</span>			
+			</p> 
+    
+       <p class="underline">
+				<label>3. Expected completion time for the projects by students / fresh grads</label>
+      	<span class="border"><span></span> <input class="text" name="job_1_time" size="30" type="text" /></span>
+      	<span class="border"> <span></span> <input class="text" name="job_2_time" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_3_time" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_4_time" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_5_time" size="30" type="text" /></span>
+			
+			</p>
+   
+	 		<p class="underline">
+				<label>4. Money you can spend on the projects done by students / fresh grads</label>
+      	<span class="border"><span></span>  <input class="text" name="job_1_money" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_2_money" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_3_money" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_4_money" size="30" type="text" /></span>
+      	<span class="border"><span></span>  <input class="text" name="job_5_money" size="30" type="text" /></span>
+			
+			</p>
+
+    	<p class="underline">
+				<label>5. What student/startup ratio would you expect for such a system to work - ie - for one company/startup, how many students / fresh grads you expect in the system ?</label>
+      	<span class="border"> Enter number of students per startup/company <input class="text" name="startup_student_ratio" size="30" type="text" /></span>
+			</p>
+			
+			 <p class="underline">
+				<label>6. Do you need a mentor for the students ?</label>
+      	<span class="border"> <input class="text"  name="mentors" size="30" type="radio" value="yes, absolutely"/> Ya absolutely - i am ready to pay more for the mentor</span>
+      	<span class="border"> <input class="text"  name="mentors" size="30" type="radio" value="need_a_choice"/> Need a choice - i might choose one</span>
+      	<span class="border"> <input class="text"  name="mentors" size="30" type="radio" value="only_initially"/> Only initially when the system is new.</span>
+      	<span class="border"> <input class="text"  name="mentors" size="30" type="radio" value="no_need"/> No not really - i think i can handle the students myself.</span>
+			</p> 
+
+    	<p class="underline">
+				<label>7. Comments / Suggestions ? We would prefer the companies who would help us making a better system. The top 5 companies selected would get our services without any subscription fees .. well some conditions do apply :).</label>
+      	<span class="border" style="height: 100px"><textarea class="text" name="comments" size="30" type="text" style="width:100%; height:100%; padding:0; border:0"></textarea></span>
+			</p>
+
+			<p class="underline">
+				<label>8. This is a invite only initiative. Please leave your name, email, contact number &amp; company name to get an invite. Rest assured that we would not compromise with your privacy. No conditions apply</label>
+      	<span class="border" style="height: 100px"><textarea class="text" name="contact" size="30" type="text" style="width:100%; height:100%; padding:0; border:0"></textarea></span>
+			</p>
+
+        
+    <p class="actions">
+      
+      <button type="submit" class="go signup"><span style="padding:26px">I am done</span></button>
+      
+    </p>
+
+	</form>
+
+</div>
+</div>
+</div>
+
+  
+
+</div>
+		</div>
+		
+		
+		
+       
+			  
+		
+	</body>
+	
+
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-19358575-3']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</html>
