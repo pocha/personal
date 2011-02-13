@@ -95,7 +95,7 @@
 						<li><a target="_blank" href="http://hackerstreet.in/item?id=3361">Stalk Ninja at Hacker Street India</a></li>
 					</ul>
 				</li>
-				<li><a href="#">Login</a></li>
+				<!--<li><a href="#">Login</a></li>-->
 			</ul>
 		</div>
 
