@@ -99,7 +99,6 @@
 			</ul>
 		</div>
 
-
 		
 <div id="contact" class="section">
 	<div class="contents" style="position:relative;">
@@ -111,7 +110,7 @@
 		{$top_message}
 		</div>
 
-
+		<div style="float:right; margin-top: 50px; font-size: small; color: black; text-align:right">Stuck? have a doubt? Just want to talk ! Our founder <strong>Ashish</strong> can be stalked at:<br/>Phone: <strong>91 95 3838 4545</strong> Email: <strong>admin@stalkninja.com</strong></div>
 		<!--
 		<div style="float:right; padding-left: 20px; padding-top: 5px; font-size: small">See the discussion thread <a target="_blank" href="http://hackerstreet.in/item?id=3361">here</a> to see what hacker says about us.</div>
 		<div style="float:right; padding-right: 20px; padding-top: 5px; font-size: small">Looking to read as to what happened backstage before launching Stalk Ninja, read it up <a target="_blank" href="http://pocha.posterous.com/why-did-i-choose-to-stalk-ninjas">here</a></div>
