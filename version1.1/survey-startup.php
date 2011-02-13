@@ -20,7 +20,7 @@ $subject = "Start-up data entered at stalkninja";
 /*$message = "$tablename (".join(",",$values).")";*/
 $message= $message.var_export($_POST,true);
 $from = "sgaurav.baghel@gmail.com";
-$headers = "Start-up data entered at stalkninja";
+$headers = "From: admin@stalkninja.com\r\n";
 mail($to,$subject,$message,$headers);
 mysql_close($link);
 header("Location: index.php?done=1");
