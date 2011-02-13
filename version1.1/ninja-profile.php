@@ -13,7 +13,7 @@
 				$error = true;
 				$message = "The email address is not found";
 			}
-			elseif (mysql_fetch_assoc(mysql_query("SELECT * FROM Ninja WHERE UserName=$username AND Email != $email"))){
+			elseif ($username != "''" and mysql_fetch_assoc(mysql_query("SELECT * FROM Ninja WHERE UserName=$username AND Email != $email"))){
 				$error = true;
 				$message = "Username already taken. Select a different username";
 			}
