@@ -3,7 +3,7 @@
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
 			<table style="text-align: left">
 				<tr>
-					<td><img src="img/gaurav.jpg" width="100px"/></td>
+					<td><a href="{$startup.FacebookProfileUrl}" target="_blank"><img src="{$startup.FacebookPicUrl}"  width="100px"/></a></td>
 					<td>{$startup.Description}
 					</td>
 				</tr>
