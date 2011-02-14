@@ -78,8 +78,13 @@
     
     <form action="survey-startup.php" method="post" onSubmit="return checkFields()">
 
-      <p class="underline">
-				<label>1. Do you have small jobs in the company which you would like to outsource. Mention top 5.</label>
+       <p class="underline">
+				<label>1. Where did you get to hear about us ? If it is a friend, please provide his/her name &amp; a way to contact him so that we can thank him/her.</label>
+      	<span class="border"><input class="text" name="referral_source" size="30" type="text" /></span>
+			</p> 
+      
+			<p class="underline">
+				<label>2. Do you have small jobs in the company which you would like to outsource. Mention top 5.</label>
 			  <span class="messsage">This is a compulsory question, you would need to specify one job at least.</span>
       	<span class="border">1. <input class="text"  name="job_1" size="30" type="text" /></span>
       	<span class="border">2. <input class="text"  name="job_2" size="30" type="text" /></span>
@@ -88,11 +93,6 @@
       	<span class="border">5. <input class="text"  name="job_5" size="30" type="text" /></span>
 			</p>
 		
-       <p class="underline">
-				<label>2. Would you like to outsource the jobs to students / fresh graduates. They would either be experienced or would work under a mentor who is experienced.</label>
-      	<span class="border"> <input class="text"  name="has_job" size="30" type="radio" value="willing_to_outsource"/> Yes I am willing to outsource </span>
-      	<span class="border"> <input class="text"  name="has_job" size="30" type="radio" value="unwilling_to_outsource"/> No I dont think they can do a good job</span>			
-			</p> 
     
        <p class="underline">
 				<label>3. Expected completion time for the projects by students / fresh grads</label>
