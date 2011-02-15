@@ -79,6 +79,28 @@
 {/literal}
 </style>
 
+  <script type="text/javascript" charset="utf-8">
+        {literal}
+  var is_ssl = ("https:" == document.location.protocol);
+  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
+  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
+  {/literal}
+</script>
+
+<script type="text/javascript" charset="utf-8">
+{literal}
+  var feedback_widget_options = {};
+
+  feedback_widget_options.display = "overlay";  
+  feedback_widget_options.company = "stalkninja";
+  feedback_widget_options.placement = "right";
+  feedback_widget_options.color = "#222";
+  feedback_widget_options.style = "idea";
+  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
+  {/literal}
+</script>
+
+
 </head>
 
 <body id="index" class="home">
@@ -110,7 +132,8 @@
 		{$top_message}
 		</div>
 
-		<div style="float:right; margin-top: 50px; font-size: small; color: black; text-align:right">Stuck? have a doubt? Just want to talk ! Our founder <strong>Ashish (aka Pocha)</strong> can be stalked at:<br/>Phone: <strong>91 95 3838 4545</strong> Email: <strong>admin@stalkninja.com</strong></div>
+		<div style="clear:both"></div>
+		<div style="text-align:center;font-size: small; color: black; margin-bottom:10px">Stalk our founder <strong>Ashish (aka Pocha)</strong>: Phone: <strong>91 95 3838 4545</strong> Email: <strong>admin@stalkninja.com</strong></div>
 		<!--
 		<div style="float:right; padding-left: 20px; padding-top: 5px; font-size: small">See the discussion thread <a target="_blank" href="http://hackerstreet.in/item?id=3361">here</a> to see what hacker says about us.</div>
 		<div style="float:right; padding-right: 20px; padding-top: 5px; font-size: small">Looking to read as to what happened backstage before launching Stalk Ninja, read it up <a target="_blank" href="http://pocha.posterous.com/why-did-i-choose-to-stalk-ninjas">here</a></div>

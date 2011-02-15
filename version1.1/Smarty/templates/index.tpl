@@ -73,6 +73,12 @@
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 
+<div style="position:fixed; left:0px; top:30%; z-index:100">
+	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/><br/>
+	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+</div>
+
+
 <div style="clear:both"></div>
 
 <div id="wrapper1" style="position:relative">
@@ -128,7 +134,8 @@
 			</div><!-- /.primary-->
 		</div><!-- /.contents -->
 	</div><!-- /.flow -->
+</div>
+
 </div><!-- /.section .separator .postamble .info -->
-</div>
 <div style="clear:both"></div>
-</div>
+
