@@ -129,7 +129,8 @@
 				<div style="color:black">If you are a <strong>student</strong> &amp; looking to work remotely with startups</div><br/>
 						<a href="student.html" class="btn blue" style="font-size:25px; padding: 5px; margin-left: 40px">Take the Ninja challenge</a>
 							<br/><br/>
-						<div style="font-size: small">First 25 Ninja(s) will get to be mentored for their first 5 projects by us.</div><br/><br/>
+						<div style="font-size:small">Already {$ninjaCount} Ninja(s) enrolled. Check the list <a href="ninja-list.php">here</a></div><br/>
+						<br/>
 						
 			</div><!-- /.primary-->
 		</div><!-- /.contents -->

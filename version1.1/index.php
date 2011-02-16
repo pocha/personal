@@ -11,10 +11,14 @@
 		$projects[] = $line;
 	}
 	
+	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Ninja"));
+	$ninjaCount = $tmp['count'];
+
 	include("smarty.php");
 	
 	$smarty->assign("projects",$projects);
 	$smarty->assign("top_message", isset($_GET['done']) ? "Thanks for submitting. You can reach us at admin@stalkninja.com or 91 95 3838 4545" : "Engage a Ninja (student) for your Startup");
+	$smarty->assign("ninjaCount",$ninjaCount);
 	//$smarty->assign("top_message", "Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "index.tpl");
 	
