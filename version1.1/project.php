@@ -23,11 +23,26 @@
 		if ($project["Status"] == "completed" and $line["StartupReview"] and $line['NinjaReview']) $has_review = true ;
 	}
 	
+	//read upload directory
+	$files = array();
+	if (is_dir('files/'.$_GET['id'] ) and $handle = opendir('files/'.$_GET['id'] )) {
+
+    /* This is the correct way to loop over the directory. */
+    while (false !== ($file = readdir($handle))) {
+			if ($file != "." and $file != "..") {
+				$files[] = array( "path" => "files/".$_GET['id']."/$file", "name" => $file);
+			}
+    }
+
+    closedir($handle);
+	}
+	
 	include("smarty.php");
 	
 	$smarty->assign("project",$project);
 	$smarty->assign("ninja",$ninja);
 	$smarty->assign("has_review",$has_review);
+	$smarty->assign("files",$files);
 
 	$smarty->assign("top_message","Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "project.tpl");
