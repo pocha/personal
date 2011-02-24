@@ -145,7 +145,8 @@
 
 {include file="$tpl_name"}
 
-<div id="contact-form" class="section" style="margin-top: 20px">
+<div style="height:100px"></div>
+<div id="contact-form" class="section" style="margin-top: 20px; position:absolute; width: 100%; bottom:0px">
 	<div class="flow">
 		<div class="contents" style="padding-top: 10px; text-align:center">
 				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. <!--<div style="float:right; font-size:small;">The matrix image is taken from http://elkarneclausen.files.wordpress.com/2010/06/the-matrix09.jpg</div>-->
