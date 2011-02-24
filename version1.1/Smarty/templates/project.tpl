@@ -116,7 +116,8 @@
 	<div id="popup1" style="text-align:left; top:10%;">
 		<a class="popup-close" href="javascript:void(0)">x</a>
 		<div class="popup-heading">Only a Ninja can pick the project</div>
-		<p><strong>If the project has a task</strong>, you can be a Ninja by solving it. Let us know by sending a mail to admin@stalkninja.com with link to your solution</p>
+		<p><strong>If the project has a task</strong>, you can be a Ninja by solving it. Let us know by sending a mail to admin@stalkninja.com with link to your solution <br/><span style="font-size:small"> You would need to upload your solution to your server space. If you do not have server space, get it for free <a target="_blank" href="http://www.x10hosting.com">here</a></span>
+		</p>
 		<p style="text-align:center">OR</p>
 		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
 		<p style="text-align:center">OR</p>
