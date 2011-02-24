@@ -102,9 +102,10 @@
 					
 						
 				</div>
-				-->
 					<div style="color:black">If you looking to engage some quality hand-picked Ninja(s) to work remotely for you, click the link below.<br/><br/></div>
 					&nbsp;&nbsp;&nbsp;<a href="startup.html" class="btn blue" style="font-size:25px; padding: 5px" align="center">Interested Startupers click here</a><br/><br/> <div style="font-size:small">Please note, to maintain quality &amp; prevent abuse, we have a face to face meet with the startup before letting them into the system</div><br/> 
+				-->
+					<p style="color:red">Due to limited number of Ninja(s) into the system & couple of projects in the pipeline, we are not taking project requests for now.</p> <p>You may write to us at admin@stalkninja.com if you want us to reconsider your request</p>
 			</div><!-- /.primary-->
 		</div><!-- /.contents -->
 	</div><!-- /.flow -->
@@ -128,7 +129,8 @@
 				<div>If you have checked above options, you could be the next <b>Neo</b> a <b>Morpheus</b> is looking for</div><br/>-->
 				<div style="color:black">If you are a <strong>student</strong> &amp; looking to work remotely with startups</div><br/>
 						<a href="student.html" class="btn blue" style="font-size:25px; padding: 5px; margin-left: 40px">Take the Ninja challenge</a>
-							<br/><br/>
+						<p style="text-align:center">OR<br/><span style="font-size: small;">Pick the easier option</span></p>
+				  <p>Solve the <strong>Task</strong> in our live project & submit the link to us. You would then be a registered Ninja as well as get to compete for the project</p>
 						<div style="font-size:small">Already {$ninjaCount} Ninja(s) enrolled. Check the list <a href="ninja-list.php">here</a></div><br/>
 						<br/>
 						
