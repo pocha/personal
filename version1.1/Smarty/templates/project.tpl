@@ -234,7 +234,8 @@
 
 					</div>
 					{/if}
-					
+	
+<div style="border-top: 1px solid black;"></div>
 <div id="project_discussion" style="text-align:left">
 	<h3>Project Discussion Board :</h3>
 	<p style="font-size:small; font-style:italic; color:black">While authenticating to post a comment, use your email id with which you are registered with us. Else the comment would not be approved. Do NOT use facebook, twitter or any other mode of authentication, use only the 'Guest' option.</p>
