@@ -6,7 +6,7 @@
 	$ninja = mysql_fetch_assoc(mysql_query("SELECT * FROM Ninja WHERE Id=".mysql_escape_string($_GET['id']).""));
 	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project_Ninja WHERE NinjaId= ".$_GET['id']." AND Status='completed'"));
 	$ninja['completedProjectCount'] = $tmp['count'];
-	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project_Ninja WHERE NinjaId= ".$_GET['id']." AND Status='open'"));
+	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project_Ninja WHERE NinjaId= ".$_GET['id']." AND Status='in-progress'"));
 	$ninja['liveProjectCount'] = $tmp['count'];
 
 
