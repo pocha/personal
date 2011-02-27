@@ -102,10 +102,16 @@
 					
 						
 				</div>
-					<div style="color:black">If you looking to engage some quality hand-picked Ninja(s) to work remotely for you, click the link below.<br/><br/></div>
-					&nbsp;&nbsp;&nbsp;<a href="startup.html" class="btn blue" style="font-size:25px; padding: 5px" align="center">Interested Startupers click here</a><br/><br/> <div style="font-size:small">Please note, to maintain quality &amp; prevent abuse, we have a face to face meet with the startup before letting them into the system</div><br/> 
 				-->
-					<p style="color:red">Due to limited number of Ninja(s) into the system & couple of projects in the pipeline, we are not taking project requests for now.</p> <p>You may write to us at admin@stalkninja.com if you want us to reconsider your request</p>
+					<div style="color:black">If you looking to engage some quality hand-picked Ninja(s) to work remotely for you, click the link below.</div>
+					
+					<div style="position:relative">
+						<div style="opacity:0.3">
+							<p style="text-align:center"><span class="btn blue" style="font-size:25px;">Interested Startupers click here</span></p>
+							<p style="font-size:small">Please note, to maintain quality &amp; prevent abuse, we have a face to face meet with the startup before letting them into the system</p>
+						</div>
+						<p style="color:red; font-size:small; position:absolute; top:35px;">Due to limited number of Ninja(s) into the system & couple of projects in the pipeline, we are not taking project requests for now.</p> <p>You may write to us at admin@stalkninja.com if you want us to reconsider your request</p>
+					</div>
 			</div><!-- /.primary-->
 		</div><!-- /.contents -->
 	</div><!-- /.flow -->
@@ -127,10 +133,10 @@
 					
 				</div>
 				<div>If you have checked above options, you could be the next <b>Neo</b> a <b>Morpheus</b> is looking for</div><br/>-->
-				<div style="color:black">If you are a <strong>student</strong> &amp; looking to work remotely with startups</div><br/>
-						<a href="student.html" class="btn blue" style="font-size:25px; padding: 5px; margin-left: 40px">Take the Ninja challenge</a>
-						<p style="text-align:center">OR<br/><span style="font-size: small;">Pick the easier option</span></p>
-				  <p>Solve the <strong>Task</strong> mentioned in any of the project & submit the link to us. You would then be a registered Ninja.</p>
+				<div style="color:black">If you are a <strong>student</strong> &amp; looking to work remotely with startups</div>
+						<p style="text-align:center"><a href="student.html" class="btn blue" style="font-size:25px;">Take the Ninja challenge</a></p>
+						<p style="text-align:center">OR</p>
+						<p><span style="font-size: small;">Pick the easier option.</span> Solve the <strong>Task</strong> mentioned in any of the project & let us know by mailing us at admin@stalkninja.com. We would happily register you in our system.</p>
 						<div style="font-size:small; text-align:center">Already {$ninjaCount} Ninja(s) enrolled. Check the list <a href="ninja-list.php">here</a></div><br/>
 						<br/>
 						

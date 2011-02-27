@@ -149,7 +149,9 @@
 <div id="contact-form" class="section" style="margin-top: 20px; position:absolute; width: 100%; bottom:0px">
 	<div class="flow">
 		<div class="contents" style="padding-top: 10px; text-align:center">
-				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. <!--<div style="float:right; font-size:small;">The matrix image is taken from http://elkarneclausen.files.wordpress.com/2010/06/the-matrix09.jpg</div>-->
+				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. <br/>
+				<div style="font-size:small; color:black">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
+
 			</div><!-- /.contents -->
 	</div><!-- /.flow -->
 </div><!-- /#contact-form -->
