@@ -148,11 +148,14 @@
 <div style="height:100px"></div>
 <div id="contact-form" class="section" style="margin-top: 20px; position:absolute; width: 100%; bottom:0px">
 	<div class="flow">
-		<div class="contents" style="padding-top: 10px; text-align:center">
-				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. <br/>
-				<div style="font-size:small; color:black">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
+		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0">
+				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative.
+		 </div>
+				<div style="font-size:small; float:left; color:gray">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
+				<br/>
+				<div style="font-size: small; float:right; color: white">Want to follow on regular updates & projects floated at stalk ninja? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+				
 
-			</div><!-- /.contents -->
 	</div><!-- /.flow -->
 </div><!-- /#contact-form -->
 
