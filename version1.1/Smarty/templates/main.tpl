@@ -153,7 +153,7 @@
 		 </div>
 				<div style="font-size:small; float:left; color:gray">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
 				<br/>
-				<div style="font-size: small; float:right; color: white">Want to follow on regular updates & projects floated at stalk ninja? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+				<div style="font-size: small; float:right; color: white">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
 				
 
 	</div><!-- /.flow -->

@@ -137,7 +137,7 @@
 						<p style="text-align:center"><a href="student.html" class="btn blue" style="font-size:25px;">Take the Ninja challenge</a></p>
 						<p style="text-align:center">OR</p>
 						<p><span style="font-size: small;">Pick the easier option.</span> Solve the <strong>Task</strong> mentioned in any of the project & let us know by mailing us at admin@stalkninja.com. We would happily register you in our system.</p>
-						<div style="font-size:small; text-align:center">Already {$ninjaCount} Ninja(s) enrolled. Check the list <a href="ninja-list.php">here</a>.<br/> Want to follow on regular updates & projects floated at stalk ninja? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div><br/>
+						<div style="font-size:small; text-align:center">Already {$ninjaCount} Ninja(s) enrolled. Check the list <a href="ninja-list.php">here</a>.<br/> Want to receive updates on projects floated vi email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div><br/>
 						<br/>
 						
 			</div><!-- /.primary-->
