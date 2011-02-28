@@ -651,6 +651,9 @@ a.rss:active {
 #contact-form a {
 	color: #90B623;
 }
+#contact-form a:hover {
+	color: #fff;
+}
 #contact-form .flow {
 	/*background-color: #90B623;*/
     color:  #fff;
