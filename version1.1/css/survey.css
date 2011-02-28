@@ -2263,6 +2263,7 @@ div.centered-form p.underline {
   background:url(../../images/ui/form-line-bg.html) repeat-x bottom left;
   padding-bottom:10px;
   margin-bottom:10px;
+	text-align:left;
 }
 div.centered-form .actions {
     color:#999;

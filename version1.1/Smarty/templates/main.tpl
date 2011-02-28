@@ -122,7 +122,7 @@
 		</div>
 
 		
-<div id="contact" class="section">
+<div id="contact" class="section" {if $tpl_name ne 'index.tpl'} style="background-color:gray" {/if} >
 	<div class="contents" style="position:relative;">
 		<div id="logo">
 			<a href=""><img src="img/stalk-ninja.png" alt="Stalk Talent"></a>

@@ -543,12 +543,12 @@ a.rss:active {
 /* @group Contact */
 
 #contact {
-    background-color: #A0CB29;
+    /*background-color: #A0CB29;*/
     color:  #fff;
 }
 
 #contact .contents {
-	background-color: #90B623;
+	/*background-color: #90B623;*/
     color:  #fff;
 	min-height: 2.1428em;
 }
@@ -643,13 +643,16 @@ a.rss:active {
 /* @group Contact form */
 
 #contact-form {
-    background-color: #A0CB29;
+    background-color: black;
     color: #fff;
 	clear: both;
 	overflow: hidden;
 }
+#contact-form a {
+	color: #90B623;
+}
 #contact-form .flow {
-	background-color: #90B623;
+	/*background-color: #90B623;*/
     color:  #fff;
     padding: 1px 0;
 }
