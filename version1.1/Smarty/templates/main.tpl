@@ -128,7 +128,7 @@
 			<a href=""><img src="img/stalk-ninja.png" alt="Stalk Talent"></a>
 		</div><!-- /#logo -->
 		
-		<div class="message" style="color:white; font-size: 18px; float:left; padding-left: 20px; padding-top: 15px;">
+		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 18px; float:left; padding-left: 20px; padding-top: 15px;">
 		{$top_message}
 		</div>
 
