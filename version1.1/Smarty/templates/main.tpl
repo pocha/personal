@@ -145,15 +145,25 @@
 
 {include file="$tpl_name"}
 
-<div style="height:100px"></div>
-<div id="contact-form" class="section" style="margin-top: 20px; position:absolute; width: 100%; bottom:0px">
+<div id="contact-form" class="section">
 	<div class="flow">
 		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0">
 				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative.
 		 </div>
 				<div style="font-size:small; float:left; color:gray">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
 				<br/>
-				<div style="font-size: small; float:right; color: white">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+				<table>
+				<tr>
+					<td>
+				<a href="http://twitter.com/stalkninja"><img style="width:100px" src="http://swatantra.info/images/swatantra_info_twitter-follow.png"/></a>
+					</td>
+					<td>
+				<div style="font-size: small;color: white">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+					</td>
+				</tr>
+				</table>
+
+				<div style="clear:both"></div>
 				
 
 	</div><!-- /.flow -->
