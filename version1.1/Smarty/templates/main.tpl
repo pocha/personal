@@ -149,7 +149,7 @@
 		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0">
 				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> (91 95 3838 4545) &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. Email - admin@stalkninja.com
 		 </div>
-				<div style="font-size:small; color:gray; float:left">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
+				<div style="font-size:small; color:gray; text-align:center;">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
 				<br/>
 				<div style="clear:both"></div>
 				<table>
@@ -158,15 +158,41 @@
 				<a href="http://twitter.com/stalkninja"><img style="width:100px" src="http://swatantra.info/images/swatantra_info_twitter-follow.png"/></a>
 					</td>
 					<td>
-				<div style="font-size: small;color: white">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
-					</td>
-					<td>
+					<table><tr><td style="border:none;">
+					
+					
+<!-- Begin MailChimp Signup Form -->
 
-	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/><br/>
-	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-via="stalkninja" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+<div id="mc_embed_signup" style="width: 800px;">
+<form action="http://stalkninja.us2.list-manage.com/subscribe/post?u=b16823d4ca5e4753b37046bfd&amp;id=a24e642218" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% Arial, sans-serif;font-size: 12px;">
+	<fieldset style="border: 0px solid #ccc;padding-top: 0.0em;margin: .0em 0;background-color: #000;color: #fff;text-align: left;">
+	
+<div class="mc-field-group" style="margin: 0.0em 1%;clear: both;overflow: hidden;">
+<label for="mce-EMAIL" style="display: inline;margin: .1em 0;line-height: 0.1em;font-weight: bold;">Are you interested to know how this initiative evolve. Subscribe to our Newsletter: </label>
+<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="width:150px; height: 20px; display:inline; margin-left:7px;">
+<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="background-color: #fff;color: #000; clear: both;width: auto;display: inline;margin: 0.3em 2% 0.3em 2%;">
+				
+</div>
+		<div id="mce-responses" style="float: left;top: -0.4em;padding: 0em .2em 0em .1em;overflow: hidden;width: 90%;margin: 0 1%;clear: both;">
+			<div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: FBE3E4;color: #D12F19;"></div>
+			<div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #E3FBE4;color: #529214;"></div>
+		</div>
+		
+	</fieldset>	
+	<a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+					<div style="font-size: small;color: white; padding-left: 25px;">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+					
 					</td>
-				</tr>
-				</table>
+					<td style="padding-left: 1px; border: none;"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/>
+	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-via="stalkninja" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+	</td>
+					</tr>
+					</table></td></tr></table>
+					
 
 				<div style="clear:both"></div>
 				
