@@ -133,7 +133,6 @@
 		</div>
 
 		<div style="clear:both"></div>
-		<div style="text-align:center;font-size: small; color: black; margin-bottom:10px">Stalk our founder <strong>Ashish (aka Pocha)</strong>: Phone: <strong>91 95 3838 4545</strong> Email: <strong>admin@stalkninja.com</strong></div>
 		<!--
 		<div style="float:right; padding-left: 20px; padding-top: 5px; font-size: small">See the discussion thread <a target="_blank" href="http://hackerstreet.in/item?id=3361">here</a> to see what hacker says about us.</div>
 		<div style="float:right; padding-right: 20px; padding-top: 5px; font-size: small">Looking to read as to what happened backstage before launching Stalk Ninja, read it up <a target="_blank" href="http://pocha.posterous.com/why-did-i-choose-to-stalk-ninjas">here</a></div>
@@ -148,10 +147,11 @@
 <div id="contact-form" class="section">
 	<div class="flow">
 		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0">
-				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative.
+				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> (91 95 3838 4545) &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. Email - admin@stalkninja.com
 		 </div>
-				<div style="font-size:small; float:left; color:gray">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
+				<div style="font-size:small; color:gray; float:left">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
 				<br/>
+				<div style="clear:both"></div>
 				<table>
 				<tr>
 					<td>
@@ -159,6 +159,11 @@
 					</td>
 					<td>
 				<div style="font-size: small;color: white">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+					</td>
+					<td>
+
+	<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/><br/>
+	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-via="stalkninja" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 					</td>
 				</tr>
 				</table>
