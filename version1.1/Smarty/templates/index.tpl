@@ -106,7 +106,59 @@
 							<p style="text-align:center"><span class="btn blue" style="font-size:25px;">Interested Startupers click here</span></p>
 							<p style="font-size:small">Please note, to maintain quality &amp; prevent abuse, we have a face to face meet with the startup before letting them into the system</p>
 						</div>
-						<p style="color:red; font-size:small; position:absolute; top:35px;">Due to limited number of Ninja(s) into the system & couple of projects in the pipeline, we are not taking project requests for now.</p> <p>You may write to us at admin@stalkninja.com if you want us to reconsider your request</p>
+						<p style="color:red; font-size:small; position:absolute; top:35px;">Due to limited number of Ninja(s) into the system & couple of projects in the pipeline, we are not taking project requests for now.</p> 
+
+<!-- Begin MailChimp Signup Form -->
+
+<div id="mc_embed_signup">
+<form action="http://stalkninja.us2.list-manage.com/subscribe/post?u=b16823d4ca5e4753b37046bfd&amp;id=a24e642218" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+	<fieldset style="border: 0px solid #ccc; padding:0">
+	
+<div class="mc-field-group" style="margin: 0.0em 1%;clear: both;overflow: hidden;">
+<table style="border:0">
+	<tr>
+		<td colspan="2">
+<span style="font-size:small; color:black" for="mce-EMAIL">We can inform you when we are ready to take projects. Leave your Email :</span>
+		</td>
+	</tr>
+	<tr>
+		<td>
+<input type="text" value="Enter Email" name="EMAIL" id="mce-EMAIL" onfocus="{literal}if(this.value == 'Enter Email') { this.value = ''; }{/literal}" >
+<style type="text/css">
+{literal}
+	#mce-EMAIL {
+		width: 100%;
+		font-size: 1em;
+		padding: 0.25em;
+		color: gray;
+	}
+	#mce-EMAIL:focus {
+		color: black;
+	}
+{/literal}
+</style>
+		</td>
+		<td>
+<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn blue">
+		</td>
+	</tr>
+</table>
+
+</div>
+		<div id="mce-responses" style="float: left;top: -0.4em;padding: 0em .2em 0em .1em;overflow: hidden;width: 90%;margin: 0 1%;clear: both;">
+			<div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: FBE3E4;color: #D12F19;"></div>
+			<div class="response" id="mce-success-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: #E3FBE4;color: #529214;"></div>
+		</div>
+		
+	</fieldset>	
+	<a href="#" id="mc_embed_close" class="mc_embed_close" style="display: none;">Close</a>
+</form>
+</div>
+
+<!--End mc_embed_signup-->
+
+
+
 					</div>
 			</div><!-- /.primary-->
 		</div><!-- /.contents -->
