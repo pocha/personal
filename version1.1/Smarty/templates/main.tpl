@@ -168,10 +168,32 @@
 	<fieldset style="border: 0px solid #ccc;padding-top: 0.0em;margin: .0em 0;background-color: #000;color: #fff;text-align: left;">
 	
 <div class="mc-field-group" style="margin: 0.0em 1%;clear: both;overflow: hidden;">
-<label for="mce-EMAIL" style="display: inline;margin: .1em 0;line-height: 0.1em;font-weight: bold;">Are you interested to know how this initiative evolve. Subscribe to our Newsletter: </label>
-<input type="text" value="" name="EMAIL" class="required email" id="mce-EMAIL" style="width:150px; height: 20px; display:inline; margin-left:7px;">
-<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn" style="background-color: #fff;color: #000; clear: both;width: auto;display: inline;margin: 0.3em 2% 0.3em 2%;">
-				
+<table style="border:0">
+	<tr>
+		<td>
+<span style="font-size:small" for="mce-EMAIL">Are you interested to know how are we evolving ? Let us reach you :</span>
+		</td>
+		<td>
+<input type="text" value="Enter Email" name="EMAIL" id="mce-EMAIL" onfocus="{literal}if(this.value == 'Enter Email') { this.value = ''; }{/literal}" >
+<style type="text/css">
+{literal}
+	#mce-EMAIL {
+		font-size: 1em;
+		padding: 0.25em;
+		color: gray;
+	}
+	#mce-EMAIL:focus {
+		color: black;
+	}
+{/literal}
+</style>
+		</td>
+		<td>
+<input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="btn blue">
+		</td>
+	</tr>
+</table>
+
 </div>
 		<div id="mce-responses" style="float: left;top: -0.4em;padding: 0em .2em 0em .1em;overflow: hidden;width: 90%;margin: 0 1%;clear: both;">
 			<div class="response" id="mce-error-response" style="display: none;margin: 1em 0;padding: 1em .5em .5em 0;font-weight: bold;float: left;top: -1.5em;z-index: 1;width: 80%;background: FBE3E4;color: #D12F19;"></div>
@@ -184,10 +206,10 @@
 </div>
 
 <!--End mc_embed_signup-->
-					<div style="font-size: small;color: white; padding-left: 25px;">Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
+					<div style="font-size: small;color: white; padding-left: 25px;">Looking to be a Ninja? Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan" target="_blank">ninjaclan@googlegroups.com</a></div>
 					
 					</td>
-					<td style="padding-left: 1px; border: none;"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/>
+					<td style="padding-left: 1px; border: none;"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/><br/>
 	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-via="stalkninja" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
 	</td>
 					</tr>
