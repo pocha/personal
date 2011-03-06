@@ -111,25 +111,20 @@
 		<div style="margin-top: 10px; color: red">You are not allowed to post on the discussion board</div>
 	</div>	-->
 
-<div id="backgroundPopup1"></div>
-
-	<div id="popup1" style="text-align:left; top:10%;">
-		<a class="popup-close" href="javascript:void(0)">x</a>
-		<div class="popup-heading">Only a Ninja can pick the project</div>
-		<p><strong>If the project has a task</strong>, you can be a Ninja by solving it. Let us know by sending a mail to admin@stalkninja.com with link to your solution <br/><span style="font-size:small"> You might need to upload your solution to your server. If you do not have server space, get it for free <a target="_blank" href="http://www.x10hosting.com">here</a></span>
-		</p>
-		<p style="text-align:center">OR</p>
-		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
-		<p style="text-align:center">OR</p>
-		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="student.html" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
-		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
-</div>
-
 
 <div style="padding: 0 100px">
-	<div id="student_tag" class="block" style=" border-bottom: 1px solid black;">
-					<h2>{$project.Heading}</h2></div>
-            <div id="project_table">
+	<div id="student_tag" style=" border-bottom: 1px solid black;">
+					<h2 style="float:left; width:80%">{$project.Heading}</h2>
+				
+					
+					<div id="fb_share_1" style="float: right; margin-left: 10px; margin-top:50px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+					
+					<div class="tweetmeme_button" style="float: right; margin-left: 10px; margin-top:50px"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
+					<div style="clear:both"></div>
+	</div>
+					
+          
+					<div id="project_table">
                 <table class="project_table" width="1000" height="75">
                    
                     <tr>
@@ -311,3 +306,19 @@ $(".popup-close1").click(function(){
 {/literal}
 </script>
 </div>
+
+<div id="backgroundPopup1"></div>
+
+	<div id="popup1" style="text-align:left; top:10%;">
+		<a class="popup-close" href="javascript:void(0)">x</a>
+		<div class="popup-heading">Only a Ninja can pick the project</div>
+		<p><strong>If the project has a task</strong>, you can be a Ninja by solving it. Let us know by sending a mail to admin@stalkninja.com with link to your solution <br/><span style="font-size:small"> You might need to upload your solution to your server. If you do not have server space, get it for free <a target="_blank" href="http://www.x10hosting.com">here</a></span>
+		</p>
+		<p style="text-align:center">OR</p>
+		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
+		<p style="text-align:center">OR</p>
+		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="student.html" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
+		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
+</div>
+
+

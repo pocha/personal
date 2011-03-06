@@ -21,7 +21,7 @@
 	$smarty->assign("ninjaCount",$ninjaCount);
 	//$smarty->assign("top_message", "Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "index.tpl");
-	
+	$smarty->assign("title","Stalk Ninja - Remote Internship, Startup Job, PartTime Job, Student Opportunity, Summer Internship, India");	
 
 	$smarty->display("main.tpl")
 ?>

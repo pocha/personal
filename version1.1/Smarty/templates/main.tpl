@@ -3,7 +3,7 @@
 
 <html>
 <head>
-	<title>Stalk Ninja</title>
+	<title>{$title}</title>
 	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
 	<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
 

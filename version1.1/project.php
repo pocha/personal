@@ -46,6 +46,7 @@
 
 	$smarty->assign("top_message","Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "project.tpl");
+	$smarty->assign("title","Project : ".$project['Heading']);
 	
 
 	$smarty->display("main.tpl")
