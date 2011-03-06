@@ -161,11 +161,11 @@
             <div class="project_desc" style="text-align: left;  border-top: 1px solid black;">
                 <h3> Description: </h3>
 								{$project.Description}
-								<div style="font-size:small; color:black; font-style:italic">
+								<div style="font-size:small; font-style:italic">
 									<p>As always :-</p>
 									<ol>
-										<li>Join <a href=http://groups.google.com/group/ninjaclan>ninjaclan@goolgegroups.com</a> to keep yourself updated of all project including this.</li>
-										<li>To get updates via sms, join Stalk Ninja SMS Channel by sending SMS 'ON STALKNINJA' (without quotes) to 9870807070</li>
+										<li>Join <a target="_blank" href=http://groups.google.com/group/ninjaclan>ninjaclan@goolgegroups.com</a> to get all project updates including this.</li>
+										<li>To get updates via sms, join Stalk Ninja SMS Channel by sending sms <span style="color:black">'ON STALKNINJA' (without quotes) to 9870807070</span></li>
 									</ol>
 								</div>
 
