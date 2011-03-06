@@ -164,7 +164,7 @@
 								<div style="font-size:small; font-style:italic">
 									<p>As always :-</p>
 									<ol>
-										<li>Join <a target="_blank" href=http://groups.google.com/group/ninjaclan>ninjaclan@goolgegroups.com</a> to get all project updates including this.</li>
+										<li>Join <a target="_blank" href=http://groups.google.com/group/ninjaclan/subscribe>ninjaclan@goolgegroups.com</a> to get all project updates including this.</li>
 										<li>To get updates via sms, join Stalk Ninja SMS Channel by sending sms <span style="color:black">'ON STALKNINJA' (without quotes) to 9870807070</span></li>
 									</ol>
 								</div>
