@@ -90,36 +90,19 @@
 
 {/literal}
 </style>
-	<!-- <div id="backgroundPopup"></div>
 
-	<div id="popup">
-		<a class="popup-close" href="javascript:void(0)">x</a>
-		<div class="popup-heading">Discussion Board</div>
-		<div style="position:relative; border: 1px solid black; width: 80%; height: 300px; margin: 0 auto; overflow-y:auto; text-align:left; font-size:small; margin-top: 5px">
-<pre>10:28 AM amitvish14: hi
-  good moring
-10:29 AM me: hey Amit . .good morning
-  congrats on your placement
- amitvish14: thanks
- me: actually I would be traveling starting tomorrow ..
-10:30 AM I am also working on another web application & hence the stalk ninja thing is not yet gone live .. but i have talked to Gaurav & we would try our best to complete it & put it live by today night or tomorrow
- amitvish14: ok
- me: aap vo bacha hua kaam aaj kar doge, then we have most of the work done & I can then peacefully go off to travel
- amitvish14: ok
-		</pre>
-		</div>
-		<div style="margin-top: 10px; color: red">You are not allowed to post on the discussion board</div>
-	</div>	-->
+
 
 
 <div style="padding: 0 100px">
 	<div id="student_tag" style=" border-bottom: 1px solid black;">
 					<h2 style="float:left; width:80%">{$project.Heading}</h2>
 				
-					
+				<!--	
 					<div id="fb_share_1" style="float: right; margin-left: 10px; margin-top:50px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
 					<div class="tweetmeme_button" style="float: right; margin-left: 10px; margin-top:50px"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
+				-->
 					<div style="clear:both"></div>
 	</div>
 					
@@ -145,9 +128,16 @@
                 <table class="project_table">
                     <tr>
                         <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$ninja item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
-                        <td><label>
-													<div class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
-													</label></td>
+                        <td>
+																	<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+					
+					<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
+													
+													<div  class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
+
+					<div style="clear:both"></div>
+
+												</td>
                       
                     </tr>
                 </table>
@@ -177,6 +167,14 @@
 									<div style="padding-top: 30px">
 										<a href="project.php?id={$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
 										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
+				
+									
+										<div class="tweetmeme_button" style="float:right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
+										<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+					
+										
+										<div style="clear:both"></div>
+
 									</div>
 									<div style="clear:both"></div>
 								</div>
@@ -305,20 +303,6 @@ $(".popup-close1").click(function(){
 	})
 {/literal}
 </script>
-</div>
-
-<div id="backgroundPopup1"></div>
-
-	<div id="popup1" style="text-align:left; top:10%;">
-		<a class="popup-close" href="javascript:void(0)">x</a>
-		<div class="popup-heading">Only a Ninja can pick the project</div>
-		<p><strong>If the project has a task</strong>, you can be a Ninja by solving it. Let us know by sending a mail to admin@stalkninja.com with link to your solution <br/><span style="font-size:small"> You might need to upload your solution to your server. If you do not have server space, get it for free <a target="_blank" href="http://www.x10hosting.com">here</a></span>
-		</p>
-		<p style="text-align:center">OR</p>
-		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
-		<p style="text-align:center">OR</p>
-		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="student.html" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
-		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
 </div>
 
 
