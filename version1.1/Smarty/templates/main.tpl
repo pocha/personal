@@ -76,8 +76,44 @@
 		background: gray;
 	}
 
+
+  #popup1 {
+                display: none;
+		position: fixed;
+		z-index: 10;
+		background-color: white;
+		top: 20%;
+		left: 15%;
+		width: 70%;
+		max-height: 80%;
+		overflow-y:auto;
+	border:1px solid rgba(0,0,0,0.4);
+	-moz-border-radius: 5px;
+	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
+	padding: 1em;
+	padding-top: 0;
+	}
+
+		#backgroundPopup1{
+			display:none;
+			position:fixed;
+			_position:absolute; /* hack for internet explorer 6*/
+			height:100%;
+			width:100%;
+			top:0;
+			left:0;
+			background:#000000;
+			border:1px solid #cecece;
+			z-index:1;
+			opacity: 0.7;
+		}
+
+
 {/literal}
 </style>
+>
 
   <script type="text/javascript" charset="utf-8">
         {literal}
