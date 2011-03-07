@@ -52,44 +52,6 @@
 	}
 {/literal}
 </style>
-<style>
-{literal}
-		#popup1 {
-                display: none;
-		position: fixed;
-		z-index: 10;
-		background-color: white;
-		top: 20%;
-		left: 15%;
-		width: 70%;
-		max-height: 80%;
-		overflow-y:auto;
-	border:1px solid rgba(0,0,0,0.4);
-	-moz-border-radius: 5px;
-	-moz-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-	-webkit-border-radius: 5px;
-	-webkit-box-shadow: 0px 0px 2px rgba(0,0,0,0.5);
-	padding: 1em;
-	padding-top: 0;
-	}
-
-		#backgroundPopup1{
-			display:none;
-			position:fixed;
-			_position:absolute; /* hack for internet explorer 6*/
-			height:100%;
-			width:100%;
-			top:0;
-			left:0;
-			background:#000000;
-			border:1px solid #cecece;
-			z-index:1;
-			opacity: 0.7;
-		}
-
-
-{/literal}
-</style>
 
 
 
@@ -263,6 +225,22 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">StalkNinja's comments powered by <span class="logo-disqus">Disqus</span></a>	
+
+
+<div id="backgroundPopup1"></div>
+
+	<div id="popup1" style="text-align:left; top:10%;">
+		<a class="popup-close" href="javascript:void(0)">x</a>
+		<div class="popup-heading">Only a Ninja can pick the project</div>
+		<p><strong>If the project has a task</strong>, you can be a Ninja by solving it. Let us know by sending a mail to admin@stalkninja.com with link to your solution <br/><span style="font-size:small"> You might need to upload your solution to your server. If you do not have server space, get it for free <a target="_blank" href="http://www.x10hosting.com">here</a></span>
+		</p>
+		<p style="text-align:center">OR</p>
+		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
+		<p style="text-align:center">OR</p>
+		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="student.html" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
+		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
+</div>
+
 
 <script type="text/javascript">
 {literal}
