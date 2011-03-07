@@ -1,7 +1,7 @@
 
 <div style="width:80%; margin: 0 auto; text-align:left">
 	<h3>If you are a seasoned programmer</h3>
-	<p>Solve the tasks mentioned in <strong>any of the project</strong> below. Mail the solution to admin@stalkninja.com.</p>
+	<p>Solve the <strong>Task</strong> mentioned in <strong>any of the project</strong> below. Mail the solution to admin@stalkninja.com.</p>
 	<p style="font-size:small; text-align:center">To see the task, go to the project by clicking on one of the link below</p>
 
 		<div style="overflow: hidden" id="project-container">
