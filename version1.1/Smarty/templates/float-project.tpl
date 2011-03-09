@@ -3,7 +3,7 @@
 <h3>Enter project details.</h3>
 <p>If you are new to the system, its recommended that you go through <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</p>
 <form action="" method=POST onsubmit="return checkCOC()">
-<table style="text-align:left; width: 100%">
+<table class="form" style="text-align:left; width: 100%">
 	
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	
@@ -51,38 +51,6 @@
 			</ul>
 	
 	</div>
-
-
-<style type="text/css">
-{literal}
-	tr:hover {
-		background-color: #EFEFEF;
-	}
-	td:first-child {
-		width: 30%;
-		font-weight: bold;
-	}
-	input {
-		width: 100%;
-	}
-	.message {
-		margin-top: 0px;
-		padding-top: 0px;
-		font-size: small;
-	}
-	.message, .message td{
-		border: 0;
-	}
-	.error {
-		color: red;
-		font-weight: bold;
-	}
-	textarea {
-		width: 100%;
-		height: 300px;
-	}
-{/literal}
-</style>
 
 
 <script type="text/javascript">

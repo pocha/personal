@@ -905,4 +905,30 @@ blockquote {
   text-indent: 23px;
 } 	
 
+	.form tr:hover {
+		background-color: #EFEFEF;
+	}
+	.form td:first-child {
+		width: 30%;
+		font-weight: bold;
+	}
+	.form input {
+		width: 100%;
+	}
+	.message {
+		margin-top: 0px;
+		padding-top: 0px;
+		font-size: small;
+	}
+	.message, .message td{
+		border: 0;
+	}
+	.error {
+		color: red;
+		font-weight: bold;
+	}
+	textarea {
+		width: 100%;
+		height: 300px;
+	}
 

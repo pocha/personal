@@ -3,7 +3,7 @@
 <p>Hello Ninja, submit your details here &amp; it would be updated in our database. You can re-submit data to update later as well.</p>
 <p class="message {if $error }error{/if}">{$message}</p>
 <form action="" method=POST>
-<table style="text-align:left; width: 100%">
+<table class="form" style="text-align:left; width: 100%">
 	<tr><td>Email</td><td><input name="Email" value="{$data.Email}"/></td></tr>
 	<tr class="message"><td colspan="2">This is the email you sent to us in the questionnaire. If you want to change email, write to us at admin@stalkninja.com</td></tr>
 	<tr><td>Username you would like to have</td><td><input name="UserName" value="{$data.UserName}"/></td></tr>
@@ -26,33 +26,4 @@
 </table>
 </form>
 </div>
-<style type="text/css">
-{literal}
-	tr:hover {
-		background-color: #EFEFEF;
-	}
-	td:first-child {
-		width: 30%;
-		font-weight: bold;
-	}
-	input {
-		width: 100%;
-	}
-	.message {
-		margin-top: 0px;
-		padding-top: 0px;
-		font-size: small;
-	}
-	.message, .message td{
-		border: 0;
-	}
-	.error {
-		color: red;
-		font-weight: bold;
-	}
-	textarea {
-		width: 100%;
-		height: 300px;
-	}
-{/literal}
-</style>
+
