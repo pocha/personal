@@ -48,6 +48,8 @@ CREATE TABLE IF NOT EXISTS `Project` (
 		DateAwarded Date,
 		DateCompleted Date,
 		Description text NOT NULL,
+		Deliverable text NOT NULL,
+		Task text NOT NULL,
 		Skills varchar(255) NOT NULL,
 		ProgressSheet text,
 		PRIMARY KEY (Id)
