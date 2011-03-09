@@ -2,7 +2,7 @@
 <p class="message {if $error }error{/if}">{$message}</p>
 <h3>Enter project details.</h3>
 <p>If you are new to the system, its recommended that you go through <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</p>
-<form action="" method=POST>
+<form action="" method=POST onsubmit="return checkCOC()">
 <table style="text-align:left; width: 100%">
 	
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
@@ -25,12 +25,12 @@
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Skills you are looking to have in the Ninja who you would select for the project. If you are ok with someone totally new, leave it blank.</td></tr>
 	
-	<tr> <td><input type="checkbox"/></td> <td>You have agreed to <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</td> </tr>
+	<tr> <td><input id="COC" type="checkbox"/></td> <td>You have agreed to <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</td> </tr>
 	
-	<tr><td colspan="2">If you would like to upload any files (pertaining to the task or the actual project), please mail them to admin@stalkninja.com & mention the heading as the subject.</td></tr>
 	
 	<input type="hidden" name="Status" value=""/>
 	<tr><td colspan="2"><input type="submit" value="Submit"/></td></tr>
+	<tr><td colspan="2" class="message">If you would like to upload any files (pertaining to the task or the actual project), please mail them to admin@stalkninja.com & mention the heading as the subject.</td></tr>
 </table>
 </form>
 </div>
@@ -96,6 +96,16 @@
 		$("#backgroundPopup").hide();
 		$("#popup").hide();
 	})
+
+	function checkCOC(){
+		if ($("#COC").is(":checked")) {
+			return true
+		}
+		else {
+			alert("Please read code of conduct & tick the checkbox");
+			return false
+		}
+	}
 {/literal}
 </script>
 
