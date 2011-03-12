@@ -1,20 +1,31 @@
 <div style="width:80%; margin:0 auto">
 <p class="message {if $error }error{/if}">{$message}</p>
-<h3>Enter project details.</h3>
+<h3>Time to do some hard work & spec out your requirement.</h3>
 <p>If you are new to the system, its recommended that you go through <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</p>
-<form action="" method=POST onsubmit="return checkCOC()">
+<form action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
 	
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	
 	<tr><td>Budget</td><td><input name="Budget" value="{$data.Budget}"/></td></tr>
-	<tr class="message"><td colspan="2">Money you are looking to offer for the project</td></tr>
+	<tr class="message"><td colspan="2">Money you are looking to offer for the project. Minimum budget is Rs 1000</td></tr>
 	
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
 	<tr class="message"><td colspan="2">Days in which you need the project completed from the day you select a Ninja</td></tr>
 	
 	<tr><td>Description</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">You need to be elaborate & provide pointers (links to online resources) if you looking for first timers to pick & deliver, wherever possible.</td></tr>
+	<tr class="message"><td colspan="2">You need to be elaborate & provide pointers (links to online resources), if you looking for first timers to pick & deliver, wherever possible.</td></tr>
+
+	{foreach from=$files item=f}
+	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
+	{/foreach}
+	
+	<tr><td>Attach files (if any)</td><td><input type="file" name="file1"/></td></tr>
+	<tr class="message"><td colspan="2">You may choose to attach a file which would show in the Attachment section on the project page.</td></tr>
+	<tr><td>Attach files (if any)</td><td><input type="file" name="file2"/></td></tr>
+	<tr><td>Attach files (if any)</td><td><input type="file" name="file3"/></td></tr>
+	<tr><td>Attach files (if any)</td><td><input type="file" name="file4"/></td></tr>
+	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
 	<tr><td>Deliverables</td><td><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
 	<tr class="message"><td colspan="2">The deliverables which the selected Ninja would need to provide you as part of this project. Make it point-wise.<br/><span class="error">Make sure you are VERY SPECIFIC. In case of an arbitration/conflict, if the deliverables are vague, it WOULD go in favor of the Ninja. Also, we do not approve projects with vague deliverables.</span></td></tr>
@@ -25,12 +36,14 @@
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Skills you are looking to have in the Ninja who you would select for the project. If you are ok with someone totally new, leave it blank.</td></tr>
 	
-	<tr> <td><input id="COC" type="checkbox"/></td> <td>You have agreed to <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</td> </tr>
+	<tr><td>Your email, phone number & location</td><td><input name="Contact" value=""/></td></tr>
+	<tr class="message"><td colspan="2">We so love talking to people. Its our favorite past time. We will be going to waste your time like anything but your privacy is utmost important to us & hence we do not save this information in our database. If we can't speak to you, your project would never see light here.</td></tr>
+	
+	<tr> <td colspan=2>You have agreed to <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja. <input id="COC" type="checkbox"/></td> </tr>
 	
 	
 	<input type="hidden" name="Status" value=""/>
 	<tr><td colspan="2"><input type="submit" value="Submit"/></td></tr>
-	<tr><td colspan="2" class="message">If you would like to upload any files (pertaining to the task or the actual project), please mail them to admin@stalkninja.com & mention the heading as the subject.</td></tr>
 </table>
 </form>
 </div>
@@ -40,15 +53,17 @@
 	<div id="popup" style="text-align:left; top:10%;">
 		<a class="popup-close" href="javascript:void(0)">x</a>
 
-		<div class="popup-heading">Code Of Conduct at Stalk Ninja</div>
-			<ul class="bullets">
-				<li>Once a project is floated, you would subscribe to the discussion board comment thread via email & respond to the questions asked there.</li>
+		<div class="popup-heading">8 point Code Of Conduct at Stalk Ninja</div>
+			<ol class="bullets" style="font-size:small">
+				<li>If you floating project for the first time, please fill in your contact details. We would like to talk to you before we approve your project.</li>
+				<li>We take responsibility of your project getting done. We charge a premium of 15% project money for the same. <strong>The charge is over & above the project budget & you would need to bear the same</strong>. The minimum budget we accept is Rs 1000 (exclusive of the premium).</li>
+				<li>After making sure the project meets the required standard, we would intimate you. The project would go live once you have deposit the project money plus premium with us. We follow escrow process, where after completion of the project & you okaying the deliverable, the money would be released to the Ninja. If you choose to cancel project for any reason, the project money would be refunded back. The premium is non-refundable & would be treated as project cancellation fees.</li>
+				<li>Once a project is floated, you would need to subscribe to the discussion board comment thread via email & respond to the questions asked there by students.</li>
 				<li>You would do required due diligence, by asking questions on discussion board, to make sure that you are comfortable enough selecting a Ninja.</li>
-				<li>Once you select a Ninja, you would deposit the project money in Stalk Ninja account. The money would be released to the Ninja, once he delivers within the project duration & you okay it. Else, it would be refunded back to you.</li>
 				<li>Post Ninja selection, you would keep us in loop for all interaction that you do with him, so that we are aware of the proceedings. This is necessary while we check deliverables during arbitration.</li>
-				<li>If you are not happy with the Ninja, or he is not responding, you would intimate us at the earliest & we would start the arbitration process. We would check for what all Ninja has delivered against the deliverables of the project & decide on how much money would go to him & how much money would come back to you. Our decision on this would be final.</li>
+				<li>If you are not happy with the Ninja, or he is not responding, you would intimate us at the earliest & we would start the arbitration process. We would check for what all Ninja has delivered against the deliverables of the project & decide on how much money would go to him. <strong>We would decide a new timeline & would take responsibility to complete rest of the deliverables by then, failing which, we would refund you double of the remaining amount.</strong></li>
 				<li>You would check all the deliverables before okaying it. Once the project is marked complete & money released, neither us nor the Ninja would be held responsible for any fault/short-coming in the deliverables</li>
-			</ul>
+			</ol>
 	
 	</div>
 
