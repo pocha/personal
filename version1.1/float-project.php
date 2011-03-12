@@ -31,6 +31,11 @@
 //		var_dump($update_param);
 
 		if (mysql_query("UPDATE Project SET ".join(",",$update_param)." WHERE Id=".$_GET['id'])) {
+		{$message=var_export($_POST, TRUE);
+					$to="admin@stalkninja.com";
+					$subject="Project udpadated ";
+					$header="From: admin@stalkninja.com\r\n";
+					mail($to, $subject, $message);}
 			$message = "The project is submitted. It would be reviewed by Ashish/Gaurav. You would be intimated by email when the project goes live or if there are any issues with it. Expect our reverting back within 24 hours. You are free to update the project content anytime you like to, before it goes live.";
 		}
 		else {
