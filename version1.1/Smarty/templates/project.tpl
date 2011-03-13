@@ -106,6 +106,14 @@
              
             </div>
             <div class="project_desc" style="text-align: left;  border-top: 1px solid black;">
+							
+								{if $files|@count > 0 }
+								<h3> Attached Files: </h3>
+									{foreach from=$files item=f}
+										<a target="_blank" href="{$f.path}">{$f.name}</a>&nbsp;
+									{/foreach}
+								{/if}
+								
                 <h3> Description: </h3>
 								<pre>{$project.Description}</pre>
 								{if $project.Deliverable}
@@ -126,13 +134,8 @@
 									</ol>
 								</div>
 
-								{if $files|@count > 0 }
-								<h3> Attached Files: </h3>
-									{foreach from=$files item=f}
-										<a target="_blank" href="{$f.path}">{$f.name}</a>&nbsp;
-									{/foreach}
-								{/if}
-                <h3>Skills Required:</h3>
+								
+								<h3>Skills Required:</h3>
                 <p>{$project.Skills}</p>
                 <div style="border-top: 1px solid black;"></div>
 									<h3 style="float:left">Takers: </h3>
