@@ -388,7 +388,9 @@ kbd,
 tt,
 samp,
 tt {
-	font-family: "andale mono", monospace;
+		font-family: "Trebuchet MS","Helvetica Neue", Arial, Helvetica, sans-serif;
+white-space: pre-wrap;
+word-wrap: break-word;
 }
 
 ins {
