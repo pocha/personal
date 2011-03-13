@@ -108,6 +108,16 @@
             <div class="project_desc" style="text-align: left;  border-top: 1px solid black;">
                 <h3> Description: </h3>
 								{$project.Description}
+								{if $project.Deliverable}
+								<h3> Deliverable: </h3>
+									{$project.Deliverable}
+								{/if}
+								{if $project.Task}
+								<h3> Task: </h3>
+									{$project.Task}
+									<p style="color:black">Only those Ninja(s) would be considered for the project who would be able to do the task.</p>
+								{/if}
+
 								<div style="font-size:small; font-style:italic">
 									<p>As always :-</p>
 									<ol>
