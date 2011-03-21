@@ -41,6 +41,7 @@
 					</tr>
 					<tr>
 						<td>
+							{if $p.Ninja|@count > 0}
 							<table style="text-align:left">
 							{foreach from=$p.Ninja item=n}
 								{if $n.NinjaReview && $n.StartupReview }
@@ -61,6 +62,9 @@
 								{/if}
 							{/foreach}
 							</table>
+							{else}
+								There are no visible reviews present yet
+							{/if}
 						</td>
 					</tr>
 						{/if}

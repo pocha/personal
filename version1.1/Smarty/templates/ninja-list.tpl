@@ -21,9 +21,9 @@
 						<td>
 							 <table>
 								<tr>
-                  <td>Total Project(s) Completed: {$n.completedProjectCount}</td>
-									<td>Rating: {$n.Rating}</td>
-									<td>Current Active Projects: {$n.liveProjectCount}</td>
+                  <td>{if $n.Rating}Rated {$n.Rating} in {$n.completedProjectCount} project(s){else}No visible rating yet{/if}</td>
+									<td>Projects attempted: {$n.attemptedProjectCount}</td>
+									<td>Live projects: {$n.liveProjectCount}</td>
 									
 								</tr>
                                                          </table>

@@ -877,11 +877,16 @@ margin-top: 40px;
 }
 
 
+.under-moderation { background-color: red; color: #141414;}
+span.under-moderation {background-color:inherit; color: red}
+
+.pending-approval { background-color: orange; color: #141414;}
+span.pending-approval {background-color:inherit;  color: orange;}
 
 .open { background-color: #90B623; color: #141414;}
 .in-progress { background-color: #90A623; color: #141414;}
 .completed { background-color: #ABABAB; color: #141414; }
-.incomplete { background-color: red; color: #141414; }
+.cancelled { background-color: #ABABAB; color: #141414; }
 
 .project_desc ul li {
 	list-style-image: none;
