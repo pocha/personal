@@ -16,15 +16,15 @@
 		
 	//read upload directory
 	$files = array();
-	if (is_dir('files/'.$_GET['id'] ) and $handle = opendir('files/'.$_GET['id'] )) {
+	$dir = "files/$id";
+	if (is_dir($dir) and $handle = opendir($dir)) {
 
     /* This is the correct way to loop over the directory. */
     while (false !== ($file = readdir($handle))) {
-			if ($file != "." and $file != "..") {
-				$files[] = array( "path" => "files/".$_GET['id']."/$file", "name" => $file);
+			if ($file != "." and $file != ".." and !is_dir($dir."/".$file)) {
+				$files[] = array( "path" => "$dir/$file", "name" => $file);
 			}
     }
-
     closedir($handle);
 	}
 
@@ -36,6 +36,23 @@
 
 		//completed project count of the Ninja
 		list($line['Ninja']['Rating'], $line['Ninja']['projectCount']) = RatingFinder($line['NinjaId'],"Startup","Ninja");
+
+		//show task work if project is in-progress/completed
+		if ($project['Status'] == "in-progress" or $project['Status'] == "completed") {
+			
+			$dir = 'files/'.$_GET['id']."/".$line['Ninja']['Id'];
+
+			if (is_dir($dir) and $handle = opendir($dir)) {
+				/* This is the correct way to loop over the directory. */
+				while (false !== ($file = readdir($handle))) {
+					if ($file != "." and $file != "..") {
+						$line['files'][] = array( "path" => "$dir/$file", "name" => $file);
+					}
+				}
+				closedir($handle);
+			}		
+		
+		}
 		
 		$takers[] = $line;
 	}
