@@ -35,9 +35,11 @@
                 },
                 Deliverable: {
                 required: true,
+				minlength: 15
                 },
                 Task: {
-                required: true
+                required: true,
+				minlength: 15
                 },
                 Skills: "required",
 	        },
@@ -46,13 +48,15 @@
 	        ,
                 Description: {
                 required: "Enter Projecy Description",
-                minlength: jQuery.format("At least {250} characters required!")
+                minlength: jQuery.format("At least 250 characters required!")
                 },
                 Deliverable: {
-                required: "We require clear marked deliverables"
+                required: "We require clear marked deliverables",
+				minlength: jQuery.format("Please elaborate your deliverables.")
                 },
                 Task: {
-                required: "Give a brief about task"
+                required: "Give a brief about task",
+				minlength: jQuery.format("Please elaborate your Task.")
                 },
                 Budget: {
                 required: "Enter Project Budget here.",
