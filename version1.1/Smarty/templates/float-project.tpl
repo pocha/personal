@@ -58,7 +58,7 @@
                 required: "Enter Project Budget here.",
                 number: "Enter a valid Project Budget",
                 minlength: jQuery.format("Project can not be less than INR 1000")
-                }
+                },
                 Contact: {
                 required: "Enter your Contact Details",
                 number: "Enter a valid contact number",
