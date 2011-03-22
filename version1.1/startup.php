@@ -2,11 +2,12 @@
 	error_reporting(E_ALL);
 
 	include("mysql.php");
+	include("functions.php");
 	
 	$startup = mysql_fetch_assoc(mysql_query("SELECT * FROM Startup WHERE Id=".mysql_escape_string($_GET['id']).""));
-	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project WHERE StartupId= ".$_GET['id']." AND Status='completed'"));
-	$startup['completedProjectCount'] = $tmp['count'];
-	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project WHERE StartupId= ".$_GET['id']." AND Status='open'"));
+	list($startup['Rating'],$startup['completedProjectCount']) = RatingFinder($startup['Id'],"Ninja","Startup");
+	
+	$tmp = mysql_fetch_assoc(mysql_query("SELECT count(*) as count FROM Project WHERE StartupId= ".$_GET['id']." AND Status = 'open'"));
 	$startup['liveProjectCount'] = $tmp['count'];
 
 
@@ -14,7 +15,7 @@
 	$result = mysql_query("SELECT * FROM Project WHERE StartupId=".mysql_escape_string($_GET['id'])."");
 
 	while ($line = mysql_fetch_assoc($result)){
-		$result1 = mysql_query("SELECT * FROM Project_Ninja WHERE ProjectId = ".$line['Id']."");
+		$result1 = mysql_query("SELECT * FROM Review WHERE ProjectId = ".$line['Id']."");
 		while ($line1 = mysql_fetch_assoc($result1)) {
 			$line1['Ninja'] = mysql_fetch_assoc(mysql_query("SELECT * FROM Ninja WHERE Id=".$line1['NinjaId']));
 			$line['Ninja'][] = $line1;

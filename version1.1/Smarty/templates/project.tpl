@@ -76,7 +76,7 @@
                         <td><label class="btn {$project.Status}">Status: {$project.Status}</label></td>
                         <td><label>Budget: Rs. {$project.Budget}</label></td>
                         <td><label>Duration: {$project.Duration} days</label></td>
-                        <td><label>Floated by: <a href="startup.php?id={$project.StartupId}">{$project.Startup.Name}</a>(Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)</label></td>
+                        <td><label>Floated by: <a href="startup.php?id={$project.StartupId}">{$project.Startup.Name}</a> {if $project.Startup.projectCount != 0} (Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)) {else} (No visible rating yet) {/if}</label></td>
                     </tr></table>
                   <table class="project_table" width="1000" height="50">
                    <tr>
@@ -89,13 +89,18 @@
 
                 <table class="project_table">
                     <tr>
-                        <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$ninja item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
+
+										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
+                        <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$takers item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
                         <td>
 																	<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
 					<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
 													
-													<div  class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
+													<div  class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == 'open'}Click to pick the project{else}The project is closed{/if}</div>
+											{else}
+												<span class="{$project.Status}">{$project.Message}</span>
+											{/if}
 
 					<div style="clear:both"></div>
 
@@ -140,8 +145,10 @@
                 <div style="border-top: 1px solid black;"></div>
 									<h3 style="float:left">Takers: </h3>
 									<div style="padding-top: 30px">
+										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
 										<a href="project.php?id={$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
-										<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; {if $project.Status == "open"} Click to pick the project {else} The project is closed {/if}&nbsp;</div>
+										{/if}
+										 {if $project.Status == "open"}<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; Click to pick the project &nbsp;</div>{/if}
 				
 									
 										<div class="tweetmeme_button" style="float:right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
@@ -155,15 +162,32 @@
 								</div>
             <div class="project_desc" style="text-align: left; margin-top: 20px"><br/>
 <table width="1000" height="100">
-										{if $ninja|@count == 0}
+										{if $takers|@count == 0}
 											<tr><td>Currently there are no takers</td></tr>
 										{else}
-										{foreach from=$ninja item=n}
-                    <tr class="{$n.Status}">
-                        <td><label><a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.BidDate}</label></td>
-                        <td><label>Rated {$n.Ninja.Rating}/10 in {$n.Ninja.projectCount} Project(s)</label></td>
-                        <td><label>{$n.Bid}</label></td>
-
+										<tr style="font-weight:bold">
+											<td>Ninja</td><td>Rating</td><td>What he/she has to say</td><!--<td>Task submission</td>-->
+										</tr>
+										{foreach from=$takers item=n}
+                    <tr class="{if $n.Status == 1}completed{else}{/if}">
+                        <td><label><a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.TakeDate}</label></td>
+                        <td><label>{if $n.Ninja.Rating != 0} Rated {$n.Ninja.Rating}/10 in {$n.Ninja.projectCount} Project(s) {else} No visible rating{/if}</label></td>
+                        <td><label>{$n.Message}</label></td>
+												<!--
+												<td>
+												{if $project.Status == "in-progress" || $project.Status == "completed"}
+													{if $n.files|@count == 0}
+														No submission to show
+													{else}
+														{foreach from=$n.files item=f}
+															<a target="_blank" href="{$f.path}">{$f.name}</a>&nbsp;
+														{/foreach}
+													{/if}
+												{else}
+													The files are hidden
+												{/if}
+												</td>
+												-->
                     </tr>
 										{/foreach}
 										{/if}
@@ -184,11 +208,11 @@
 						<h3>Reviews:</h3>
 
 						<table style="font-size:medium">
-							{if $has_review == false}
+							{if $reviews|@count == 0}
 								<tr><td>There are no visible reviews for the project</td></tr>
 							{/if}
 
-							{foreach from=$ninja item=n}
+							{foreach from=$reviews item=n}
 								{if $project.Status == "completed" && $n.NinjaReview && $n.StartupReview }
 							<tr>
 								<td style="width:50%">
@@ -211,6 +235,7 @@
 					</div>
 					{/if}
 	
+{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
 <div style="border-top: 1px solid black;"></div>
 <div id="project_discussion" style="text-align:left">
 	<h3>Project Discussion Board :</h3>
@@ -238,7 +263,7 @@
 </script>
 <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 <a href="http://disqus.com" class="dsq-brlink">StalkNinja's comments powered by <span class="logo-disqus">Disqus</span></a>	
-
+{/if}
 
 <div id="backgroundPopup1"></div>
 

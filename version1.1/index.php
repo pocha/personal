@@ -4,7 +4,7 @@
 	include("mysql.php");
 
 	$projects = array();
-	$result = mysql_query("SELECT * FROM Project WHERE Status != '' ORDER BY DateCreated DESC");
+	$result = mysql_query("SELECT * FROM Project ORDER BY DateCreated DESC");
 	while ($line = mysql_fetch_assoc($result)){
 		$data = mysql_fetch_assoc(mysql_query("SELECT * FROM Startup WHERE Id=".$line['StartupId'].""));
 		$line['StartupName'] = $data['Name'];

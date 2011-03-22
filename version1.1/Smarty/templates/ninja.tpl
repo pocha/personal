@@ -14,15 +14,17 @@
 			</table>
     </div>
     
+		<h3>Skills : {$ninja.Skills}</h3>
 		<div class="rating" style="margin-left: 45px;">
-        <p><h3>&nbsp;Overall Rating: <b>{$ninja.Rating}/10</b> in {$ninja.completedProjectCount} Project(s) &nbsp; &nbsp;&nbsp; &nbsp;Current live Projects: {$ninja.liveProjectCount}</h3></p>
+        <p><h3>{if $ninja.Rating} <b>Got rated {$ninja.Rating}/10</b> in {$ninja.completedProjectCount} Project(s) {else} No visible rating yet.{/if} &nbsp; Projects attempted:{$ninja.attemptedProjectCount} &nbsp; Live projects: {$ninja.liveProjectCount}</h3></p>
 
     </div>
    <div style="border-top: 1px solid black;"></div>
-    <h3 style="text-align: left; padding-left: 40px;  margin-top: 45px;">Projects picked:</h3>
+    <h3 style="text-align: left; padding-left: 40px;  margin-top: 45px;">Past performance of Ninja in the system:</h3>
 
 		<div style="overflow: hidden; margin-bottom: 50px" id="project-container">
-			
+		  {if $projects|@count > 0 }	
+
 			{foreach from=$projects item=p}
 			<div class="btn {$p.Status}" style="text-align:center;">
 				<table style="width:100%; font-size: medium">
@@ -70,7 +72,9 @@
 						</table>
 			</div>
 			{/foreach}
-	
+		{else}
+			There are no past projects/reviews to show for the user
+		{/if}
 	</div>
 
 </div>
