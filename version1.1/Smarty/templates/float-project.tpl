@@ -41,7 +41,7 @@
                 required: true,
 				minlength: 15
                 },
-                Skills: "required",
+              
 	        },
 	        messages: {
 	          email: "Please enter a valid email address."
