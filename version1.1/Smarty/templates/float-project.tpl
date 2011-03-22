@@ -35,28 +35,24 @@
                 },
                 Deliverable: {
                 required: true,
-				minlength: 15
                 },
                 Task: {
-                required: true,
-				minlength: 15
+                required: true
                 },
-              
+                
 	        },
 	        messages: {
 	          email: "Please enter a valid email address."
 	        ,
                 Description: {
                 required: "Enter Projecy Description",
-                minlength: jQuery.format("At least 250 characters required!")
+                minlength: jQuery.format("At least {250} characters required!")
                 },
                 Deliverable: {
-                required: "We require clear marked deliverables",
-				minlength: jQuery.format("Please elaborate your deliverables.")
+                required: "We require clear marked deliverables"
                 },
                 Task: {
-                required: "Give a brief about task",
-				minlength: jQuery.format("Please elaborate your Task.")
+                required: "Give a brief about task"
                 },
                 Budget: {
                 required: "Enter Project Budget here.",

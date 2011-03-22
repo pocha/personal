@@ -25,9 +25,11 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
 
     $smarty->assign("error", true);
         $smarty->assign("message", "The reCAPTCHA wasn't entered correctly."."reCAPTCHA : ( " . $resp->error . ")");
-        $smarty->assign("tpl_name", "error.tpl");
+        $smarty->assign("tpl_name", "float-project.tpl");
         $smarty->display("main.tpl");
-        exit;	
+        $data = $_POST;
+		exit;	
+		
     //die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." ."(reCAPTCHA said: " . $resp->error . ")");
   }
 }
@@ -125,7 +127,7 @@ if ($_GET['token'] == NULL) {
 
         $update_param = array();
         foreach ($_POST as $key => $value) {
-            if ($key != "name" AND $key != "email" AND $key != "contact") {
+            if ($key != "name" AND $key != "email" AND $key != "contact" AND $key != "recaptcha_challenge_field" AND $key !="recaptcha_response_field") {
                 if ($value) {
                     $update_param[] = "$key='" . mysql_real_escape_string($value) . "'";
                 } else {
@@ -240,7 +242,7 @@ else {
 
         $update_param = array();
         foreach ($_POST as $key => $value) {
-            if ($key != "name" AND $key != "email" AND $key != "contact") {
+            if ($key != "name" AND $key != "email" AND $key != "contact" AND $key != "recaptcha_challenge_field" AND $key !="recaptcha_response_field") {
                 if ($value) {
                     $update_param[] = "$key='" . mysql_real_escape_string($value) . "'";
                 } else {
