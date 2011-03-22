@@ -1,10 +1,96 @@
 <div style="width:80%; margin:0 auto">
+
+          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	  <script type="text/javascript" src="js/jquery.validate.js"></script>
+
+  <script type="text/javascript">
+            {literal}
+    $(document).ready(function() {
+	      $("#float-project").validate({
+	        rules: {
+	          name: "required",
+	          email: {
+	          required: true,
+	          email: true
+                      },
+                contact: {
+                required: true,
+                number: true,
+                minlength: 10
+                },
+                name: "required",
+                Heading: "required",
+                Budget: {
+                required: true,
+                number: true,
+                minlength: 4
+                },
+                Duration: {
+                required: true,
+                number: true
+                },
+                Description: {
+                required: true,
+                minlength: 250
+                },
+                Deliverable: {
+                required: true,
+                minlength: 250
+                },
+                Task: {
+                required: true,
+                minlength: 150
+                },
+                Skills: "required",
+	        },
+	        messages: {
+	          email: "Please enter a valid email address."
+	        ,
+                Description: {
+                required: "Enter Projecy Description",
+                minlength: jQuery.format("At least {250} characters required!")
+                },
+                Deliverable: {
+                required: "We require clear marked deliverables",
+                minlength: jQuery.format("At least 250 characters required!")
+                },
+                Task: {
+                required: "Give a brief about task",
+                minlength: jQuery.format("At least 150 characters required!")
+                },
+                Budget: {
+                required: "Enter Project Budget here.",
+                number: "Enter a valid Project Budget",
+                minlength: jQuery.format("Project can not be less than INR 1000")
+                }
+                Contact: {
+                required: "Enter your Contact Details",
+                number: "Enter a valid contact number",
+                minlength: jQuery.format("Enter contact number with area code")
+                } },
+	      });
+	    });
+            {/literal}
+	  </script>
+
+
+
+
+
 <p class="message {if $error }error{/if}">{$message}</p>
-<h3>Time to do some hard work & spec out your requirement.</h3>
-<p>If you are new to the system, its recommended that you go through <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.</p>
-<form action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
+<h3>{$heading}</h3>
+<p>If you are new to the system, its recommended that you go through <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.
+<br/> All fields are compulsory.</p>
+<form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
-	
+
+	<tr style="display:{$top}"><td>Startup Name</td><td><input name="name" value="{$data.Name}"/></td></tr>
+
+	<tr style="display:{$top}"><td>Email address</td><td><input name="email" value="{$data.email}"/></td></tr>
+        <tr class="message" style="display:{$top}"><td colspan="2">If you are already registered with us, provide email id you used to register with us.</td></tr>
+
+        <tr style="display:{$top}"><td>Contact Number</td><td><input name="contact" value="{$data.contact}"/></td></tr>
+
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	
 	<tr><td>Budget</td><td><input name="Budget" value="{$data.Budget}"/></td></tr>
@@ -13,8 +99,8 @@
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
 	<tr class="message"><td colspan="2">Days in which you need the project completed from the day you select a Ninja</td></tr>
 	
-	<tr><td>Description</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">You need to be elaborate & provide pointers (links to online resources), if you looking for first timers to pick & deliver, wherever possible.</td></tr>
+	<tr ><td>Description</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
+	<tr class="message"><td colspan="2">You need to be elaborate & provide pointers (links to online resources), if you looking for first timers to pick & deliver, wherever possible (minimum 250 words).</td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
@@ -28,22 +114,24 @@
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
 	<tr><td>Deliverables</td><td><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
-	<tr class="message"><td colspan="2">The deliverables which the selected Ninja would need to provide you as part of this project. Make it point-wise.<br/><span class="error">Make sure you are VERY SPECIFIC. In case of an arbitration/conflict, if the deliverables are vague, it WOULD go in favor of the Ninja. Also, we do not approve projects with vague deliverables.</span></td></tr>
+	<tr class="message"><td colspan="2">The deliverables which the selected Ninja would need to provide you as part of this project(minimum 250 words). Make it point-wise.<br/><span class="error">Make sure you are VERY SPECIFIC. In case of an arbitration/conflict, if the deliverables are vague, it WOULD go in favor of the Ninja. Also, we do not approve projects with vague deliverables.</span></td></tr>
 	
 	<tr><td>Task</td><td><textarea name="Task">{$data.Task}</textarea></td></tr>
-	<tr class="message"><td colspan="2">This is like a mini challenge, which Ninja need to solve to be able to compete for the project. We strongly recommend you put one, even if it is as easy as putting up a 'hello world' html page. Check other projects to get a feel of what we are saying.</td></tr>
+	<tr class="message"><td colspan="2">This is like a mini challenge, which Ninja need to solve to be able to compete for the project. We strongly recommend you put one, even if it is as easy as putting up a 'hello world' html page. Check other projects to get a feel of what we are saying(minimum 150 words).</td></tr>
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Skills you are looking to have in the Ninja who you would select for the project. If you are ok with someone totally new, leave it blank.</td></tr>
-	
+	<tr><td>Captcha</td><td>{$Captcha}</td></tr>
+
+	<!--
 	<tr><td>Your email, phone number & location</td><td><input name="Contact" value=""/></td></tr>
 	<tr class="message"><td colspan="2">We so love talking to people. Its our favorite past time. We will be going to waste your time like anything but your privacy is utmost important to us & hence we do not save this information in our database. If we can't speak to you, your project would never see light here.</td></tr>
-	
+	-->
 	<tr> <td colspan=2>You have agreed to <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja. <input id="COC" type="checkbox"/></td> </tr>
 	
 	
 	<input type="hidden" name="Status" value=""/>
-	<tr><td colspan="2"><input type="submit" value="Submit"/></td></tr>
+        <tr><td colspan="2"><input type="submit" value="Submit"/></td></tr>
 </table>
 </form>
 </div>
