@@ -95,8 +95,8 @@
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
 	<tr class="message"><td colspan="2">Days in which you need the project completed from the day you select a Ninja</td></tr>
 	
-	<tr ><td>Description</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">You need to be elaborate & provide pointers (links to online resources), if you looking for first timers to pick & deliver, wherever possible (minimum 250 words).</td></tr>
+	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
+	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 250 words. Tip: mention links/resources for the Ninja(s) to read up.</td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
@@ -109,11 +109,11 @@
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file4"/></td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
-	<tr><td>Deliverables</td><td><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
-	<tr class="message"><td colspan="2">The deliverables which the selected Ninja would need to provide you as part of this project. Make it point-wise.<br/><span class="error">Make sure you are VERY SPECIFIC. In case of an arbitration/conflict, if the deliverables are vague, it WOULD go in favor of the Ninja. Also, we do not approve projects with vague deliverables.</span></td></tr>
+	<tr><td colspan="2">Deliverables<br/><br/><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
+	<tr class="message"><td colspan="2">What you expect the selected Ninja to deliver to you. Most crucial part. Keep it crisp & point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
 	
-	<tr><td>Task</td><td><textarea name="Task">{$data.Task}</textarea></td></tr>
-	<tr class="message"><td colspan="2">This is like a mini challenge, which Ninja need to solve to be able to compete for the project. We strongly recommend you put one, even if it is as easy as putting up a 'hello world' html page. Check other projects to get a feel of what we are saying.</td></tr>
+	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
+	<tr class="message"><td colspan="2">Small task relevant to the project which would help you screen Ninja(s) for selection. Specify task output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Skills you are looking to have in the Ninja who you would select for the project. If you are ok with someone totally new, leave it blank.</td></tr>
