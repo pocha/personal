@@ -24,6 +24,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     // What happens when the CAPTCHA was entered incorrectly
 
     $smarty->assign("error", true);
+    $smarty->assign("data", $_POST);
         $smarty->assign("message", "The reCAPTCHA wasn't entered correctly."."reCAPTCHA : ( " . $resp->error . ")");
         $smarty->assign("tpl_name", "float-project.tpl");
         $smarty->display("main.tpl");
