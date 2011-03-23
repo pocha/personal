@@ -921,6 +921,7 @@ blockquote {
 	}
 	.form input {
 		width: 300px;
+		margin-right: 230px;
 	}
 	.message {
 		margin-top: 0px;
