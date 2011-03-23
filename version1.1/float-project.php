@@ -155,7 +155,7 @@ if ($_GET['token'] == NULL) {
         $data = "";
     }
 
-    $smarty->assign("heading", "Time to do some hard work & spec out your requirement.");
+    $smarty->assign("heading", "Float Project");
 }
 
 else {

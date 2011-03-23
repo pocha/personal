@@ -1,4 +1,11 @@
-<div style="width:80%; margin:0 auto">
+<div class="box">
+<style type="text/css">
+{literal}
+	body {
+		background-color: #DCDCDC;
+	}
+{/literal}
+</style>
 
           <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	  <script type="text/javascript" src="js/jquery.validate.js"></script>
@@ -81,7 +88,7 @@
 
 <p class="message {if $error }error{/if}">{$message}</p>
 <h3>{$heading}</h3>
-<p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms">7 step how-the-hell-this-thing-works</a>.</p>
+<p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms">how-the-hell-this-thing-works</a>.</p>
 <p><span class="message">All fields are compulsory.</p>
 <form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
@@ -101,7 +108,7 @@
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
 	<tr class="message"><td colspan="2">Days in which the project needs to be completed from the day of Ninja selection</td></tr>
 	
-	<tr ><td>Description</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
+	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
 	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 250 words. Tip: mention links/resources to read up.</td></tr>
 
 	{foreach from=$files item=f}
@@ -115,10 +122,10 @@
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file4"/></td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
-	<tr><td>Deliverables</td><td><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
+	<tr><td colspan="2">Deliverables<br/><br/><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
 	<tr class="message"><td colspan="2">Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
 	
-	<tr><td>Task</td><td><textarea name="Task">{$data.Task}</textarea></td></tr> 
+	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
 	<tr class="message"><td colspan="2">Small task relevant to the project. Keep output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
