@@ -34,13 +34,14 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     //die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." ."(reCAPTCHA said: " . $resp->error . ")");
   }
 }
+ 
 
 if ($_GET['token'] == NULL) {
 
     $name = strip_tags($_POST['name']);
     $email = strip_tags($_POST['email']);
     $contact = strip_tags($_POST['contact']);
-    $title = strip_tags($_POST['title']);
+    $title = strip_tags($_POST['Heading']);
 
 
     $query = "select count(*) as count from Startup where Email='" . $email . "'";
@@ -99,7 +100,7 @@ if ($_GET['token'] == NULL) {
         $header = "From: admin@stalkninja.com\r\n";
         $message = "Name: $name \n Email: $email \n Thanks for submitting Project $title at StalkNinja. Use the link
                 below to edit project whenever you need. \n http://stalkninja.com/float-project.php?token=$token";
-        mail($to, $subject, $message);
+        //mail($to, $subject, $message);
         //put upload data
         if (!is_dir($dir)) {
             mkdir($dir);
@@ -213,7 +214,7 @@ else {
         $to = "admin@stalkninja.com";
         $subject = "Project updated ";
         $header = "From: admin@stalkninja.com\r\n";
-        mail($to, $subject, $message);
+        //mail($to, $subject, $message);
         
         //put upload data
         if (!is_dir($dir)) {
