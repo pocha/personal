@@ -49,26 +49,26 @@
                 
 	        },
 	        messages: {
-	          email: "Oops, our bot sniffed an invalid email."
+	          email: "Oops, our system sniffed an invalid email."
 	        ,
                 Description: {
-                required: "You cant escape this !!",
+                required: "No no, we cant let you float a project without description.",
                 minlength: jQuery.format("Mr project creator, we need at least 250 characters here. We know its painful, please bear with us.")
                 },
                 Deliverable: {
-                required: "How can you leave the most crucial part empty. Negative Sir !!!"
+                required: "No deliverable == No work. Our system is baffled. Please help it."
                 },
                 Task: {
                 required: "The task is mandatory. Please spare a moment. Need help, call Ashish - 91 95 3838 4545"
                 },
                 Budget: {
-                required: "Sorry, you need to spare some money. Also, we are for-profit (if you have not yet got it)",
+                required: "Sorry, but all projects at stalk ninja are paid. So no leaving the budget empty.",
                 number: "Our system could not understand the amount. It says - you are kidding.",
-                minlength: jQuery.format("Hey dint we mention it in code of conduct that minimum budget is Rs 1000.")
+                minlength: jQuery.format("Hey dint we mention it in <a class='terms'>code of conduct</a> that minimum budget is Rs 1000.")
                 },
                 Contact: {
                 required: "We love to talk to people. We bore you to death & we wont let you float a project without your contact detail.",
-                number: "You must be kidding. This does not look like valid number.",
+                number: "We caught you. It is NaN (not a number)",
                 minlength: jQuery.format("Guess you forgot area code or something ..")
                 } },
 	      });
