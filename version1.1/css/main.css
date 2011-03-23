@@ -933,6 +933,7 @@ blockquote {
 	.error {
 		color: red;
 		font-weight: bold;
+		font-size: small;
 	}
 	textarea {
 		width: 100%;
