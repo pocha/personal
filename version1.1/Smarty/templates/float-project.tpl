@@ -1,11 +1,4 @@
-<div class="box">
-<style type="text/css">
-{literal}
-	body {
-		background-color: #DCDCDC;
-	}
-{/literal}
-</style>
+<div style="width:80%; margin:0 auto">
 
           <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
 	  <script type="text/javascript" src="js/jquery.validate.js"></script>
@@ -49,88 +42,82 @@
                 
 	        },
 	        messages: {
-	          email: "Oops, our bot sniffed an invalid email."
+	          email: "Please enter a valid email address."
 	        ,
                 Description: {
-                required: "You cant escape this !!",
-                minlength: jQuery.format("Mr project creator, we need at least 250 characters here. We know its painful, please bear with us.")
+                required: "Enter Project Description",
+                minlength: jQuery.format("At least {250} characters required!")
                 },
                 Deliverable: {
-                required: "How can you leave the most crucial part empty. Negative Sir !!!"
+                required: "Please mark deliverables clearly"
                 },
                 Task: {
-                required: "The task is mandatory. Please spare a moment. Need help, call Ashish - 91 95 3838 4545"
+                required: "The task is mandatory"
                 },
                 Budget: {
-                required: "Sorry, but you need to spare some money. Also, we are for-profit (if you have not yet got it)",
-                number: "Our system could not understand the amount. It says - you are kidding.",
-                minlength: jQuery.format("Hey dint we mention it in code of conduct that minimum budget is Rs 1000.")
+                required: "Enter Project Budget here.",
+                number: "Enter a valid Project Budget",
+                minlength: jQuery.format("Project can not be less than INR 1000")
                 },
                 Contact: {
-                required: "We love to talk to people. We bore you to death & we wont let you float a project without your contact detail.",
-                number: "You must be kidding. This does not look like valid number.",
-                minlength: jQuery.format("Guess you forgot area code or something ..")
+                required: "Enter your Contact Details",
+                number: "Enter a valid contact number",
+                minlength: jQuery.format("Enter contact number with area code")
                 } },
 	      });
 	    });
             {/literal}
 	  </script>
 
-<script type="text/javascript">
-{literal}
- var RecaptchaOptions = {
-    theme : 'white'
- };
- {/literal}
- </script>
+
 
 
 
 <p class="message {if $error }error{/if}">{$message}</p>
 <h3>{$heading}</h3>
-<p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms">how-the-hell-this-thing-works</a>.</p>
-<p><span class="message">All fields are compulsory.</p>
+<p>If you are new to the system, its recommended that you go through <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja.
+<br/> All fields are compulsory.</p>
 <form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
 
-	<tr style="display:{$top}"><td>Company</td><td><input name="name" value="{$data.Name}"/></td></tr>
+	<tr style="display:{$top}"><td>Startup Name</td><td><input name="name" value="{$data.Name}"/></td></tr>
 
-	<tr style="display:{$top}"><td>Email</td><td><input name="email" value="{$data.email}"/></td></tr>
-        <tr class="message" style="display:{$top}"><td colspan="2">Already registered with us? provide the same email. First timer ? no problem, any email would do (we meant your email).</td></tr>
+	<tr style="display:{$top}"><td>Email address</td><td><input name="email" value="{$data.email}"/></td></tr>
+        <tr class="message" style="display:{$top}"><td colspan="2">If you are already registered with us, provide email id you used to register with us.</td></tr>
 
-        <tr style="display:{$top}"><td>Phone</td><td><input name="contact" value="{$data.contact}"/></td></tr>
+        <tr style="display:{$top}"><td>Contact Number</td><td><input name="contact" value="{$data.contact}"/></td></tr>
 
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	
 	<tr><td>Budget</td><td><input name="Budget" value="{$data.Budget}"/></td></tr>
-	<tr class="message"><td colspan="2">Minimum budget is Rs 1000.</td></tr>
+	<tr class="message"><td colspan="2">Money you are looking to offer for the project. Minimum budget is Rs 1000</td></tr>
 	
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
-	<tr class="message"><td colspan="2">Days in which the project needs to be completed from the day of Ninja selection</td></tr>
+	<tr class="message"><td colspan="2">Days in which you need the project completed from the day you select a Ninja</td></tr>
 	
-	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 250 words. Tip: mention links/resources to read up.</td></tr>
+	<tr ><td>Description</td><td><textarea name="Description">{$data.Description}</textarea></td></tr>
+	<tr class="message"><td colspan="2">You need to be elaborate & provide pointers (links to online resources), if you looking for first timers to pick & deliver, wherever possible (minimum 250 words).</td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
 	{/foreach}
 	
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file1"/></td></tr>
-	<tr class="message"><td colspan="2">The files would be shown in Attachment section of the project.</td></tr>
+	<tr class="message"><td colspan="2">You may choose to attach a file which would show in the Attachment section on the project page.</td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file2"/></td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file3"/></td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file4"/></td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
-	<tr><td colspan="2">Deliverables<br/><br/><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
+	<tr><td>Deliverables</td><td><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
+	<tr class="message"><td colspan="2">The deliverables which the selected Ninja would need to provide you as part of this project. Make it point-wise.<br/><span class="error">Make sure you are VERY SPECIFIC. In case of an arbitration/conflict, if the deliverables are vague, it WOULD go in favor of the Ninja. Also, we do not approve projects with vague deliverables.</span></td></tr>
 	
-	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
-	<tr class="message"><td colspan="2">Small task relevant to the project. Keep output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
+	<tr><td>Task</td><td><textarea name="Task">{$data.Task}</textarea></td></tr>
+	<tr class="message"><td colspan="2">This is like a mini challenge, which Ninja need to solve to be able to compete for the project. We strongly recommend you put one, even if it is as easy as putting up a 'hello world' html page. Check other projects to get a feel of what we are saying.</td></tr>
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
-	<tr class="message"><td colspan="2">Pre-requisite skills (if any). Looking to pick someone fresh ? Leave this empty.</td></tr>
-	<tr><td style="font-style:italic;"> .. only human ..</td><td>{$Captcha}</td></tr>
+	<tr class="message"><td colspan="2">Skills you are looking to have in the Ninja who you would select for the project. If you are ok with someone totally new, leave it blank.</td></tr>
+	<tr><td>Captcha</td><td>{$Captcha}</td></tr>
 
 	<!--
 	<tr><td>Your email, phone number & location</td><td><input name="Contact" value=""/></td></tr>
@@ -150,15 +137,16 @@
 	<div id="popup" style="text-align:left; top:10%;">
 		<a class="popup-close" href="javascript:void(0)">x</a>
 
-		<div class="popup-heading">How to for the project creators</div>
+		<div class="popup-heading">8 point Code Of Conduct at Stalk Ninja</div>
 			<ol class="bullets" style="font-size:small">
-				<li>Once the project form is submitted, the project would go live. The Ninja(s) in the system would be intimated of it & they would start attempting the task.</li>
-				<li>We would review the project against the <a target="_blank" href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea">guidelines</a>. If it does not conform, the project status is changed to 'pending-approval' or 'under-moderation' depending on severity. Otherwise, the project creator needs to do payment within 24 hours of our intimation failing which the project status changes to 'pending-approval'.</li>
-				<li> Payment for the project is project money + 15% premium. If the project creator cancels the project, the project money would be returned but the premium is non-refundable.</li>
-				<li> There is a project discussion board where Ninja(s) would ask questions/clarifications. There is an email subscription option to it. Project creators can also use the space to ask questions to one/more Ninja(s). The place is open & messages are globally visible</li>
-				<li> Project creator intimate us post zeroing in on a Ninja. A formal approval from the Ninja is sought & post agreement, the contact details are exchanged & the project kicks-off.</li>
-				<li> The Ninja needs to complete the task within the project duration from the date of project kick-off, else the money is returned back to the project creator. Post completion, once the project creator okays the deliverable, the project money is released to the Ninja. If the Ninja becomes unresponsive, the project creator can choose to cancel project, or choose another Ninja for the project. A new project deadline would be decided for the latter case. </li>
-				<li> It is imperative that all emails floating between project creator & the Ninja should be cced to admin@stalkninja.com . We mediate if we feel either of the party is not behaving fairly to their counterpart.</li>
+				<li>If you floating project for the first time, please fill in your contact details. We would like to talk to you before we approve your project.</li>
+				<li>We take responsibility of your project getting done. We charge a premium of 15% project money for the same. <strong>The charge is over & above the project budget & you would need to bear the same</strong>. The minimum budget we accept is Rs 1000 (exclusive of the premium).</li>
+				<li>After making sure the project meets the required standard, we would intimate you. The project would go live once you have deposit the project money plus premium with us. We follow escrow process, where after completion of the project & you okaying the deliverable, the money would be released to the Ninja. If you choose to cancel project for any reason, the project money would be refunded back. The premium is non-refundable & would be treated as project cancellation fees.</li>
+				<li>Once a project is floated, you would need to subscribe to the discussion board comment thread via email & respond to the questions asked there by students.</li>
+				<li>You would do required due diligence, by asking questions on discussion board, to make sure that you are comfortable enough selecting a Ninja.</li>
+				<li>Post Ninja selection, you would keep us in loop for all interaction that you do with him, so that we are aware of the proceedings. This is necessary while we check deliverables during arbitration.</li>
+				<li>If you are not happy with the Ninja, or he is not responding, you would intimate us at the earliest & we would start the arbitration process. We would check for what all Ninja has delivered against the deliverables of the project & decide on how much money would go to him. <strong>We would decide a new timeline & would take responsibility to complete rest of the deliverables by then, failing which, we would refund you double of the remaining amount.</strong></li>
+				<li>You would check all the deliverables before okaying it. Once the project is marked complete & money released, neither us nor the Ninja would be held responsible for any fault/short-coming in the deliverables</li>
 			</ol>
 	
 	</div>
