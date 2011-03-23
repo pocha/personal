@@ -38,7 +38,7 @@
                 },
                 Description: {
                 required: true,
-                minlength: 50
+                minlength: 250
                 },
                 Deliverable: {
                 required: true,
@@ -109,7 +109,7 @@
 	<tr class="message"><td colspan="2">Days in which the project needs to be completed from the day of Ninja selection</td></tr>
 	
 	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 50 words. Tip: mention links/resources to read up.</td></tr>
+	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 250 words. Tip: mention links/resources to read up.</td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
