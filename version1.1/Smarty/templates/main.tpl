@@ -66,11 +66,13 @@ plugins : "",
 	
 	<style type="text/css">
 {literal}
-  .menu  {
-		background-color: black;
+	.menu-container {
 		position: absolute;
 		z-index: 100;
 		right: 150px;
+	}
+  .menu  {
+		background-color: black;
 		top: 15px;
 		border:1px solid rgba(0,0,0,0.4);
 	-moz-border-radius: 5px;
@@ -197,7 +199,8 @@ plugins : "",
 
 <body id="index" class="home">
 
-	<div class="menu">
+	<div class="menu-container">
+		<div class="menu" style="float:left; margin-top: 15px;">
 			<ul id="page-bar">
 				<li><a href="http://stalkninja.com">Home</a></li>
 				<li style="position:relative"><a href="http://blog.stalkninja.com" target="_blank">Interesting Bits</a>
@@ -211,6 +214,12 @@ plugins : "",
 				</li>
 				<!--<li><a href="#">Login</a></li>-->
 			</ul>
+			</div>
+			<div style="float:left; margin-left: 20px">
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe>
+	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-via="stalkninja" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
+		</div>
+		<div style="clear:both"></div>
 		</div>
 
 		
@@ -241,7 +250,7 @@ plugins : "",
 
 <div id="contact-form" class="section">
 	<div class="flow">
-		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0">
+		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0; font-size: small">
 				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> (91 95 3838 4545) &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. Email - admin@stalkninja.com
 		 </div>
 				<div style="font-size:small; color:gray; text-align:center;">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
@@ -304,9 +313,6 @@ plugins : "",
 					<div style="font-size: small;color: white; padding-left: 25px;">Looking to be a Ninja? Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan/subscribe" target="_blank">ninjaclan@googlegroups.com</a> & Google SMS Channel by sending sms 'ON STALKNINJA' (without quotes) to 9870807070</div>
 					
 					</td>
-					<td style="padding-left: 1px; border: none;"><iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=box_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=65" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:60px; height:65px;" allowTransparency="true"></iframe><br/><br/>
-	<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-count="vertical" data-via="stalkninja" data-related="pocha">Tweet</a><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-	 </td>
 					</tr>
 					</table></td></tr></table>
 					

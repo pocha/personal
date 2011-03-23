@@ -109,7 +109,7 @@
 	<tr class="message"><td colspan="2">Days in which the project needs to be completed from the day of Ninja selection</td></tr>
 	
 	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 250 words. Tip: mention links/resources to read up.</td></tr>
+	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 250 words. Tip: mention links/resources for the Ninja(s) to read up.</td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
@@ -123,10 +123,10 @@
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
 	<tr><td colspan="2">Deliverables<br/><br/><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
+	<tr class="message"><td colspan="2">What you expect the selected Ninja to deliver to you. Most crucial part. Keep it crisp & point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
 	
 	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
-	<tr class="message"><td colspan="2">Small task relevant to the project. Keep output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
+	<tr class="message"><td colspan="2">Small task relevant to the project which would help you screen Ninja(s) for selection. Specify task output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Pre-requisite skills (if any). Looking to pick someone fresh ? Leave this empty.</td></tr>
