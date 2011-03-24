@@ -79,7 +79,7 @@ CREATE TABLE `Project` (
   `ProgressSheet` text,
   `Deliverable` text NOT NULL,
   `Task` text NOT NULL,
-  `Token` varchar(10) NOT NULL,
+  `Token` varchar(100) NOT NULL,
   PRIMARY KEY (`Id`)
 ) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=latin1;
 /*!40101 SET character_set_client = @saved_cs_client */;

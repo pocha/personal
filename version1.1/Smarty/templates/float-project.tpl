@@ -16,14 +16,6 @@
 				
 				$("input[type='submit']").click(function() {
 					tinyMCE.triggerSave();
-					/*var content = tinyMCE.get('Description').getContent(); // get the content
-					$("input[name = 'Description']").val(content); // put it in the textarea
-					
-					content = tinyMCE.get('Deliverable').getContent(); // get the content
-					$("input[name = 'Deliverable']").val(content); // put it in the textarea
-					
-					content = tinyMCE.get('Task').getContent(); // get the content
-					$("input[name = 'Task']").val(content); // put it in the textarea*/
 				});
 
 	      $("#float-project").validate({
@@ -101,7 +93,7 @@
 
 <p class="message {if $error }error{/if}">{$message}</p>
 <h3>{$heading}</h3>
-<p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms">how-the-hell-this-thing-works</a>.</p>
+<p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms btn blue">how it works</a>.</p>
 <p><span class="message">All fields are compulsory.</p>
 <form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
@@ -163,10 +155,10 @@
 	<div id="popup" style="text-align:left; top:10%;">
 		<a class="popup-close" href="javascript:void(0)">x</a>
 
-		<div class="popup-heading">How to for the project creators</div>
+		<div class="popup-heading">How-to for the project creators</div>
 			<ol class="bullets" style="font-size:small">
 				<li>Once the project form is submitted, the project would go live. The Ninja(s) in the system would be intimated of it & they would start attempting the task.</li>
-				<li>We would review the project against the <a target="_blank" href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea">guidelines</a>. If it does not conform, the project status is changed to 'pending-approval' or 'under-moderation' depending on severity. Otherwise, the project creator needs to do payment within 24 hours of our intimation failing which the project status changes to 'pending-approval'.</li>
+				<li>We would review the project against the <a target="_blank" href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea">guidelines</a>. If it does not conform, the project status will be changed to 'pending-approval' or 'under-moderation' depending on severity. Otherwise, the project creator needs to do payment within 24 hours of our intimation failing which the project status changes to 'pending-approval'.</li>
 				<li> Payment for the project is project money + 15% premium. If the project creator cancels the project, the project money would be returned but the premium is non-refundable.</li>
 				<li> There is a project discussion board where Ninja(s) would ask questions/clarifications. There is an email subscription option to it. Project creators can also use the space to ask questions to one/more Ninja(s). The place is open & messages are globally visible</li>
 				<li> Project creator intimate us post zeroing in on a Ninja. A formal approval from the Ninja is sought & post agreement, the contact details are exchanged & the project kicks-off.</li>

@@ -146,7 +146,7 @@ if ($_GET['token'] == NULL) {
         //var_dump($query);
         //echo($id);
         if (mysql_query($query)) {
-            $message = "Congrats, your Project is <a href = \" http://stalkninja.com/project.php?id=$id \">Live!</a> You are free to <a href = \"http://stalkninja.com/float-project.php?token=$token\">edit</a> the project any number of times but deliverables must not change. We have mailed you link to edit your project. <br/> Float another project";
+            $message = "Congrats, your Project is <a target='_blank' href = \" http://stalkninja.com/project.php?id=$id \">Live!</a> You are free to <a target='_blank' href = \"http://stalkninja.com/float-project.php?token=$token\">edit</a> the project any number of times but deliverables must not change. We have mailed you link to edit your project. You may float another project below";
         } else {
             $error = true;
             $message = mysql_error();
@@ -259,7 +259,7 @@ else {
         $query = "UPDATE Project SET " . join(",", $update_param) . " WHERE Id=$id";
         //var_dump($query);
         if (mysql_query($query)) {
-            $message = "Your Project is <a href = \"http://stalkninja.com/project.php?id=$id\">Updated</a>. Make sure that you subscribe to Disqus board and keep cheking for comments by Ninja's. <br/> <a href = \"http://stalkninja.com/float-project.php\">Float another project</a>";
+            $message = "Your Project is <a target='_blank' href = \"http://stalkninja.com/project.php?id=$id\">Updated</a>. Make sure that you subscribe to Disqus board and keep cheking for comments by Ninja's. <br/> <a href = \"http://stalkninja.com/float-project.php\">Float another project</a>";
         } else {
             $error = true;
             $message = mysql_error();
