@@ -63,7 +63,7 @@ $title = strip_tags($_POST['Heading']);
         $to = "admin@stalkninja.com";
         $subject = "Project updated ";
         $header = "From: admin@stalkninja.com\r\n";
-       // mail($to, $subject, $message);
+       mail($to, $subject, $message);
         
         //put upload data
         if (!is_dir($dir)) {

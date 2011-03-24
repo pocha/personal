@@ -85,7 +85,7 @@ if ($_GET['token'] == NULL) {
         $header = "From: admin@stalkninja.com\r\n";
         $message = "Name: $name \n Email: $email \n Thanks for submitting Project $title at StalkNinja. Use the link
                 below to edit project whenever you need. \n http://stalkninja.com/float-project.php?token=$token";
-        // mail($to, $subject, $message);
+        mail($to, $subject, $message);
         //put upload data
         if (!is_dir($dir)) {
             mkdir($dir);
