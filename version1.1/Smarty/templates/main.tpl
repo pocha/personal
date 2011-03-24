@@ -253,7 +253,7 @@ plugins : "",
 		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0; font-size: small">
 				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> (91 95 3838 4545) &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. Email - admin@stalkninja.com
 		 </div>
-				<div style="font-size:small; color:gray; text-align:center;">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. We just dont give a sh**t about Internet Explorer.</div>
+				<div style="font-size:small; color:gray; text-align:center;">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. Sorry, we do not care much about Internet Explorer for now.</div>
 				<br/>
 				<div style="clear:both"></div>
 				<table>

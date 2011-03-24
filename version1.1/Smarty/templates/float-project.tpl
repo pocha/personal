@@ -13,6 +13,19 @@
   <script type="text/javascript">
             {literal}
     $(document).ready(function() {
+				
+				$("input[type='submit']").click(function() {
+					tinyMCE.triggerSave();
+					/*var content = tinyMCE.get('Description').getContent(); // get the content
+					$("input[name = 'Description']").val(content); // put it in the textarea
+					
+					content = tinyMCE.get('Deliverable').getContent(); // get the content
+					$("input[name = 'Deliverable']").val(content); // put it in the textarea
+					
+					content = tinyMCE.get('Task').getContent(); // get the content
+					$("input[name = 'Task']").val(content); // put it in the textarea*/
+				});
+
 	      $("#float-project").validate({
 	        rules: {
 	          name: "required",
@@ -123,7 +136,7 @@
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
 	<tr><td colspan="2">Deliverables<br/><br/><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
+	<tr class="message"><td colspan="2">What the Ninja suppose to deliver as part of the project. Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
 	
 	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
 	<tr class="message"><td colspan="2">Small task relevant to the project. Keep output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
