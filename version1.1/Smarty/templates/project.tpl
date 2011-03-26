@@ -172,7 +172,7 @@
                     <tr class="{if $n.Status == 1}completed{else}{/if}">
                         <td><label><a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.TakeDate}</label></td>
                         <td><label>{if $n.Ninja.Rating != 0} Rated {$n.Ninja.Rating}/10 in {$n.Ninja.projectCount} Project(s) {else} No visible rating{/if}</label></td>
-                        <td><label>{$n.Message}</label></td>
+                        <td><label><pre>{$n.Message}</pre></label></td>
 												<!--
 												<td>
 												{if $project.Status == "in-progress" || $project.Status == "completed"}
