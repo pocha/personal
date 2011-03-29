@@ -43,13 +43,14 @@
                 },
                 Description: {
                 required: true,
-                minlength: 50
+                minlength: 250
                 },
                 Deliverable: {
                 required: true,
                 },
                 Task: {
-                required: true
+                required: true,
+                minlength: 250
                 },
                 
 	        },
@@ -58,13 +59,14 @@
 	        ,
                 Description: {
                 required: "No no, we cant let you float a project without description.",
-                minlength: jQuery.format("Mr project creator, we need at least 250 characters here. We know its painful, please bear with us.")
+                minlength: jQuery.format("We need at least 250 words here. It does take time, but its worth doing it rather explaining details to each Ninja one on one.")								
                 },
                 Deliverable: {
                 required: "No deliverable == No work. Our system is baffled. Please help it."
                 },
                 Task: {
-                required: "The task is mandatory. Please spare a moment. Need help, call Ashish - 91 95 3838 4545"
+                required: "The task is mandatory. Please spare a moment. Need help, call Ashish - 91 95 3838 4545",
+                minlength: jQuery.format("We need at least 250 words here.")								
                 },
                 Budget: {
                 required: "Sorry, but all projects at stalk ninja are paid. So no leaving the budget empty.",
