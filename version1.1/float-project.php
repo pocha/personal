@@ -83,7 +83,7 @@ if ($_GET['token'] == NULL) {
         $to = "admin@stalkninja.com, $email";
         $subject = "$title: Submitted at StalkNinja ";
         $header = "From: admin@stalkninja.com\r\n";
-        $message = "Name: $name \n Email: $email \n Thanks for submitting Project $title at StalkNinja.\n Link to edit project -  http://stalkninja.com/edit-project.php?token=$token \n Link to view project - http://stalkninja.com/project.php?id=$id";
+        $message = "Name: $name \n Email: $email \n Thanks for submitting Project $title at StalkNinja.\n Link to edit project -  http://stalkninja.com/project/edit/$token \n Link to view project - http://stalkninja.com/project/$id";
         mail($to, $subject, $message, $header);
         //put upload data
         if (!is_dir($dir)) {
@@ -130,7 +130,7 @@ if ($_GET['token'] == NULL) {
         //var_dump($query);
         //echo($id);
         if (mysql_query($query)) {
-            $message = "Congrats, your Project is <a target='_blank' href = \" http://stalkninja.com/project.php?id=$id \">Live!</a> You are free to <a target='_blank' href = \"http://stalkninja.com/edit-project.php?token=$token\">edit</a> the project any number of times but deliverables must not change. We have mailed you link to edit your project. You may float another project below";
+            $message = "Congrats, your Project is <a target='_blank' href = \" http://stalkninja.com/project/$id \">Live!</a> You are free to <a target='_blank' href = \"http://stalkninja.com/project/edit/$token\">edit</a> the project any number of times but deliverables must not change. We have mailed you link to edit your project. You may float another project below";
         } else {
             $error = true;
             $message = mysql_error();
@@ -155,7 +155,7 @@ else {
 
 
 
-$smarty->assign("files", $files);
+//$smarty->assign("files", $files);
 $smarty->assign("data", $data);
 $smarty->assign("error", $error);
 $smarty->assign("message", $message);

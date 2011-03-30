@@ -59,11 +59,11 @@ $title = strip_tags($_POST['Heading']);
     $title = $data['Heading'];
 
     if (count($_POST) > 0) { //save the data
-        $message = var_export($_POST, TRUE);
+        $message = var_export($_POST, TRUE)."\n Project url - http://stalkninja.com/project/$id";
         $to = "admin@stalkninja.com";
         $subject = "Project updated ";
         $header = "From: admin@stalkninja.com\r\n";
-       mail($to, $subject, $message);
+       mail($to, $subject, $message,$header);
         
         //put upload data
         if (!is_dir($dir)) {
@@ -120,7 +120,7 @@ $title = strip_tags($_POST['Heading']);
         $query = "UPDATE Project SET " . join(",", $update_param) . " WHERE Id=$id";
         //var_dump($query);
         if (mysql_query($query)) {
-            $message = "Your Project is <a target='_blank' href = \"http://stalkninja.com/project.php?id=$id\">Updated</a>. Make sure that you subscribe to Disqus board and keep cheking for comments by Ninja's. <br/> <a href = \"http://stalkninja.com/float-project.php\">Float another project</a>";
+            $message = "Your Project is <a target='_blank' href = \"http://stalkninja.com/project/$id\">Updated</a>. Make sure that you subscribe to Disqus board and keep cheking for comments by Ninja's. <br/> <a href = \"http://stalkninja.com/project/new\">Float another project</a>";
         } else {
             $error = true;
             $message = mysql_error();
