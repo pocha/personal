@@ -1,0 +1,6 @@
+ 2131  for i in `ls -1`; do sed 's:project.php?id={\(.*\)}:/project/{\1}:g' $i > ../mod/$i; mv ../mod/$i $i; done
+ 2132  for i in `ls -1`; do sed 's:\(ninja\).php?id={\(.*\)}:/\1/{\2}:g' $i > ../mod/$i; mv ../mod/$i $i; done
+ 2133  for i in `ls -1`; do sed 's:\(startup\).php?id={\(.*\)}:/\1/{\2}:g' $i > ../mod/$i; mv ../mod/$i $i; done
+ 2134  for i in `ls -1`; do sed 's:"css:"/css:g' $i > ../mod/$i; mv ../mod/$i $i; done
+ 2135  for i in `ls -1`; do sed 's:"js:"/js:g' $i > ../mod/$i; mv ../mod/$i $i; done
+ 2136  for i in `ls -1`; do sed 's:"img/:"/img/:g' $i > ../mod/$i; mv ../mod/$i $i; done
