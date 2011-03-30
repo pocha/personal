@@ -12,7 +12,7 @@
 					<tr style="text-align:left">
                                             <td style="width: 100px; padding-left: 25px;">{if $n.FacebookProfileUrl}<a target="_blank" href="{$n.FacebookProfileUrl}">{/if}<img src="{if $n.FacebookPicUrl}{$n.FacebookPicUrl}{else}img/ninja-image.jpg{/if}" width="100px"></img><p style="font-size:small; color:black;">{$n.Name}</p>{if $n.FacebookProfileUrl}</a>{/if}</td>
 						<td style="width: 700px;">{if $n.Description}{$n.Description}{else}The Ninja has not given any description yet{/if}</td>
-                                                <td><a href="ninja.php?id={$n.Id}"><div class="btn open" style="text-align:center; width: 145px; padding-right: 25px;">Visit Ninja Profile</div></a></td>
+                                                <td><a href="/ninja/{$n.Id}"><div class="btn open" style="text-align:center; width: 145px; padding-right: 25px;">Visit Ninja Profile</div></a></td>
                                                 
                                         </tr>
                                 </table>

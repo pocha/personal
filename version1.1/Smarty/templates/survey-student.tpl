@@ -7,7 +7,7 @@
 		<div style="overflow: hidden" id="project-container">
 			{foreach from=$projects item=p}
 			<div class="btn {$p.Status}" style="text-align:center">
-				<a href="project.php?id={$p.Id}">
+				<a href="/project/{$p.Id}">
 				<table style="width:100%; font-size: medium">
 					<tr>
 						<td>{$p.Heading}</td>

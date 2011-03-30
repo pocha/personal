@@ -61,7 +61,7 @@
 					<h2 style="float:left; width:80%">{$project.Heading}</h2>
 				
 				<!--	
-					<div id="fb_share_1" style="float: right; margin-left: 10px; margin-top:50px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+					<div id="fb_share_1" style="float: right; margin-left: 10px; margin-top:50px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com//project/{$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
 					<div class="tweetmeme_button" style="float: right; margin-left: 10px; margin-top:50px"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
 				-->
@@ -76,7 +76,7 @@
                         <td><label class="btn {$project.Status}">Status: {$project.Status}</label></td>
                         <td><label>Budget: Rs. {$project.Budget}</label></td>
                         <td><label>Duration: {$project.Duration} days</label></td>
-                        <td><label>Floated by: <a href="startup.php?id={$project.StartupId}">{$project.Startup.Name}</a> {if $project.Startup.projectCount != 0} (Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)) {else} (No visible rating yet) {/if}</label></td>
+                        <td><label>Floated by: <a href="/startup/{$project.StartupId}">{$project.Startup.Name}</a> {if $project.Startup.projectCount != 0} (Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)) {else} (No visible rating yet) {/if}</label></td>
                     </tr></table>
                   <table class="project_table" width="1000" height="50">
                    <tr>
@@ -91,9 +91,9 @@
                     <tr>
 
 										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
-                        <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$takers item=n} {if $n.Status}<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
+                        <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$takers item=n} {if $n.Status}<a href="/ninja/{$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
                         <td>
-																	<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+																	<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com//project/{$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
 					<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
 													
@@ -115,7 +115,7 @@
 								{if $files|@count > 0 }
 								<h3> Attached Files: </h3>
 									{foreach from=$files item=f}
-										<a target="_blank" href="{$f.path}">{$f.name}</a>&nbsp;
+										<a target="_blank" href="/{$f.path}">{$f.name}</a>&nbsp;
 									{/foreach}
 								{/if}
 								
@@ -146,13 +146,13 @@
 									<h3 style="float:left">Takers: </h3>
 									<div style="padding-top: 30px">
 										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
-										<a href="project.php?id={$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
+										<a href="/project/{$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
 										{/if}
 										 {if $project.Status == "open"}<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; Click to pick the project &nbsp;</div>{/if}
 				
 									
 										<div class="tweetmeme_button" style="float:right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
-										<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com/project.php?id={$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
+										<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com//project/{$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
 										
 										<div style="clear:both"></div>
@@ -170,7 +170,7 @@
 										</tr>
 										{foreach from=$takers item=n}
                     <tr class="{if $n.Status == 1}completed{else}{/if}">
-                        <td><label><a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.TakeDate}</label></td>
+                        <td><label><a href="/ninja/{$n.NinjaId}">{$n.Ninja.Name}</a><br/>Date: {$n.TakeDate}</label></td>
                         <td><label>{if $n.Ninja.Rating != 0} Rated {$n.Ninja.Rating}/10 in {$n.Ninja.projectCount} Project(s) {else} No visible rating{/if}</label></td>
                         <td><label><pre>{$n.Message}</pre></label></td>
 												<!--
@@ -216,11 +216,11 @@
 								{if $project.Status == "completed" && $n.NinjaReview && $n.StartupReview }
 							<tr>
 								<td style="width:50%">
-									<a href="ninja.php?id={$n.NinjaId}">{$n.Ninja.Name}</a>: {$n.NinjaReview}
+									<a href="/ninja/{$n.NinjaId}">{$n.Ninja.Name}</a>: {$n.NinjaReview}
 									<p>Rated {$project.Startup.Name} {$n.NinjaRating}/10</p>
 								</td>
 								<td style="width:50%">
-									<a href="startup.php?id={$project.Startup.Id}">{$project.Startup.Name}</a>: {$n.StartupReview}
+									<a href="/startup/{$project.Startup.Id}">{$project.Startup.Name}</a>: {$n.StartupReview}
 									<p>Rated {$n.Ninja.Name} {$n.StartupRating}/10</p>
 								</td>
 							</tr>
@@ -252,7 +252,7 @@
 
     // The following are highly recommended additional parameters. Remove the slashes in front to use.
      var disqus_identifier = '{/literal}{$project.Id}{literal}';
-    var disqus_url = '{/literal}http://stalkninja.com/project.php?id={$project.Id}{literal}';
+    var disqus_url = '{/literal}http://stalkninja.com//project/{$project.Id}{literal}';
 
     /* * * DON'T EDIT BELOW THIS LINE * * */
     (function() {
@@ -276,7 +276,7 @@
 		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
 		<p style="text-align:center">OR</p>
 		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="survey-student.php" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
-		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
+		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="/project/{$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
 </div>
 
 

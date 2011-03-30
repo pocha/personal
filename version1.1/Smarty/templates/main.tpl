@@ -4,12 +4,12 @@
 <html>
 <head>
 	<title>{$title}</title>
-	<link rel="stylesheet" href="css/main.css" type="text/css" media="all">
-	<script type="text/javascript" src="js/jquery-1.4.2.js"></script>
+	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
+	<script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
 
 	
 
-<script type="text/javascript" src="js/jscripts/tiny_mce/tiny_mce.js"></script>
+<script type="text/javascript" src="/js/jscripts/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript">
 	{literal}
 tinyMCE.init({
@@ -46,10 +46,10 @@ plugins : "",
          
 
         // Drop lists for link/image/media/template dialogs
-        template_external_list_url : "js/template_list.js",
-        external_link_list_url : "js/link_list.js",
-        external_image_list_url : "js/image_list.js",
-        media_external_list_url : "js/media_list.js",
+        template_external_list_url : "/js/template_list.js",
+        external_link_list_url : "/js/link_list.js",
+        external_image_list_url : "/js/image_list.js",
+        media_external_list_url : "/js/media_list.js",
 
         // Replace values for the template plugin
         template_replace_values : {
@@ -226,7 +226,7 @@ plugins : "",
 <div id="contact" class="section" {if $tpl_name ne 'index.tpl'} style="background-color:gray" {/if} >
 	<div class="contents" style="position:relative;">
 		<div id="logo">
-			<a href=""><img src="img/stalk-ninja.png" alt="Stalk Talent"></a>
+			<a href=""><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 		</div><!-- /#logo -->
 		
 		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 18px; float:left; padding-left: 20px; padding-top: 15px;">

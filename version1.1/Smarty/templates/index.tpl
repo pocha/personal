@@ -1,7 +1,7 @@
 <div id="header" class="section">
 	
 	<div class="contents" style="text-align:center;">
-		<p style="font-size: 1.5em">Project floating is live. Float a project <a class="btn blue" href="float-project.php">here</a>. No registration needed</p>
+		<p style="font-size: 1.5em">Project floating is live. Float a project <a class="btn blue" href="/project/new">here</a>. No registration needed</p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 
@@ -13,7 +13,7 @@
 		<div style="overflow: hidden" id="project-container">
 			{foreach from=$projects item=p}
 			<div class="btn {$p.Status}" style="text-align:center; width:90%; margin-bottom: 10px; font-size: small">
-				<a href="project.php?id={$p.Id}">
+				<a href="/project/{$p.Id}">
 				<table style="width:100%;">
 					<tr>
 						<td>{$p.Heading}</td>
@@ -84,10 +84,10 @@
 
 <p style="font-size: 2em; font-family:Tahoma">Get Associated</p><br/>
 
-<a href="float-project.php" style=" position:relative; left:-30px; text-decoration: none;" class="tooltip"><img src="img/Draft.png" style="height:200px;"/>
+<a href="/project/new" style=" position:relative; left:-30px; text-decoration: none;" class="tooltip"><img src="/img/Draft.png" style="height:200px;"/>
 <span class="classic">Are you a Startup? Engage a Ninja from hand-picked lot via a project.</span></a>
-<img style="position:relative; top: -130px; left: -10px" src="img/pitch_arrow.png"/>
-<a href="survey-student.php" style="position:relative; left:50px;" class="tooltip"><img src="img/sword-battle.jpg" style="height:200px;"/>
+<img style="position:relative; top: -130px; left: -10px" src="/img/pitch_arrow.png"/>
+<a href="survey-student" style="position:relative; left:50px;" class="tooltip"><img src="/img/sword-battle.jpg" style="height:200px;"/>
 <span class="classic">Are you a student looking to work with startups? Take the Ninja Challenge.</span></a>
 
 <br/><br/>

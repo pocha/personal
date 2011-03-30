@@ -23,7 +23,7 @@
 			<div class="btn {$p.Status}" style="text-align:center;">
 				<table style="width:100%; font-size: medium">
 					<tr>
-						<td> <a href="project.php?id={$p.Id}">{$p.Heading}</a></td>
+						<td> <a href="/project/{$p.Id}">{$p.Heading}</a></td>
 					</tr>
 					<tr>
 						<td>
@@ -47,11 +47,11 @@
 								{if $n.NinjaReview && $n.StartupReview }
 							<tr>
 								<td style="width:50%">
-									<a href="ninja.php?id={$n.Ninja.Id}">{$n.Ninja.Name}</a>: {$n.NinjaReview}
+									<a href="/ninja/{$n.Ninja.Id}">{$n.Ninja.Name}</a>: {$n.NinjaReview}
 									<p>Rated {$startup.Name} {$n.NinjaRating}/10</p>
 								</td>
 								<td style="width:50%">
-									<a href="startup.php?id={$startup.Id}">{$startup.Name}</a>: {$n.StartupReview}
+									<a href="/startup/{$startup.Id}">{$startup.Name}</a>: {$n.StartupReview}
 									<p>Rated {$n.Ninja.Name} {$n.StartupRating}/10</p>
 								</td>
 							</tr>
