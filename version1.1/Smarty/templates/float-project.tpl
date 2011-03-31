@@ -106,6 +106,7 @@
         <tr class="message" style="display:{$top}"><td colspan="2">Already registered with us? provide the same email. First timer ? no problem, any email would do (we meant your email).</td></tr>
 
         <tr style="display:{$top}"><td>Phone</td><td><input name="contact" value="{$data.contact}"/></td></tr>
+	<tr class="message"><td colspan="2">System do not accept any space. Only numbers (no + or anything) - eg 9538384545 . Include country code if outside India.</td></tr>
 
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	
