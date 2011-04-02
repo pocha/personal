@@ -15,10 +15,10 @@
  
 			
 			<div class="sign-up"> 
-				<a name="a1" href="#a1" onclick = "showcontent1()">Click to Register</a> 
+				<a name="a1" href="http://www.stalkninja.com/survey-student">Ninja Challenge</a> 
 			</div> 
 			<div class="sign-up1"> 
-				<a name="a1" href="#a1" onclick = "showcontent1()">Click to Register</a> 
+				<a name="a1" href="http://www.stalkninja.com/project/new">Float a Project</a> 
 			</div> 
 			
 		</div>	
