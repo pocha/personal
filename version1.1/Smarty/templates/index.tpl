@@ -18,7 +18,7 @@
 				<a name="a1" href="http://www.stalkninja.com/survey-student">Ninja Challenge</a> 
 			</div> 
 			<div class="sign-up1"> 
-				<a name="a1" href="http://www.stalkninja.com/project/new">Float a Project</a> 
+				<a name="a1" href="http://www.stalkninja.com/project/new">Start-up Float a Project</a> 
 			</div> 
 			
 		</div>	

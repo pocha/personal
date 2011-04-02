@@ -1032,8 +1032,7 @@ blockquote {
 				text-indent:-9999px;
 			}
 			
-			#banner .wrapper .wrap .sign-up a:hover,
-			#banner .wrapper .wrap .sign-up a:active {
+			#banner .wrapper .wrap .sign-up a:hover {
 				background-position:0px -56px;
 			}
 			#banner .wrapper .wrap .sign-up1 a {
@@ -1048,8 +1047,7 @@ blockquote {
 				text-indent:-9999px;
 			}
 			
-			#banner .wrapper .wrap .sign-up1 a:hover,
-			#banner .wrapper .wrap .sign-up1 a:active {
+			#banner .wrapper .wrap .sign-up1 a:hover {
 				background-position:0px -56px;
 			}
 			
