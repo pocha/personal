@@ -989,3 +989,68 @@ blockquote {
   overflow:hidden;
 }
 
+
+/*################### Temp float project - blue area ########################*/
+#banner {
+	background:url('../img/banner_side.jpg') repeat #69f;
+	height:246px;
+	margin:0;
+	padding:0;
+}
+.wrap {
+	width:950px;
+	margin:0 auto;
+	text-align:left;
+}
+	#banner .wrapper {
+		background:url('../img/banner_bg.jpg') no-repeat 50% 0px;
+		height:246px;
+	}
+	
+		#banner .wrapper .wrap {
+			height:246px;
+			position:relative;
+		}
+
+			
+			#feature1 {
+				height:100%;
+				background:url('../img/sn2.png') no-repeat;
+				background-position:bottom left;
+			}
+			
+
+			#banner .wrapper .wrap .sign-up a {
+				background:url('../img/free_trial3.png') no-repeat 0px 0px;
+				position: absolute;
+				bottom:60px;
+				display:block;
+				right:0px;
+				width: 274px;
+				height:56px;
+				z-index:10;
+				text-indent:-9999px;
+			}
+			
+			#banner .wrapper .wrap .sign-up a:hover,
+			#banner .wrapper .wrap .sign-up a:active {
+				background-position:0px -56px;
+			}
+			#banner .wrapper .wrap .sign-up1 a {
+				background:url('../img/free_trial2.png') no-repeat 0px 0px;
+				position: absolute;
+				bottom:140px;
+				display:block;
+				right:0px;
+				width: 274px;
+				height:56px;
+				z-index:10;
+				text-indent:-9999px;
+			}
+			
+			#banner .wrapper .wrap .sign-up1 a:hover,
+			#banner .wrapper .wrap .sign-up1 a:active {
+				background-position:0px -56px;
+			}
+			
+/*################### Temp float project - blue area  closes ########################*/

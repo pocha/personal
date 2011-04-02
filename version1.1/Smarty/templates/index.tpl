@@ -4,7 +4,28 @@
 		<p style="font-size: 1.5em">Project floating is live. Float a project <a class="btn blue" href="/project/new">here</a>. No registration needed</p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
+<!-- temp float project blue area -->
+<div id="banner"> 
+		<div class="wrapper"> 
+		<div class="wrap"> 
+		
+			<div id="feature1" style="display:block;"> 
+				
+			</div> 
+ 
+			
+			<div class="sign-up"> 
+				<a name="a1" href="#a1" onclick = "showcontent1()">Click to Register</a> 
+			</div> 
+			<div class="sign-up1"> 
+				<a name="a1" href="#a1" onclick = "showcontent1()">Click to Register</a> 
+			</div> 
+			
+		</div>	
+		</div> 
+	</div>
 
+<!-- temp float project blue area closes -->
 <div style="width:900px; margin:0 auto">
 <div class="message" style="font-size: small; text-align:center ; padding: 20px;">
 		  Click on a project below for details.
