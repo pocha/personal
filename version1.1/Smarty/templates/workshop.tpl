@@ -12,7 +12,7 @@
 
 
 <div class="box">
-<h2>Thanks for huge support!! We are already over capacity, Registrations have been closed.</h2>
+<h2>Thanks for huge support!! We are already over capacity, Registrations for MANIT Workshop have been closed.</h2>
 <!--
 <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dFZQY21MelpLajBDTkdFWktjelVMSGc6MQ" width="760" height="965" frameborder="0" marginheight="0" marginwidth="0" style="overflow: hidden;">Loading...</iframe>
 -->
