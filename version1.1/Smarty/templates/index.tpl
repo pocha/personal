@@ -113,12 +113,8 @@ function gallery() {
  
  
 			<div id="button_wrap">
-			<div class="btn open" > 
-				<a name="" href="http://www.stalkninja.com/project/new">&nbsp; &nbsp; &nbsp; &nbsp; Float a Project &nbsp; &nbsp; &nbsp; &nbsp;</a> 
-			</div> <br/><br/>
-			<div class="btn open"> 
-				<a name="a1" href="http://www.stalkninja.com/survey-student">&nbsp; &nbsp; Take Ninja Challenge &nbsp; </a> 
-			</div> 
+				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a> <br/><br/>
+				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Compete for a Project</a> 
 			
 		</div>	
 		</div> 
