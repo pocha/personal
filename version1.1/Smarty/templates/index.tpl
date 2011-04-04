@@ -95,16 +95,17 @@ function gallery() {
 		<div class="wrapper" style="display: block; overflow: hidden;"> 
 		
 		
-			<div id="feature1"> 
-				<div id="gallery">
+			
+			<div id="feature1" > 
+<div id="gallery">
 
-	<div class="show">
-		<img src="/img/sn2.png" alt="Float Project" title="" alt="" rel=" "/>
-	</div>
+	<a href="#" class="show">
+		<img src="img/sn2.png" alt="Flowing Rock" title="" alt="" rel=" "/>
+	</a>
+	
 	
 			<div class="caption"><div class="content"></div></div>
 			</div>
-
 			</div> 
  
  
