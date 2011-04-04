@@ -95,11 +95,11 @@ function gallery() {
 		<div class="wrapper" style="display: block; overflow: hidden;"> 
 		
 		
-			<div id="feature1" style="width: 45%;"> 
+			<div id="feature1"> 
 				<div id="gallery">
 
 	<div class="show">
-		<img src="/img/sn2.png" alt="Flowing Rock" width="580" height="360" title="" alt="" rel=" "/>
+		<img src="/img/sn2.png" alt="Float Project" title="" alt="" rel=" "/>
 	</div>
 	
 			<div class="caption"><div class="content"></div></div>
