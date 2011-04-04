@@ -118,18 +118,10 @@ function gallery() {
 			<div id="feature1" style="width: 45%;"> 
 				<div id="gallery">
 
-	<a href="#" class="show">
+	<div class="show">
 		<img src="/img/sn2.png" alt="Flowing Rock" width="580" height="360" title="" alt="" rel=" "/>
-	</a>
+	</div>
 	
-	<a href="#">
-		<img src="images/grass-blades.jpg" alt="Grass Blades" width="580" height="360" title="" alt="" rel="<h3>Grass Blades</h3>Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. "/>
-	</a>
-	
-	<a href="#">
-		<img src="images/ladybug.jpg" alt="Ladybug" width="580" height="360" title="" alt="" rel="<h3>Ladybug</h3>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."/>
-
-	</a>
 			<div class="caption"><div class="content"></div></div>
 			</div>
 
