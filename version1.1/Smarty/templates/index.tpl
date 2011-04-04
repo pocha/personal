@@ -6,19 +6,20 @@
 </div><!-- /#header -->
 <!-- temp float project blue area -->
 <div id="banner"> 
-		<div class="wrapper"> 
-		<div class="wrap"> 
+		<div class="wrapper" style="display: block; overflow: hidden;"> 
 		
-			<div id="feature1" style="display:block;"> 
+		
+			<div id="feature1" style="width: 45%;"> 
 				
 			</div> 
  
-			
-			<div class="sign-up"> 
-				<a name="a1" href="http://www.stalkninja.com/survey-student">Ninja Challenge</a> 
-			</div> 
-			<div class="sign-up1"> 
-				<a name="a1" href="http://www.stalkninja.com/project/new">Start-up Float a Project</a> 
+ 
+			<div id="button_wrap">
+			<div class="btn open" > 
+				<a name="" href="http://www.stalkninja.com/project/new">&nbsp; &nbsp; &nbsp; &nbsp; Float a Project &nbsp; &nbsp; &nbsp; &nbsp;</a> 
+			</div> <br/><br/>
+			<div class="btn open"> 
+				<a name="a1" href="http://www.stalkninja.com/survey-student">&nbsp; &nbsp; Take Ninja Challenge &nbsp; </a> 
 			</div> 
 			
 		</div>	
@@ -103,12 +104,5 @@
 
 
 
-<p style="font-size: 2em; font-family:Tahoma">Get Associated</p><br/>
-
-<a href="/project/new" style=" position:relative; left:-30px; text-decoration: none;" class="tooltip"><img src="/img/Draft.png" style="height:200px;"/>
-<span class="classic">Are you a Startup? Engage a Ninja from hand-picked lot via a project.</span></a>
-<img style="position:relative; top: -130px; left: -10px" src="/img/pitch_arrow.png"/>
-<a href="survey-student" style="position:relative; left:50px;" class="tooltip"><img src="/img/sword-battle.jpg" style="height:200px;"/>
-<span class="classic">Are you a student looking to work with startups? Take the Ninja Challenge.</span></a>
 
 <br/><br/>
