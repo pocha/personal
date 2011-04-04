@@ -103,7 +103,7 @@ function gallery() {
 		<img src="img/sn2.png" alt="Flowing Rock" title="" alt="" rel=" "/>
 	</a>
 	<a href="http://www.stalkninja.com/ninja-list.php">
-		<img src="img/sn6.png" alt="" title="" alt="" rel=" "/>
+		<img src="img/sn6.PNG" alt="" title="" alt="" rel=" "/>
 	</a>
 	
 	
