@@ -997,58 +997,39 @@ blockquote {
 	margin:0;
 	padding:0;
 }
-.wrap {
-	width:950px;
-	margin:0 auto;
-	text-align:left;
-}
+
 	#banner .wrapper {
 		
 		height:246px;
+		width:950px;
+	margin:0 auto;
+	text-align:left;
+	position:relative;
 	}
-	
-		#banner .wrapper .wrap {
-			height:246px;
-			position:relative;
-		}
-
-			
 			#feature1 {
 				height:100%;
-				background:url('../img/sn2.png') no-repeat;
+				background:url('') no-repeat;
 				background-position:bottom left;
 			}
-			
-
-			#banner .wrapper .wrap .sign-up a {
-				background:url('../img/free_trial3.png') no-repeat 0px 0px;
+		#button_wrap{
 				position: absolute;
-				bottom:60px;
+				bottom:120px;
 				display:block;
 				right:0px;
 				width: 274px;
 				height:56px;
-				z-index:10;
-				text-indent:-9999px;
-			}
-			
-			#banner .wrapper .wrap .sign-up a:hover {
-				background-position:0px -56px;
-			}
-			#banner .wrapper .wrap .sign-up1 a {
-				background:url('../img/free_trial2.png') no-repeat 0px 0px;
-				position: absolute;
-				bottom:140px;
-				display:block;
-				right:0px;
-				width: 274px;
-				height:56px;
-				z-index:10;
-				text-indent:-9999px;
-			}
-			
-			#banner .wrapper .wrap .sign-up1 a:hover {
-				background-position:0px -56px;
-			}
-			
+				}
+		
+#button_wrap a:hover,
+#button_wrap a:focus,
+#button_wrap a:active,
+#gallery a:hover,
+#gallery a:focus,
+#gallery a:active {
+	background-color: transparent;
+	color: #fff;
+	border: none;
+	text-decoration: none;
+	border: none;
+}		
 /*################### Temp float project - blue area  closes ########################*/
