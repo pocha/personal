@@ -99,8 +99,11 @@ function gallery() {
 			<div id="feature1" > 
 <div id="gallery">
 
-	<a href="#" class="show">
+		<a href="http://www.stalkninja.com/project/new" class="show">
 		<img src="img/sn2.png" alt="Flowing Rock" title="" alt="" rel=" "/>
+	</a>
+	<a href="http://www.stalkninja.com/ninja-list.php">
+		<img src="img/sn6.png" alt="" title="" alt="" rel=" "/>
 	</a>
 	
 	
