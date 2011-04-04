@@ -68,7 +68,7 @@ function gallery() {
 {literal}
 #gallery {
 	position:relative;
-	height:360px
+	
 }
 	#gallery a {
 		float:left;
@@ -83,26 +83,6 @@ function gallery() {
 		z-index:500
 	}
 
-	#gallery .caption {
-		z-index:600; 
-		background-color:#000; 
-		color:#ffffff; 
-		height:100px; 
-		width:100%; 
-		position:absolute;
-		bottom:0;
-	}
-
-	#gallery .caption .content {
-		margin:5px
-	}
-	
-	#gallery .caption .content h3 {
-		margin:0;
-		padding:0;
-		color:#1DCCEF;
-	}
-	
 {/literal}
 </style>
 	
