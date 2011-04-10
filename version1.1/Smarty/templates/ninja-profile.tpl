@@ -9,11 +9,42 @@
 }
 {/literal}
 </style>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+	  <script type="text/javascript" src="/js/jquery.validate.js"></script>
+
+  <script type="text/javascript">
+            {literal}
+    $(document).ready(function() {
+				
+				$("input[type='submit']").click(function() {
+					tinyMCE.triggerSave();
+				});
+
+	      $("#edit_profile").validate({
+	        rules: {
+			 Description: {
+                required: true,
+                minlength: 250
+                },
+                
+	        },
+	        messages: {
+			Description: {
+                required: "Sorry, you can't leave this field blank",
+                minlength: jQuery.format("We need at least 250 words here, be exhaustive we need to know more about you.")								
+                }, 
+				}
+				,
+	      });
+	    });
+            {/literal}
+	  </script>
+
 
 <h3>Time to let us know you more Ninja, enter your details.</h3>
 <p>Hello Ninja, submit your details here &amp; it would be updated in our database. You can re-submit data to update later as well.</p>
 <p class="message {if $error }error{/if}">{$message}</p>
-<form action="" method=POST>
+<form id ="edit_profile" action="" method=POST>
 <table class="form" style="text-align:left; max-width: 100%">
 	<tr><td>Email</td><td><input name="Email" value="{$data.Email}"/></td></tr>
 	<tr class="message"><td colspan="2">This is the email you sent to us in the questionnaire. If you want to change email, write to us at admin@stalkninja.com</td></tr>
