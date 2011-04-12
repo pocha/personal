@@ -1,5 +1,5 @@
 <div style="width:80%; margin: 0 auto">
-<h2>Register below for the workshop at MANIT on 5th & 6th April, 2011. </h2>
+<h2>Register below for the workshop at DAIICT on 16th April, 2011. </h2>
 
 
 <style type="text/css">
@@ -12,7 +12,7 @@
 
 
 <div class="box">
-<h2>Register for workshop at DAIICT on April, 16</h2>
+<h2>Registeration form for Workshop</h2>
 
 Prerequisites: Basic HTML, CSS, php and MySQL
 <br/>
