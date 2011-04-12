@@ -12,10 +12,10 @@
 
 
 <div class="box">
-<h2>Register here for workshop at DAIICT, GandhiNagar on April, 16</h2>
+<h2>Register for workshop at DAIICT on April, 16</h2>
 
-prerequisites: Basic HTML, CSS, php and MySQL
-
+Prerequisites: Basic HTML, CSS, php and MySQL
+<br/>
 <iframe src="https://spreadsheets.google.com/embeddedform?formkey=dFZQY21MelpLajBDTkdFWktjelVMSGc6MQ" width="760" height="965" frameborder="0" marginheight="0" marginwidth="0" style="overflow: hidden;">Loading...</iframe>
 
 </div>
