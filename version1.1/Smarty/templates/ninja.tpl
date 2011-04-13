@@ -29,7 +29,7 @@
 			<div class="btn {$p.Status}" style="text-align:center;">
 				<table style="width:100%; font-size: medium">
 					<tr>
-						<td><a href="/project/{$p.Id}">{$p.Heading}</a></td>
+						<td><a href="/project/{$p.ProjectId}">{$p.Heading}</a></td>
 					</tr>
 					<tr>
 						<td>
