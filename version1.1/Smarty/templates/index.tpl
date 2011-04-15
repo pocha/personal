@@ -87,7 +87,7 @@ function gallery() {
 </style>
 	
 	<div class="contents" style="text-align:center;">
-		<p style="font-size: 1.5em">Project floating is live. Float a project <a class="btn blue" href="/project/new">here</a>. No registration needed</p>
+		<p style="font-size: 1.5em">Register here for workshop at DAIICT, GandhiNagar on April, 16 <a class="btn blue" href="/workshop.php">Register Now</a></p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
