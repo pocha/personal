@@ -1,5 +1,5 @@
 <div style="width:80%; margin: 0 auto">
-<h2>Register below for the workshop at DAIICT on 16th April, 2011. </h2>
+<h2>Register below for the workshop at SDMCET, Dharwad </h2>
 
 
 <style type="text/css">
