@@ -275,7 +275,7 @@
 		<p style="text-align:center">OR</p>
 		<p><strong>If there is no task in the project</strong> & you have already solved the Ninja Challenge, then send an email from your email registered with us & mention why you want to pick this project. We would show it on the project page.</p>
 		<p style="text-align:center">OR</p>
-		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="survey-student.php" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
+		<p>If you are not a registered Ninja but think that you have everything to do this project,<a href="/survey-student.php" target="_blank">Take the Ninja challenge</a> & we would let you compete for the project.</p>
 		<!--<div style="margin-top: 10px;">{if $project.Status == "open"} Ready to grab this project!!  See how other Ninjas are competing for this Project,<br/> Move to <a href="/project/{$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {else} The Project has been marked as Closed. Read the one-on-ones happened between Ninjas for this project. <br/> Move to <a href="project.php?id={$project.Id}#disqus_thread" class="popup-close1">Discussion board</a> {/if}</div>-->
 </div>
 
