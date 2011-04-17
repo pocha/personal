@@ -17,7 +17,7 @@
 									<td>{if $n.Description}{$n.Description}{else}The Ninja has not given any description yet{/if}</td>
 								</tr>
 								<tr>
-									<td><span style="font-size: 1.5em; color:black">Skills :</span> {$n.Skills}</td>
+									<td><span style="color:black">Skills : {$n.Skills}</span></td>
 								</tr>
 							</table>
 							</td>
