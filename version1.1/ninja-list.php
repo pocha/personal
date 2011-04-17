@@ -27,9 +27,9 @@ include("mysql.php");
 	$ninjas[0]['Rank'] = 1;
 	for ($i=1; $i < count($ninjas); $i++) {
 		if ($ninjas[$i]['Points'] < $ninjas[$i-1]['Points'])
-			$n['Rank'] = $ninjas[$i-1]['Rank'] + 1;
+			$ninjas[$i]['Rank'] = $ninjas[$i-1]['Rank'] + 1;
 		else 
-			$n['Rank'] = $ninjas[$i-1]['Rank'];
+			$ninjas[$i]['Rank'] = $ninjas[$i-1]['Rank'];
 	}
 		
 
