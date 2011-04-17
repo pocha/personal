@@ -230,7 +230,7 @@ plugins : "",
 		</div><!-- /#logo -->
 		
 		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 1.8em; float:left; padding-left: 1em; padding-top: 1em;">
-		Yes, Students can deliver !!
+		Yes, students can deliver ...
 		</div>
 
 		<div style="clear:both"></div>
