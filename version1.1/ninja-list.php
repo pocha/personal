@@ -2,7 +2,7 @@
 include("mysql.php");
 
 	$ninjas = array();
-	$result = mysql_query("SELECT ROUND(AVG(Review.StartupRating),2) as Rating, COUNT(DISTINCT(Review.Id)) as completedProjectCount, COUNT(DISTINCT(Taker.Id)) as attemptedProjectCount, Ninja.* FROM Ninja LEFT OUTER JOIN Review ON Ninja.Id = Review.NinjaId LEFT OUTER JOIN Taker ON Ninja.Id = Taker.NinjaId LEFT OUTER JOIN Project ON Taker.ProjectId=Project.Id GROUP BY Ninja.Id ORDER BY Rating DESC, completedProjectCount DESC, attemptedProjectCount  DESC");
+	$result = mysql_query("SELECT ROUND(AVG(Review.StartupRating),2) as Rating, AVG(Project.Budget) as Budget, COUNT(DISTINCT(Review.Id)) as completedProjectCount, COUNT(DISTINCT(Taker.Id)) as attemptedProjectCount, Ninja.* FROM Ninja LEFT OUTER JOIN Review ON Ninja.Id = Review.NinjaId LEFT OUTER JOIN Taker ON Ninja.Id = Taker.NinjaId LEFT OUTER JOIN Project ON Taker.ProjectId=Project.Id GROUP BY Ninja.Id ORDER BY Rating DESC, completedProjectCount DESC, attemptedProjectCount  DESC");
 	
   while ($line = mysql_fetch_assoc($result)){
 
@@ -10,7 +10,7 @@ include("mysql.php");
 		$line['liveProjectCount'] = $tmp['Count'];
 
 		//calculate rank
-		$line['Points'] = $line['Rating'] * $line['completedProjectCount'] + (($line['Rating']) ? $line['Rating'] * $line['liveProjectCount'] : $line['liveProjectCount']) + $line['attemptedProjectCount'];
+		$line['Points'] = $line['Budget'] * $line['Rating'] * $line['completedProjectCount'] + (($line['Rating']) ? $line['Rating'] * $line['liveProjectCount'] : $line['liveProjectCount']) + $line['attemptedProjectCount'];
 
 		$ninjas[] = $line;
 	}
