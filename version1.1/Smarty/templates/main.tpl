@@ -229,7 +229,7 @@ plugins : "",
 			<a href=""><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 		</div><!-- /#logo -->
 		
-		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 1.8em; float:left; padding-left: 1em; padding-top: 1em;">
+		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 1.6em; float:left; padding-left: 1em; padding-top: 1.5em;">
 		Pool of hand-picked students. Hire one via project.
 		</div>
 
