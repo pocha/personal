@@ -19,7 +19,7 @@ include("mysql.php");
 		if ($a['Points'] == $b['Points'])
 			return 0;
 
-		return ($a['Points'] < $b['Points']) ? -1 : 1;
+		return ($a['Points'] < $b['Points']) ? 1 : -1;
 	}
 
 	usort($ninjas,"cmp");
