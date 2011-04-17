@@ -5,8 +5,9 @@
 						<p style="text-align:center">Click on the Ninja picture to check his/her facebook profile</p>
 
 		<div  id="ninja-container">
-			{foreach from=$ninjas item=n}
+			{foreach from=$ninjas item=n name=ninjas}
 			<div style="text-align:center; margin-bottom: 5px; border: 1px solid black; padding: 5px;">
+				<h3>Stalk Ninja Rank - {$smarty.foreach.ninjas.iteration}</h3>
 				
 				<table style="width:100%; font-size: medium">
 					<tr style="text-align:left">
