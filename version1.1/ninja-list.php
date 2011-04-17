@@ -26,6 +26,10 @@ include("mysql.php");
 	
 	$ninjas[0]['Rank'] = 1;
 	for ($i=1; $i < count($ninjas); $i++) {
+		if ($ninjas[$i]['Points'] == 0) {
+			$ninjas[$i]['Rank'] = "no rank assigned yet";
+			continue;
+		}
 		if ($ninjas[$i]['Points'] < $ninjas[$i-1]['Points'])
 			$ninjas[$i]['Rank'] = $ninjas[$i-1]['Rank'] + 1;
 		else 
