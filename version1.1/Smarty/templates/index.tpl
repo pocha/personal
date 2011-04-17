@@ -87,7 +87,7 @@ function gallery() {
 </style>
 	
 	<div class="contents" style="text-align:center;">
-		<p style="font-size: 1.5em">Register here for workshop at SDMCET, Dharwad <a class="btn blue" href="/workshop.php">Register Now</a></p>
+		<p style="font-size: 1.5em; width:960px">The Ninja(s) in our system are ranked now. Check list <a class="btn blue" href="/ninja-list.php">here</a></p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
