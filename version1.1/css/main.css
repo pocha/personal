@@ -1014,10 +1014,11 @@ blockquote {
 			}
 		#button_wrap{
 				position: absolute;
-				bottom:120px;
+				top:50px;
 				display:block;
 				right:0px;
 				height:56px;
+				font-size: 50px;
 				}
 		
 #button_wrap a:hover,
