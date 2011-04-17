@@ -86,8 +86,8 @@ function gallery() {
 {/literal}
 </style>
 	
-	<div class="contents" style="text-align:center;">
-		<p style="font-size: 1.5em; width:960px">The Ninja(s) in our system are ranked now. Check list <a class="btn blue" href="/ninja-list.php">here</a></p>
+	<div class="contents" style="text-align:right;">
+		<p style="font-size: 1.1em; width:960px">The Ninja(s) in our system are ranked now. Check list <a href="/ninja-list.php">here</a></p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->

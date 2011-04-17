@@ -552,6 +552,7 @@ a.rss:active {
 #contact {
     /*background-color: #A0CB29;*/
     color:  #fff;
+		margin-bottom: 1em;
 }
 
 #contact .contents {
@@ -586,7 +587,7 @@ a.rss:active {
 #header {
 	position: relative;
 	background-color: #252525;
-	height: 100px; /* 6.0714em if youre into that kinda thing... */
+	/*height: 100px;  6.0714em if youre into that kinda thing... */
 	border-top: 5px solid #f4f3e0;
 	border-bottom: 6px solid #f4f3e0;
 	color: white;

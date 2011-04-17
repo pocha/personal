@@ -229,8 +229,8 @@ plugins : "",
 			<a href=""><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 		</div><!-- /#logo -->
 		
-		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 18px; float:left; padding-left: 20px; padding-top: 15px;">
-		{$top_message}
+		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 1.8em; float:left; padding-left: 1em; padding-top: 1em;">
+		Yes, Students can deliver !!
 		</div>
 
 		<div style="clear:both"></div>
