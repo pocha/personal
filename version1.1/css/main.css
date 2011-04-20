@@ -994,9 +994,13 @@ blockquote {
 /*################### Temp float project - blue area ########################*/
 #banner {
 	background:url('../img/banner_side.jpg') repeat #ccc;
-	height:246px;
-	margin:0;
-	padding:0;
+	height: 150px;
+	margin: 100px auto 50px;
+	padding:20px;
+	width: 1000px;
+	-moz-border-radius: 10px;
+	-webkit-border-radius: 10px;
+
 }
 
 	#banner .wrapper {
@@ -1014,9 +1018,9 @@ blockquote {
 			}
 		#button_wrap{
 				position: absolute;
-				top:50px;
+				top:0;
 				display:block;
-				right:0px;
+				right:50px;
 				height:56px;
 				font-size: 1.5em;
 				}

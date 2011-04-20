@@ -67,7 +67,8 @@ function gallery() {
 <style type="text/css">
 {literal}
 #gallery {
-	position:relative;
+	position:absolute;
+	top: -100px;
 	
 }
 	#gallery a {
@@ -92,7 +93,7 @@ function gallery() {
 </div><!-- /#header -->
 <!-- temp float project blue area -->
 <div id="banner"> 
-		<div class="wrapper" style="display: block; overflow: hidden;"> 
+		<div class="wrapper" style="display: block;"> 
 		
 		
 			
