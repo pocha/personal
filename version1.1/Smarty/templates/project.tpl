@@ -128,7 +128,7 @@
 								{if $project.Task}
 								<h3> Task: </h3>
 									{$project.Task}
-									<p style="color:black">Only those Ninja(s) would be considered for the project who would be able to do the task.</p>
+									<p style="color:black">Only those Ninja(s) would be considered for the project who would be able to do the task. If you are attempting the task, drop a comment in the discussion board. Feel free to ask for any help.</p>
 								{/if}
 
 								<div style="font-size:small; font-style:italic">
