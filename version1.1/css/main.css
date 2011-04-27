@@ -889,12 +889,19 @@ span.pending-approval {background-color:inherit;  color: orange;}
 .completed { background-color: #ABABAB; color: #141414; }
 .cancelled { background-color: #ABABAB; color: #141414; }
 
-.project_desc ul li {
+.project_desc > ul > li {
 	list-style-image: none;
 	list-style-position: outside;
 	list-style-type: disc;
 	margin-left: 30px;
 	padding-top: 10px;
+}
+
+.project_desc > ul > ul > li {
+	margin-left: 60px;
+}
+.project_desc > ul > ul > ul > li{
+	margin-left: 90px;
 }
 
 blockquote {
