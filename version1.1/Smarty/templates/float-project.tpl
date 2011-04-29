@@ -106,18 +106,18 @@
         <tr class="message" style="display:{$top}"><td colspan="2">Already registered with us? provide the same email. First timer ? no problem, any email would do (we meant your email).</td></tr>
 
         <tr style="display:{$top}"><td>Phone</td><td><input name="contact" value="{$data.contact}"/></td></tr>
-	<tr class="message"><td colspan="2">System do not accept any space. Only numbers (no + or anything) - eg 9538384545 . Include country code if outside India.</td></tr>
+	<tr class="message"><td colspan="2">System do not accept any space. Only numbers (no '+' or anything) - eg 9538384545 . Include country code if outside India.</td></tr>
 
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>
 	
 	<tr><td>Budget</td><td><input name="Budget" value="{$data.Budget}"/></td></tr>
-	<tr class="message"><td colspan="2">Minimum budget is Rs 1000.</td></tr>
+	<tr class="message"><td colspan="2">Minimum budget is Rs 1000. There is 15% premium on top of this budget.</td></tr>
 	
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
 	<tr class="message"><td colspan="2">Days in which the project needs to be completed from the day of Ninja selection</td></tr>
 	
 	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Word limit - 50 words. Tip: mention links/resources to read up.</td></tr>
+	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Minimum 250 words. Tip: mention links/resources for Ninja(s) to read up.</td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
@@ -134,7 +134,7 @@
 	<tr class="message"><td colspan="2">What the Ninja suppose to deliver as part of the project. Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
 	
 	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
-	<tr class="message"><td colspan="2">Small task relevant to the project. Keep output which is verifiable with a flick of the eye, unlike code checking/compiling.</td></tr>
+	<tr class="message"><td colspan="2">Interested people need to complete this task to be able to contest for the project. Usually it is a good idea to put a small part of the project as task so that you are sure of the Ninja capability.</td></tr>
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Pre-requisite skills (if any). Looking to pick someone fresh ? Leave this empty.</td></tr>
