@@ -92,7 +92,9 @@ function gallery() {
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
-<div id="banner"> 
+<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days {/if}</p> 
+<div class="message" style="font-size: small; text-align:center; padding-bottom:2em">Dont believe us ? Scroll down to check all the projects.</div>
+<div id="banner">
 		<div class="wrapper" style="display: block;"> 
 		
 		
@@ -115,7 +117,7 @@ function gallery() {
  
 			<div id="button_wrap">
 				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a> <br/><br/>
-				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Compete for a Project</a> 
+				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Be A Ninja</a> 
 			
 		</div>	
 		</div> 
@@ -140,6 +142,7 @@ function gallery() {
 							<table>
 								<tr>
 									<td>Status: {$p.Status}</td>
+									<td>Budget: Rs. {$p.Budget|number_format:0:".":","}</td>
 									<td>Floated By: {$p.StartupName}</td>
 									<td>Floated On: {$p.DateCreated}</td>
 									{if $p.DateCompleted}
