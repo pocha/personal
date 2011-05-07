@@ -2,8 +2,8 @@
 <h2>Ninja Challenge</h2>
 <div style="width:80%; margin: 0 auto; text-align:left">
 	<h3>If you are a seasoned programmer/techie {literal}{{/literal} </h3>
-	<p>Solve task mentioned in ANY ONE of the project below & mail the solution to admin@stalkninja.com . If you need help, feel free to call Ashish at 95 3838 4545 or ping him on gtalk at pocha@stalkninja.com .</p>
 	<div style="margin-left: 50px">
+		<p>Solve task mentioned in ANY ONE of the project below & mail the solution to admin@stalkninja.com . If you need help, feel free to call Ashish at 95 3838 4545 or ping him on gtalk at pocha@stalkninja.com .</p>
 		<div class="message" style="font-size: small; text-align:center ; padding: 20px;">
 					Click on a project below for details.
 				</div>
