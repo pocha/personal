@@ -88,7 +88,7 @@ function gallery() {
 </style>
 	
 	<div class="contents" style="text-align:right;">
-		<p style="font-size: 1.1em; width:960px">The Ninja(s) in our system are ranked now. Check list <a href="/ninja-list.php">here</a></p>
+			<p style="font-size: 1.1em; width:960px">Our first press coverage. Check it <a target="_blank" href="http://bit.ly/lNIkRs">here</a></p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
@@ -116,8 +116,9 @@ function gallery() {
  
  
 			<div id="button_wrap">
-				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a> <br/><br/>
-				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Be A Ninja</a> 
+				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a> <br/>Looking to float an internship? Read <a href="http://blog.stalkninja.com/the-mail-sent-to-startups-for-the-internship">this</a><br/><br/>
+				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Be A Ninja</a>
+<!--<br/>Want an internship? Read <a href="http://blog.stalkninja.com/the-mail-sent-to-startups-for-the-internship">this</a><br/>-->
 			
 		</div>	
 		</div> 
