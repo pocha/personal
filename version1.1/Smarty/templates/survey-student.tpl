@@ -1,5 +1,6 @@
 
 <h2>Ninja Challenge</h2>
+<p>Only 3% of college students are able to successfully complete the challenge. If you can solve this, we would let you have a profile <a target="_blank" href="/ninja-list.php">here</a>
 <div style="width:80%; margin: 0 auto; text-align:left">
 	<h3>If you are a seasoned programmer/techie {literal}{{/literal} </h3>
 	<div style="margin-left: 50px">
@@ -43,7 +44,7 @@
  <div style="margin-left: 50px">
 	 <p>Solve <span style="font-weight:bold">both</span> the assignments & let us know at admin@stalkninja.com with the url of both the solutions.<p>
 	 <p class="message">The task look tech oriented but believe us, it would not require even a single line of intensive coding (you might need to dribble with some html but we dont consider that coding :] ). It would test your skill of grasping new things, understanding it & successfully implementing it.</p>
-	 <p class="message"><a target="_blank" href="http://www.facebook.com/kar2905">Kartik</a> has intimated us that FBML needed for second assignment is obsolete now. If you cant get it to work, let us know.</p>
+	 <p class="message"><a target="_blank" href="http://www.facebook.com/kar2905">Kartik</a> has intimated us that FBML needed for second assignment is obsolete now. If you CAN'T get it to work, let us know.</p>
 
 	 <p><a class="btn blue" href="http://pocha.posterous.com/assignment-are-you-kidding-0" target="_blank">First Assignment</a></p>
 	 <p><a class="btn blue" href="http://www.facebook.com/pages/Stalk-Ninja/139273162793864?sk=app_4949752878" target="_blank">Second Assignment</a></p>
