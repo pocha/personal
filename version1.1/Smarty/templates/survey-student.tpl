@@ -42,7 +42,7 @@
  <h3>{literal}} Else {</h3>
  <div style="margin-left: 50px">
 	 <p>Solve <span style="font-weight:bold">both</span> the assignments & let us know at admin@stalkninja.com with the url of both the solutions.<p>
-	 <p class="message">The task look tech oriented but believe us, it would not even require a single line of coding. It would test your skill of grasping new things, understanding it & successfully implementing it.</p>
+	 <p class="message">The task look tech oriented but believe us, it would not require even a single line of coding. It would test your skill of grasping new things, understanding it & successfully implementing it.</p>
 	 <p class="message"><a target="_blank" href="http://www.facebook.com/kar2905">Kartik</a> has intimated us that FBML needed for second assignment is obsolete now. If you cant get it to work, let us know.</p>
 
 	 <p><a class="btn blue" href="http://pocha.posterous.com/assignment-are-you-kidding-0" target="_blank">First Assignment</a></p>
