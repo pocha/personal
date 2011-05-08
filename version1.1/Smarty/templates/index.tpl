@@ -87,8 +87,9 @@ function gallery() {
 {/literal}
 </style>
 	
-	<div class="contents" style="text-align:right;">
+	<div class="contents" style="text-align:center;">
 			<p style="font-size: 1.1em; width:960px">Our first press coverage. Check it <a target="_blank" href="http://bit.ly/lNIkRs">here</a></p>
+			<p style="font-size: 1.1em; width:960px"> We have kick-started a <a target="_blank" href="/internship.php">summer internship</a> program. Read about it <a target="_blank" href="http://blog.stalkninja.com/the-mail-sent-to-startups-for-the-internship">here</a></p>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
@@ -116,9 +117,9 @@ function gallery() {
  
  
 			<div id="button_wrap">
-				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a> <br/>Looking to float an internship? Read <a href="http://blog.stalkninja.com/the-mail-sent-to-startups-for-the-internship">this</a><br/><br/>
+				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a> <br/>or <a href="/internship/startup">float a summer internship</a><br/><br/>
 				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Be A Ninja</a>
-<!--<br/>Want an internship? Read <a href="http://blog.stalkninja.com/the-mail-sent-to-startups-for-the-internship">this</a><br/>-->
+<br/>& <a href="/internship/student">apply for a summer intern</a><br/>
 			
 		</div>	
 		</div> 
