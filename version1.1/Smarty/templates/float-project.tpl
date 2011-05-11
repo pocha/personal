@@ -96,6 +96,7 @@
 <p class="message {if $error }error{/if}">{$message}</p>
 <h3>{$heading}</h3>
 <p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms btn blue">how it works</a>.</p>
+<p>Looking to get maximum out of the project ? Read our <a href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea" target="_blank">philosophy cum instructions</a> on our blog.</p>
 <p><span class="message">All fields are compulsory.</p>
 <form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
@@ -157,15 +158,12 @@
 	<div id="popup" style="text-align:left; top:10%;">
 		<a class="popup-close" href="javascript:void(0)">x</a>
 
-		<div class="popup-heading">How-to for the project creators</div>
-			<ol class="bullets" style="font-size:small">
-				<li>Once the project form is submitted, the project would go live. The Ninja(s) in the system would be intimated of it & they would start attempting the task.</li>
-				<li>We would review the project against the <a target="_blank" href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea">guidelines</a>. If it does not conform, the project status will be changed to 'pending-approval' or 'under-moderation' depending on severity. Otherwise, the project creator needs to do payment within 24 hours of our intimation failing which the project status changes to 'pending-approval'.</li>
-				<li> Payment for the project is project money + 15% premium. If the project creator cancels the project, the project money would be returned but the premium is non-refundable.</li>
-				<li> There is a project discussion board where Ninja(s) would ask questions/clarifications. There is an email subscription option to it. Project creators can also use the space to ask questions to one/more Ninja(s). The place is open & messages are globally visible</li>
-				<li> Project creator intimate us post zeroing in on a Ninja. A formal approval from the Ninja is sought & post agreement, the contact details are exchanged & the project kicks-off.</li>
-				<li> The Ninja needs to complete the task within the project duration from the date of project kick-off, else the money is returned back to the project creator. Post completion, once the project creator okays the deliverable, the project money is released to the Ninja. If the Ninja becomes unresponsive, the project creator can choose to cancel project, or choose another Ninja for the project. A new project deadline would be decided for the latter case. </li>
-				<li> It is imperative that all emails floating between project creator & the Ninja should be cced to admin@stalkninja.com . We mediate if we feel either of the party is not behaving fairly to their counterpart.</li>
+		<div class="popup-heading">'How-to' cum code of conduct for the project creators</div>
+			<ol class="bullets">
+				<li>We would review the project against the <a target="_blank" href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea">guidelines</a>. If it does not conform, the project status will be changed to 'pending-approval' or 'under-moderation' depending on severity. We would intimate you of the same & you need to update the project within 24 hours of the intimation, else the project is canceled.</li>
+				<li>Once we approve the project & intimate you of the same with the invoice, the project creator needs to do payment within 24 hours of our intimation failing which the project is canceled.</li>
+				<li> Payment for the project is project money + 15% premium. If the project creator cancels the project, the project money would be returned but the premium is non-refundable. You would need to do online transfer to our account (we would furnish you the details) & intimate us with NEFT details.</li>
+				<li> There is a project discussion board where Ninja(s) would ask questions/clarifications. <span style="font-weight: bold">Please subscribe to the discussion board via email. The option is on the bottom left of the project page.</span></li>
 			</ol>
 	
 	</div>
