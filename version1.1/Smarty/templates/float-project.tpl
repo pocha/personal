@@ -116,8 +116,7 @@
 	<tr><td>Duration (days)</td><td><input name="Duration" value="{$data.Duration}"/></td></tr>
 	<tr class="message"><td colspan="2">Days in which the project needs to be completed from the day of Ninja selection</td></tr>
 	
-	<tr><td colspan="2">Description<br/><br/><textarea name="Description">{$data.Description}</textarea></td></tr>
-	<tr class="message"><td colspan="2">Describe the project, The More (exhaustive), The Merrier (better). Minimum 250 words. Tip: mention links/resources for Ninja(s) to read up.</td></tr>
+	<tr><td colspan="2">Description<br/><p class="message">Describe the project, The More (exhaustive), The Merrier (better). Minimum 250 words. Tip: mention links/resources for Ninja(s) to read up.</p><textarea name="Description">{$data.Description}</textarea></td></tr>
 
 	{foreach from=$files item=f}
 	<tr><td>Delete attached file {$f}</td><td><input type="checkbox" name="delete-{$f}"/></td></tr>
@@ -130,11 +129,9 @@
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file4"/></td></tr>
 	<tr><td>Attach files (if any)</td><td><input type="file" name="file5"/></td></tr>
 
-	<tr><td colspan="2">Deliverables<br/><br/><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
-	<tr class="message"><td colspan="2">What the Ninja suppose to deliver as part of the project. Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (above) would be compared to the supplied deliverables.</td></tr>
+	<tr><td colspan="2">Deliverables<br/><p class="message">What the Ninja suppose to deliver as part of the project. Most crucial part. Keep it point-wise. In case of arbitration, the actual deliverables (below) would be compared to the supplied deliverables by the Ninja.</p><textarea name="Deliverable">{$data.Deliverable}</textarea></td></tr>
 	
-	<tr><td colspan="2">Task<br/><br/><textarea name="Task">{$data.Task}</textarea></td></tr> 
-	<tr class="message"><td colspan="2">Interested people need to complete this task to be able to contest for the project. Usually it is a good idea to put a small part of the project as task so that you are sure of the Ninja capability.</td></tr>
+	<tr><td colspan="2">Trial Task<br/><p class="message">Select the hardest part of the project & put it up as a trial task. We make it mandatory for Ninja(s) to solve the task to be able to compete for the project. The performance in the task helps you to zero in on a Ninja in the pool of all the Ninja(s) competing for the project.</p><textarea name="Task">{$data.Task}</textarea></td></tr> 
 	
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Pre-requisite skills (if any). Looking to pick someone fresh ? Leave this empty.</td></tr>
