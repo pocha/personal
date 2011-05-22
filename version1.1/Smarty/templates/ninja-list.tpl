@@ -3,11 +3,12 @@
 	<div class="contents">
             <h3 style="margin-top: 5px;">Total {$ninjas|@count} Ninja's available to be engaged.</h3>
 						<p style="text-align:center">Click on the Ninja picture to check his/her facebook profile</p>
+						<p class="message" style="text-align:center">Formula for rank calculation - avg project budget * (avg rating x completed project + avg rating x live project + attempted projects)</p>
 
 		<div  id="ninja-container">
 			{foreach from=$ninjas item=n name=ninjas}
 			<div style="text-align:center; margin-bottom: 5px; border: 1px solid black; padding: 5px;">
-				<h3>Stalk Ninja Rank - {$n.Rank}</h3>
+				<h3>Stalk Ninja Rank - {$n.Rank} ($n.Points points)</h3>
 				
 				<table style="width:100%; font-size: medium">
 					<tr style="text-align:left">

@@ -10,7 +10,8 @@ include("mysql.php");
 		$line['liveProjectCount'] = $tmp['Count'];
 
 		//calculate rank
-		$line['Points'] = $line['Budget'] * $line['Rating'] * $line['completedProjectCount'] + (($line['Rating']) ? $line['Rating'] * $line['liveProjectCount'] : $line['liveProjectCount']) + $line['attemptedProjectCount'];
+		//$line['Points'] = $line['Budget'] * $line['Rating'] * $line['completedProjectCount'] + (($line['Rating']) ? $line['Rating'] * $line['liveProjectCount'] : $line['liveProjectCount']) + $line['attemptedProjectCount'];
+		$line['Points'] = $line['Budget'] * ($line['Rating'] * $line['completedProjectCount'] + (($line['Rating']) ? $line['Rating'] * $line['liveProjectCount'] : $line['liveProjectCount']) + $line['attemptedProjectCount']);
 
 		$ninjas[] = $line;
 	}
