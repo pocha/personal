@@ -146,10 +146,8 @@ function gallery() {
 									<td>Status: {$p.Status}</td>
 									<td>Budget: Rs. {$p.Budget|number_format:0:".":","}</td>
 									<td>Floated By: {$p.StartupName}</td>
-									<td>Floated On: {$p.DateCreated}</td>
-									{if $p.DateCompleted}
-									<td>Completed On: {$p.DateCompleted}</td>
-									{/if}
+									<td>Floated On: {$p.DateCreated|date_format:"%B %e"}</td>
+									
 								</tr>
 							</table>
 						</td>
