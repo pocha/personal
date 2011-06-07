@@ -339,5 +339,12 @@ plugins : "",
 {/literal}
 </script>
 
+<script type="text/javascript">
+{literal}
+document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
+SnapABug.addButton("97e4e1a5-4f24-431d-89d9-46453ea0d203","4","20%","true");
+{/literal}
+</script>
+
 </html>
 
