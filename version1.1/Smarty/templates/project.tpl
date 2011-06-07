@@ -80,9 +80,9 @@
                     </tr></table>
                   <table class="project_table" width="1000" height="50">
                    <tr>
-                        <td width="180"><label>Created: {$project.DateCreated | date_format}</label></td>
-                        <td><label>Awarded on: {if $project.DateAwarded} {$project.DateAwarded } { else }-{/if}</label></td>
-                        <td><label>Completed on: {if $project.DateCompleted} {$project.DateCompleted } { else }-{/if}</label></td>
+                        <td width="180"><label>Created: {$project.DateCreated|date_format:"%a, %B %e, %Y"}</label></td>
+                        <td><label>Awarded on: {if $project.DateAwarded} {$project.DateAwarded|date_format:"%a, %B %e, %Y"} { else }-{/if}</label></td>
+                        <td><label>Completed on: {if $project.DateCompleted} {$project.DateCompleted|date_format:"%a, %B %e, %Y"} { else }-{/if}</label></td>
                         
                     </tr>
                 </table> 
