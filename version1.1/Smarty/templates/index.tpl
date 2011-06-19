@@ -88,8 +88,8 @@ function gallery() {
 </style>
 	
 	<div class="contents" style="text-align:center;">
-			<p style="font-size: 1.1em; width:960px">Stalk Ninja covered in press at <a target="_blank" href="http://bit.ly/lNIkRs">Yourstory.in</a>, <a target="_blank" href="http://bitly.com/mBA8N0">The New Indian Express</a> & <a target="_blank" href="http://bitly.com/k2a2n9">CHIP magazine</a></p>
-			<p>We current have {$ninjaCount} Ninjas in the system. Check the list here</p> 
+			<p style="font-size: 1.1em; width:960px">Stalk Ninja got covered in <a target="_blank" href="http://bit.ly/lNIkRs">Yourstory.in</a>, <a target="_blank" href="http://bitly.com/mBA8N0">The New Indian Express</a> & <a target="_blank" href="http://bitly.com/k2a2n9">CHIP magazine</a></p>
+			<p>We current have <a href="ninja-list.php">{$ninjaCount} Ninjas</a> in the system.</p> 
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
