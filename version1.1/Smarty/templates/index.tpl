@@ -126,8 +126,11 @@ function gallery() {
 	</div>
 
 <!-- temp float project blue area closes -->
-<div style="width:900px; margin:0 auto">
-<div class="message" style="font-size: small; text-align:center ; padding: 20px;">
+<div style="width:950px; margin:0 auto">
+
+	<div style="float:left; width: 450px;">
+
+		<div class="message" style="font-size: small; text-align:center ; padding: 20px;">
 		  Click on a project below for details.
 		</div>
 
@@ -145,8 +148,7 @@ function gallery() {
 								<tr>
 									<td>Status: {$p.Status}</td>
 									<td>Budget: Rs. {$p.Budget|number_format:0:".":","}</td>
-									<td>Floated By: {$p.StartupName}</td>
-									<td>Floated On: {$p.DateCreated|date_format:"%B %e"}</td>
+									<td>Date: {$p.DateCreated|date_format:"%B %e"}</td>
 									
 								</tr>
 							</table>
@@ -158,9 +160,16 @@ function gallery() {
 			{/foreach}
 			
 		</div>
+	</div>
+	
+	<div style="float:right; padding-left: 50px; width:400px;">
+		<script type="text/javascript" src="http://adminstalkninja.disqus.com/combination_widget.js?num_items=20&hide_mods=0&color=grey&default_tab=people&excerpt_length=200"></script>
+	</div>
+
+	<div style="clear:both"></div>
+
 </div>
 
-<div style="clear:both"></div>
 
 <style type="text/css">
 {literal}
