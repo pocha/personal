@@ -163,7 +163,7 @@ function gallery() {
 		</div>
 	</div>
 	
-	<div style="float:right; width:300px; font-size:small">
+	<div style="float:right; width:300px; font-size:small; margin-top:30px;">
 		<script type="text/javascript" src="http://adminstalkninja.disqus.com/combination_widget.js?num_items=20&hide_mods=0&color=grey&default_tab=people&excerpt_length=200"></script>
 	</div>
 
