@@ -125,12 +125,13 @@ function gallery() {
 		</div> 
 	</div>
 
+<div style="clear:both"></div>
 <!-- temp float project blue area closes -->
 <div style="width:950px; margin:0 auto">
 
-	<div style="float:left; width: 450px;">
+	<div style="float:left; width: 650px;">
 
-		<div class="message" style="font-size: small; text-align:center ; padding: 20px;">
+		<div class="message" style="font-size: small; text-align:center ; padding-bottom: 20px;">
 		  Click on a project below for details.
 		</div>
 
@@ -162,7 +163,7 @@ function gallery() {
 		</div>
 	</div>
 	
-	<div style="float:right; padding-left: 50px; width:400px;">
+	<div style="float:right; width:300px; font-size:small">
 		<script type="text/javascript" src="http://adminstalkninja.disqus.com/combination_widget.js?num_items=20&hide_mods=0&color=grey&default_tab=people&excerpt_length=200"></script>
 	</div>
 
