@@ -53,7 +53,7 @@ if ($_GET['token'] == NULL) {
 
     if ($data4['count'] != 1) {
        
-        if (preg_match('/^[a-z0-9\_\-\.A-Z]+@[a-z0-9\_\-\.A-Z]+$/', $email) && preg_match('/^[\w ]+$/', $name)) {
+        if (preg_match('/^[a-z0-9\_\-\.A-Z]+@[a-z0-9\_\-\.A-Z]+$/', $email) && ($name != '')) {
         $query = "INSERT INTO Startup(Name, Email, Phone, RegisteredOn) values('$name', '$email', '$contact', now())";
         mysql_query($query);
         $startup_id = mysql_insert_id();
