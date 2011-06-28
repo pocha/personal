@@ -89,7 +89,7 @@ function gallery() {
 	
 	<div class="contents" style="text-align:center; width: 960px">
 			<p style="font-size: 1.2em; width:960px">Stalk Ninja got covered in <a target="_blank" href="http://bit.ly/lNIkRs">Yourstory.in</a>, <a target="_blank" href="http://bitly.com/mBA8N0">The New Indian Express</a> & <a target="_blank" href="http://bitly.com/k2a2n9">CHIP magazine</a></p>
-		<p>Out of {$ninjaCount*33.33|string_format:"%d"} college students who attempted <a href="survey-student" target="_blank">Ninja Challenge</a>, <a href="ninja-list.php">{$ninjaCount} students</a> became Ninja.</p> 
+		<p style="font-size:small">Out of {$ninjaCount*33.33|string_format:"%d"} college students who have attempted <a href="survey-student" target="_blank">Ninja Challenge</a>, {$ninjaCount} became Ninjas. Check the list & their skillset <a href="ninja-list.php">here</a>.</p> 
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
