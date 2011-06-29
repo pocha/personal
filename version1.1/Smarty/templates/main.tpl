@@ -343,9 +343,18 @@ plugins : "",
 <script type="text/javascript">
 {literal}
 document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
-SnapABug.addButton("97e4e1a5-4f24-431d-89d9-46453ea0d203","4","20%","true");
+SnapABug.addButton("97e4e1a5-4f24-431d-89d9-46453ea0d203","3","90%","true");
 {/literal}
 </script>
+<style type="text/css">
+{literal}
+	.SnapABug_Button {
+		left: !important;
+		right: 10px !important;
+		padding-bottom: 10px !important;
+	}
+{/literal}
+</style>
 
 </html>
 
