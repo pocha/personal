@@ -1,0 +1,72 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<title>Disqus mod</title>
+<script src="http://adminstalkninja.disqus.com/combination_widget.js?num_items=20&hide_mods=0&color=grey&default_tab=recent&excerpt_length=200"></script>
+<script src="jquery.js"></script>
+<script src="jquery.jcarousel.min.js"></script>
+<link rel="stylesheet" href="tango/skin.css" />
+<link rel="stylesheet" href="style.css" />
+<script type="text/javascript">
+jQuery(document).ready(function() {
+	$('#dsq-combo-recent .dsq-clearfix').each(function(){
+		$('#mycarousel').append("<li>" + $(this).html() + "</li>");
+	});
+	
+    jQuery('#mycarousel').jcarousel({vertical: true, scroll: -1, auto: 2, wrap: "circular",  initCallback: carousel_callback});
+});
+
+function carousel_callback(carousel, state) {
+	$("#tab-recent").click(function() {
+		carousel.reset();
+		var i=1;
+		$('#dsq-combo-recent .dsq-clearfix').each(function(){
+			carousel.add(i, "<li>" + $(this).html() + "</li>");
+			i++;
+		});
+		carousel.size(i-1);
+		$("#tab-people").removeClass();
+		$("#tab-popular").removeClass();		
+		$("#tab-recent").removeClass();
+		$("#tab-recent").addClass("active");
+	});	
+	$("#tab-people").click(function() {
+		carousel.reset();
+		var i=1;
+		$('#dsq-combo-people .dsq-clearfix').each(function(){
+			carousel.add(i, "<li>" + $(this).html() + "</li>");
+			i++;
+		});
+		carousel.size(i-1);
+		$("#tab-people").removeClass();
+		$("#tab-popular").removeClass();		
+		$("#tab-recent").removeClass();
+		$("#tab-people").addClass("active");
+	});	
+	$("#tab-popular").click(function() {
+		carousel.reset();
+		var i=1;
+		$('#dsq-combo-popular .dsq-clearfix').each(function(){
+			carousel.add(i, "<li>" + $(this).html() + "</li>");
+			i++;
+		});
+		carousel.size(i-1);
+		$("#tab-people").removeClass();
+		$("#tab-popular").removeClass();		
+		$("#tab-recent").removeClass();
+		$("#tab-popular").addClass("active");
+	});	
+}
+</script>
+</head>
+
+<body>
+<ul id="tabs">
+	 <li id="tab-people">People</li>
+	 <li id="tab-recent" class="active">Recent</li>
+	 <li id="tab-popular" >Popular</li>
+ </ul>
+<ul id="mycarousel" class="jcarousel jcarousel-skin-tango"></ul>
+</body>
+</html>

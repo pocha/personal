@@ -165,6 +165,19 @@ function gallery() {
 	
 	<div style="float:right; width:300px; font-size:small; margin-top:30px;">
 		<script type="text/javascript" src="http://adminstalkninja.disqus.com/combination_widget.js?num_items=20&hide_mods=0&color=grey&default_tab=recent&excerpt_length=200"></script>
+		<script src="/disqus/jquery.jcarousel.min.js"></script>
+		<script src="/disqus/abhinav.js"></script>
+		<link rel="stylesheet" href="/disqus/tango/skin.css" />
+		<link rel="stylesheet" href="/disqus/style.css" />
+	
+		<div style="text-align:left;">
+			<ul id="tabs" style="padding:5px;">
+				<li id="tab-people">People</li>
+				<li id="tab-recent" class="active">Recent</li>
+				<li id="tab-popular" >Popular</li>
+			</ul>
+			<ul id="mycarousel" class="jcarousel jcarousel-skin-tango"></ul>
+		</div>
 	</div>
 
 	<div style="clear:both"></div>

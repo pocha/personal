@@ -1,0 +1,48 @@
+@charset "UTF-8";
+/* CSS Document */
+
+#dsq-combo-widget {
+	display:none;
+	visibility:hidden;
+}
+
+.dsq-combo-avatar {
+	float:left;
+	width:48px;
+	margin:0 10px 10px 5px;
+	font-size:10px;
+}
+
+
+.jcarousel-skin-tango .jcarousel-item a{
+	font-size:small;
+	font-weight: normal;
+}
+
+
+#tabs {
+	list-style:none;
+	height:15px;
+	margin:0;
+	padding:0;
+}
+
+#tabs li{
+	list-style:none;
+	float:left;
+	background-color:#ccc;
+	margin-right:2px;
+	padding:3px;
+	text-transform: uppercase;
+	color: #8f902d;
+	font-size:10px;
+	font-family:Arial, Helvetica, sans-serif;
+}
+
+#tabs li:hover{ 
+	color:#fff;
+	cursor:pointer;
+}
+#tabs .active {
+	background-color:#f0f0f0;;	
+}
