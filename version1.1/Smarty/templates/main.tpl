@@ -204,14 +204,13 @@ plugins : "",
 <div id="contact" class="section" {if $tpl_name ne 'index.tpl'} style="background-color:gray" {/if} >
 	<div class="contents" style="position:relative;">
 		<div id="logo">
-			<a href=""><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
+			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
+			<br/>
+			<div class="message" style="{if $tpl_name eq 'index.tpl'} color:#252525; {/if} font-size: 1em; float:left; padding-left: -1em;">
+				Get your tech projects done.
+			</div>
 		</div><!-- /#logo -->
-		
-		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 1.6em; float:left; padding-left: 1em; padding-top: 1.5em;">
-		Pool of hand-picked students. Hire one via project.
-		</div>
 
-		<div style="clear:both"></div>
 		<!--
 		<div style="float:right; padding-left: 20px; padding-top: 5px; font-size: small">See the discussion thread <a target="_blank" href="http://hackerstreet.in/item?id=3361">here</a> to see what hacker says about us.</div>
 		<div style="float:right; padding-right: 20px; padding-top: 5px; font-size: small">Looking to read as to what happened backstage before launching Stalk Ninja, read it up <a target="_blank" href="http://pocha.posterous.com/why-did-i-choose-to-stalk-ninjas">here</a></div>

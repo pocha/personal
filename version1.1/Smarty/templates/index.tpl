@@ -4,7 +4,7 @@
 $(document).ready(function() {		
 	
 	//Execute the slideShow
-	slideShow();
+	//slideShow();
 
 });
 
@@ -94,38 +94,7 @@ function gallery() {
 </div><!-- /#header -->
 <!-- temp float project blue area -->
 <p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days {/if}</p> 
-<div class="message" style="font-size: small; text-align:center; padding-bottom:2em">Dont believe us ? Scroll down to check all the projects.</div>
-<div id="banner">
-		<div class="wrapper" style="display: block;"> 
-		
-		
-			
-			<div id="feature1" > 
-<div id="gallery">
 
-		<a href="http://www.stalkninja.com/project/new" class="show">
-		<img src="img/sn2.png" alt="Flowing Rock" title="" alt="" rel=" "/>
-	</a>
-	<a href="http://www.stalkninja.com/ninja-list.php">
-		<img src="img/sn6.PNG" alt="" title="" alt="" rel=" "/>
-	</a>
-	
-	
-			<div class="caption"><div class="content"></div></div>
-			</div>
-			</div> 
- 
- 
-			<div id="button_wrap">
-				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a><br/><br/>
-				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Be A Ninja</a>
-<br/>
-			
-		</div>	
-		</div> 
-	</div>
-
-<div style="clear:both"></div>
 <!-- temp float project blue area closes -->
 <div style="width:950px; margin:0 auto">
 

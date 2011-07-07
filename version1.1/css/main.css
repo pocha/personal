@@ -861,10 +861,10 @@ margin-top: 40px;
 .blue:hover	{background-color: #CCCCCC; color: #ffffff;}
 
 .green		{background-color: #CCCCCC; color: #141414;}
-.green:hover{background-color: #8aff00; color: #ffffff;}
+.green:hover {background-color: #8aff00; color: #ffffff;}
 
-.red		{background-color: #CCCCCC; color: #141414;}
-.red:hover	{background-color: #ff004e; color: #ffffff;}
+.red		{background-color: #1E99FF; color: #141414;}
+.red:hover	{background-color: #CCCCCC; color: #ffffff;}
 
 #project-container div {
 	width: 98%;
