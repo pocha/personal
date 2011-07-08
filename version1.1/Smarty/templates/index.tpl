@@ -121,6 +121,11 @@ function gallery() {
 									<td>Date: {$p.DateCreated|date_format:"%B %e"}</td>
 									
 								</tr>
+								{if $p.Status == 'cancelled' || $p.Status = 'pending-approval' }
+								<tr>
+									<td colspan="3" style="font-size:x-small;">{$p.Message}</td>
+								</tr>
+								{/if}
 							</table>
 						</td>
 					</tr>
