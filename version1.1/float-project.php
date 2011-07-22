@@ -6,7 +6,7 @@ $data = array();
 
 include("mysql.php");
 include ("smarty.php");
-/*
+
 require_once("captcha/recaptchalib.php");
 $publicKey="6Lcou8ISAAAAAHSaXUUFn11YTZVSjH_T1y6NMFEO";
 $privateKey="6Lcou8ISAAAAAM-TvOhSc2xnEpFFuXncnjsZGJkx";
@@ -35,7 +35,7 @@ if($_SERVER['REQUEST_METHOD'] == 'POST')
     //die ("The reCAPTCHA wasn't entered correctly. Go back and try it again." ."(reCAPTCHA said: " . $resp->error . ")");
   }
 }
-*/
+
  
 if ($_GET['token'] == NULL) {
 

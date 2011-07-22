@@ -137,14 +137,14 @@
 	<tr><td>Skills Required</td><td><input name="Skills" value="{$data.Skills}"/></td></tr>
 	<tr class="message"><td colspan="2">Pre-requisite skills (if any). Looking to pick someone fresh ? Leave this empty.</td></tr>
 	
-	<!--
 	<tr><td style="font-style:italic;"> .. only human ..</td><td>{$Captcha}</td></tr>
+	<!--
 
 	
 	<tr><td>Your email, phone number & location</td><td><input name="Contact" value=""/></td></tr>
 	<tr class="message"><td colspan="2">We so love talking to people. Its our favorite past time. We will be going to waste your time like anything but your privacy is utmost important to us & hence we do not save this information in our database. If we can't speak to you, your project would never see light here.</td></tr>
 	-->
-	<tr> <td colspan=2>You have agreed to <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja. <input style="width:20px" id="COC" type="checkbox"/></td> </tr>
+	<tr> <td colspan=2>You have agreed to the <a href="javascript:void(0)" class="terms">code of conduct</a> at Stalk Ninja. <input style="width:20px" id="COC" type="checkbox"/></td> </tr>
 	
 	
 	<input type="hidden" name="Status" value=""/>
