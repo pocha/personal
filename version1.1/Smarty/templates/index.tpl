@@ -93,7 +93,7 @@ function gallery() {
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
-<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days {/if}</p> 
+<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days* {/if}</p> 
 
 <!-- temp float project blue area closes -->
 <div style="width:950px; margin:0 auto">
@@ -201,3 +201,4 @@ function gallery() {
 
 
 <br/><br/>
+<p style="font-size:small; font-style:italic">* The figure includes the budget of cancelled projects too</p>
