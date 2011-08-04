@@ -4,7 +4,7 @@
 $(document).ready(function() {		
 	
 	//Execute the slideShow
-	slideShow();
+	//slideShow();
 
 });
 
@@ -88,44 +88,13 @@ function gallery() {
 </style>
 	
 	<div class="contents" style="text-align:center; width: 960px">
-			<p style="font-size: 1.1em; width:960px">Stalk Ninja got covered in <a target="_blank" href="http://bit.ly/lNIkRs">Yourstory.in</a>, <a target="_blank" href="http://bitly.com/mBA8N0">The New Indian Express</a> & <a target="_blank" href="http://bitly.com/k2a2n9">CHIP magazine</a><br/><br/>
-			There are <a href="ninja-list.php">{$ninjaCount} Ninjas</a> in the system.</p> 
+			<p style="font-size: 1.2em; width:960px">Stalk Ninja got covered in <a target="_blank" href="http://bit.ly/lNIkRs">Yourstory.in</a>, <a target="_blank" href="http://bitly.com/mBA8N0">The New Indian Express</a> & <a target="_blank" href="http://bitly.com/k2a2n9">CHIP magazine</a></p>
+		<p style="font-size:small">Out of {$ninjaCount*33.33|string_format:"%d"} college students who have attempted <a href="survey-student" target="_blank">Ninja Challenge</a>, {$ninjaCount} became Ninjas. Check the list & their skillset <a href="ninja-list.php">here</a>.</p> 
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 <!-- temp float project blue area -->
-<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days {/if}</p> 
-<div class="message" style="font-size: small; text-align:center; padding-bottom:2em">Dont believe us ? Scroll down to check all the projects.</div>
-<div id="banner">
-		<div class="wrapper" style="display: block;"> 
-		
-		
-			
-			<div id="feature1" > 
-<div id="gallery">
+<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days* {/if}</p> 
 
-		<a href="http://www.stalkninja.com/project/new" class="show">
-		<img src="img/sn2.png" alt="Flowing Rock" title="" alt="" rel=" "/>
-	</a>
-	<a href="http://www.stalkninja.com/ninja-list.php">
-		<img src="img/sn6.PNG" alt="" title="" alt="" rel=" "/>
-	</a>
-	
-	
-			<div class="caption"><div class="content"></div></div>
-			</div>
-			</div> 
- 
- 
-			<div id="button_wrap">
-				<a name="" class="btn blue" style="width:300px; text-align:center" href="http://www.stalkninja.com/project/new"><span style="width:300px">Float a Project</span></a><br/><br/>
-				<a name="a1" class="btn blue" style="width:300px; text-align:center"  href="http://www.stalkninja.com/survey-student">Be A Ninja</a>
-<br/>
-			
-		</div>	
-		</div> 
-	</div>
-
-<div style="clear:both"></div>
 <!-- temp float project blue area closes -->
 <div style="width:950px; margin:0 auto">
 
@@ -152,6 +121,11 @@ function gallery() {
 									<td>Date: {$p.DateCreated|date_format:"%B %e"}</td>
 									
 								</tr>
+								{if $p.Status == 'cancelled' || $p.Status == 'pending-approval' }
+								<tr>
+									<td colspan="3" style="font-size:x-small;">{$p.Message}</td>
+								</tr>
+								{/if}
 							</table>
 						</td>
 					</tr>
@@ -165,6 +139,19 @@ function gallery() {
 	
 	<div style="float:right; width:300px; font-size:small; margin-top:30px;">
 		<script type="text/javascript" src="http://adminstalkninja.disqus.com/combination_widget.js?num_items=20&hide_mods=0&color=grey&default_tab=recent&excerpt_length=200"></script>
+		<script src="/disqus/jquery.jcarousel.min.js"></script>
+		<script src="/disqus/abhinav.js"></script>
+		<link rel="stylesheet" href="/disqus/tango/skin.css" />
+		<link rel="stylesheet" href="/disqus/style.css" />
+	
+		<div style="text-align:left;">
+			<ul id="tabs" style="padding:5px;">
+				<li id="tab-people">People</li>
+				<li id="tab-recent" class="active">Recent</li>
+				<li id="tab-popular" >Popular</li>
+			</ul>
+			<ul id="mycarousel" class="jcarousel jcarousel-skin-tango"></ul>
+		</div>
 	</div>
 
 	<div style="clear:both"></div>
@@ -214,3 +201,4 @@ function gallery() {
 
 
 <br/><br/>
+<p style="font-size:small; font-style:italic">* The figure includes the budget of cancelled projects too</p>

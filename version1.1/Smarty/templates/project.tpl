@@ -97,7 +97,7 @@
 					
 					<div class="tweetmeme_button" style="float: right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
 													
-													<div  class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == 'open'}Click to pick the project{else}The project is closed{/if}</div>
+													<div  class="btn {$project.Status}" style="font-size:26px;" align="center" id="be-a-taker">&nbsp; {if $project.Status == 'open'}Compete for the project{else}The project is closed{/if}</div>
 											{else}
 												<span class="{$project.Status}">{$project.Message}</span>
 											{/if}
@@ -142,13 +142,16 @@
 								
 								<h3>Skills Required:</h3>
                 <p>{$project.Skills}</p>
+								<div style="padding-bottom:20px; text-align:center; width:100%">
+										<a href="/project/new"><div class="btn red" style="font-size:26px;">&nbsp;Float a New/Similar Project&nbsp;</div></a>
+								</div>
                 <div style="border-top: 1px solid black;"></div>
 									<h3 style="float:left">Takers: </h3>
 									<div style="padding-top: 30px">
 										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
 										<a href="/project/{$project.Id}#disqus_thread"><div class="btn blue" style="font-size:26px; float:left; margin-left: 50px" id="discussion-boa">&nbsp;Project Discussion Board&nbsp;</div></a>
 										{/if}
-										 {if $project.Status == "open"}<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; Click to pick the project &nbsp;</div>{/if}
+										 {if $project.Status == "open"}<div class="btn {$project.Status}" style="font-size:26px; margin-left: 100px" id="be-a-taker1">&nbsp; Compete for the project &nbsp;</div>{/if}
 				
 									
 										<div class="tweetmeme_button" style="float:right; margin-left: 10px;"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
@@ -239,7 +242,6 @@
 <div style="border-top: 1px solid black;"></div>
 <div id="project_discussion" style="text-align:left">
 	<h3>Project Discussion Board :</h3>
-	<p style="font-size:small; font-style:italic; color:black">While authenticating to post a comment, use your email id with which you are registered with us. Else the comment would not be approved. Do NOT use facebook, twitter or any other mode of authentication, use only the 'Guest' option.</p>
 				<div id="disqus_thread" style="font-size: small; color:black"></div>
 </div>
 

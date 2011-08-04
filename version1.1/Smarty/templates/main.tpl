@@ -7,7 +7,6 @@
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
 	<script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
 
-	
 
 <script type="text/javascript" src="/js/jscripts/tiny_mce/tiny_mce.js"></script>
 <script type="text/javascript">
@@ -70,6 +69,7 @@ plugins : "",
 		position: absolute;
 		z-index: 100;
 		right: 150px;
+		top: 0;
 	}
   .menu  {
 		background-color: black;
@@ -199,46 +199,17 @@ plugins : "",
 
 <body id="index" class="home">
 
-	<div class="menu-container">
-		<div class="menu" style="float:left; margin-top: 15px;">
-			<ul id="page-bar">
-				<li><a href="http://stalkninja.com">Home</a></li>
-				<li style="position:relative"><a href="http://blog.stalkninja.com" target="_blank">Interesting Bits</a>
-					<ul>
-						<li><a href="http://blog.stalkninja.com/the-reason-behind-stalk-ninja" target="_blank">The Reason(not the song from Hoobastanks)</a></li>
-						<li><a target="_blank" href="http://blog.stalkninja.com/some-of-the-rules-can-be-bent-others-can-be-b">Making of Stalk Ninja</a></li>
-						<li><a target="_blank" href="http://blog.stalkninja.com/pitching-to-ninjas">Pitch to students</a></li>
-						<li><a target="_blank" href="http://blog.stalkninja.com/our-harbingers">People pitching for us</a></li>
-						<li><a target="_blank" href="http://hackerstreet.in/item?id=3361">Stalk Ninja at Hacker Street India</a></li>
-					</ul>
-				</li>
-				<!--<li><a href="#">Login</a></li>-->
-			</ul>
-			</div>
-			<div style="float:left; margin-left: 20px">
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=buttton_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:30px;padding-top:10px; padding-bottom:5px" allowTransparency="true"></iframe>
-	<!--<a href="http://twitter.com/share" class="twitter-share-button" data-url="http://stalkninja.com" data-text="Enabling startups to outsource jobs to students" data-via="stalkninja" data-related="pocha">Tweet</a>--><script type="text/javascript" src="http://platform.twitter.com/widgets.js"></script>
-<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1308486732491&amp;count=horizontal&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdev.stalkninja.com%2F&amp;related=pocha&amp;text=Enabling%20startups%20to%20outsource%20jobs%20to%20students&amp;url=http%3A%2F%2Fstalkninja.com&amp;via=stalkninja" class="twitter-share-button twitter-count-horizontal" style="height: 20px; width: 60px; display: block;" title="Twitter For Websites: Tweet Button"></iframe>
-		</div>
-		<div style="clear:both"></div>
-		</div>
-
 		
 <div id="contact" class="section" {if $tpl_name ne 'index.tpl'} style="background-color:gray" {/if} >
 	<div class="contents" style="position:relative;">
 		<div id="logo">
-			<a href=""><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
+			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
+			<br/>
+			<div class="message" style="{if $tpl_name eq 'index.tpl'} color:#CCCCCC; {/if} font-size: 1em; float:left;">
+				Managed tech outsourcing to college students.
+			</div>
 		</div><!-- /#logo -->
-		
-		<div class="message" style="{if $tpl_name eq 'index.tpl'} color:gray; {/if} font-size: 1.6em; float:left; padding-left: 1em; padding-top: 1.5em;">
-		Pool of hand-picked students. Hire one via project.
-		</div>
 
-		<div style="clear:both"></div>
-		<!--
-		<div style="float:right; padding-left: 20px; padding-top: 5px; font-size: small">See the discussion thread <a target="_blank" href="http://hackerstreet.in/item?id=3361">here</a> to see what hacker says about us.</div>
-		<div style="float:right; padding-right: 20px; padding-top: 5px; font-size: small">Looking to read as to what happened backstage before launching Stalk Ninja, read it up <a target="_blank" href="http://pocha.posterous.com/why-did-i-choose-to-stalk-ninjas">here</a></div>
-		-->
 		<div style="clear:both"></div>
 
 	</div><!-- /.contents -->
@@ -324,6 +295,84 @@ plugins : "",
 	</div><!-- /.flow -->
 </div><!-- /#contact-form -->
 
+<div class="menu-container">
+		<!--<div class="menu" style="float:left; margin-top: 15px;">
+			<ul id="page-bar">
+				<li><a href="http://stalkninja.com">Home</a></li>
+				<li style="position:relative"><a href="http://blog.stalkninja.com" target="_blank">Interesting Bits</a>
+					<ul>
+						<li><a href="http://blog.stalkninja.com/the-reason-behind-stalk-ninja" target="_blank">The Reason(not the song from Hoobastanks)</a></li>
+						<li><a target="_blank" href="http://blog.stalkninja.com/some-of-the-rules-can-be-bent-others-can-be-b">Making of Stalk Ninja</a></li>
+						<li><a target="_blank" href="http://blog.stalkninja.com/pitching-to-ninjas">Pitch to students</a></li>
+						<li><a target="_blank" href="http://blog.stalkninja.com/our-harbingers">People pitching for us</a></li>
+						<li><a target="_blank" href="http://hackerstreet.in/item?id=3361">Stalk Ninja at Hacker Street India</a></li>
+					</ul>
+				</li>
+			</ul>
+			</div>
+			-->
+			<style type="text/css">
+			{literal}
+.tab {
+    background: url("http://snapengage.com/img/site/tab-l2.png") no-repeat scroll 0 0 transparent;
+    float: right;
+    height: 36px;
+    padding-left: 10px;
+}
+.tab ul {
+    background: url("http://snapengage.com/img/site/tab-r2.png") no-repeat scroll right center #F5F5F5;
+    font: bold 20px Arial,Helvetica,sans-serif;
+    height: 36px;
+    padding-right: 10px;
+}
+.tab ul li {
+    display: block;
+    float: left;
+}
+.tab ul li a.active {
+    color: #75A8FF;
+}
+.tab ul li a {
+    color: #777777;
+    display: block;
+    float: left;
+    height: 36px;
+    line-height: 26px;
+    padding: 3px 10px;
+    text-decoration: none;
+		font-size: 0.7em;
+}
+.tab ul li a:hover {
+	color: #8DC23A;
+	background-color:inherit;
+}
+			{/literal}
+			</style>
+			<table>
+				<tr>
+					<td>
+			<div class="tab">
+				<ul> 
+					<li><a target="_top" href="http://www.snapengage.com/" class="active">Home</a></li>
+
+					<li><a target="_top" href="http://www.snapengage.com/plans">How it Works</a></li>
+					<li><a target="_top" href="http://www.snapengage.com/testimonials">What Users Say</a></li>
+					<li><a target="_top" href="http://www.snapengage.com/testimonials">What Press Say</a></li>
+					<li><a target="_top" href="http://www.snapengage.com/features">Pricing</a></li>
+				</ul>
+			</div>
+				</td>
+				<td>
+			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=buttton_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:30px;padding-top:10px; padding-bottom:5px" allowTransparency="true"></iframe>
+			<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1308486732491&amp;count=horizontal&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdev.stalkninja.com%2F&amp;related=pocha&amp;text=Enabling%20startups%20to%20outsource%20jobs%20to%20students&amp;url=http%3A%2F%2Fstalkninja.com&amp;via=stalkninja" class="twitter-share-button twitter-count-horizontal" style="height: 20px; width: 60px; display: block;" title="Twitter For Websites: Tweet Button"></iframe>
+			</td>
+			</tr>
+		</table>
+		</div>
+		<div style="clear:both"></div>
+		</div>
+
+
 
 </body>
 <script type="text/javascript">
@@ -343,9 +392,18 @@ plugins : "",
 <script type="text/javascript">
 {literal}
 document.write(unescape("%3Cscript src='" + ((document.location.protocol=="https:")?"https://snapabug.appspot.com":"http://www.snapengage.com") + "/snapabug.js' type='text/javascript'%3E%3C/script%3E"));</script><script type="text/javascript">
-SnapABug.addButton("97e4e1a5-4f24-431d-89d9-46453ea0d203","4","20%","true");
+SnapABug.addButton("97e4e1a5-4f24-431d-89d9-46453ea0d203","3","90%","true");
 {/literal}
 </script>
+<style type="text/css">
+{literal}
+	.SnapABug_Button {
+		left: !important;
+		right: 10px !important;
+		padding-bottom: 10px !important;
+	}
+{/literal}
+</style>
 
 </html>
 
