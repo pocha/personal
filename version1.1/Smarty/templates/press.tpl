@@ -15,6 +15,7 @@
 width:880px;
 position:relative;
 margin:0 auto;
+margin-bottom: 25px;
 background: #ffffff;
 }
 .team {
@@ -32,20 +33,24 @@ padding:15px 18px;
 width:520px;
 }
 
+a, a:visited, a:hover, a:focus {
+	text-decoration: none;
+	font-weight: bold;
+	color: #000;
+}
+
 {/literal}
 </style>
 
 <div class="wrapper1"><!-- Wrapper div -->
 
-<br/>
 				
 				
 				<div class="about-content" style="width:810px; position: relative; margin-left: 35px; "><!-- About us div -->
 				<a name="top"></a>
-				<h2 class="page-heading"><strong><div style=" color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold;">StalkNinja in Press</div></strong></h2>
-				<img src="img/press.jpg" usemap="#shapes" alt="Our Supporters"/>
-				<br/><br/><br/><br/><br/>
-				
+				<h2 class="page-heading"><strong><div style=" color:#7C7A7A; float: left; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-top: 25px; margin-bottom: 15px;">StalkNinja in Press</div></strong></h2>
+				<img src="img/press.jpg" usemap="#shapes" alt="StalkNinja in press"/>
+				<br/><br/>				
 				<div class="team"><div style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif">
 			
 <a name="yourstory" ></a>
@@ -63,7 +68,7 @@ width:520px;
 					<span class="clear"></span>
 		</div></a>
 
-<div class="clear"></div><br/><br/><br/><br/>
+<div class="clear"></div><br/><br/><br/>
 <a name="techaloo" ></a>
 		<img src="img/techaloo.png" class="left"/>
 		<a href="http://techaloo.com/stalk-ninja-connecting-students-with-start-ups/"><div class="team-content left">
@@ -79,7 +84,7 @@ width:520px;
 					<span class="clear"></span>
 		</div></a>
 
-<div class="clear"></div><br/><br/><br/><br/>
+<div class="clear"></div><br/><br/><br/>
 <a name="chip"></a>
 		<img src="img/chip.jpg" class="left"/>
 		<a href="https://picasaweb.google.com/108559432150076164220/StalkNinjaPressCoverage?authkey=Gv1sRgCMP0upLTm-b-Qg#5616574192708386610/"><div class="team-content left">
@@ -93,7 +98,7 @@ width:520px;
 			<br/>
 					<a style="float:right;" class="next-tab mover" href="#top">Top ^</a>
 					<span class="clear"></span>
-		</div>
+		</div></a><br/><br/>
 </div>
 
 
@@ -106,9 +111,6 @@ width:520px;
 				<div class="clear"></div>
 </div>
 
-
-
-<div class="clear"></div>
 
 			  
         
