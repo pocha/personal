@@ -19,8 +19,8 @@
 
 <div id="middel-container">
   <div class="box1" style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif; text-align: left;">
-  <div style="padding:35px 0 0 70px; color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-bottom: 15px;">Privacy Policy</div>
-    <div style="color:#7C7A7A; font:16px  Arial, Helvetica, sans-serif; font-weight:bold; float:left" >Summary</div>
+  <div style="padding:35px 0 0 50px; color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-bottom: 15px;">Privacy Policy</div>
+    <div style="color:#7C7A7A; font:16px  Arial, Helvetica, sans-serif; font-weight:bold; float:left" ><br/>Summary</div>
 			  <div style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif">
 			 <br/><br/>At StalkNinja, we take the privacy of our members very seriously. Please read this Privacy Policy to learn more about how we treat personally identifiable information. We provide this Privacy Policy because you have a right to know what information we collect, how it is protected and used, and the circumstances under which it may be disclosed. If you have comments, suggestions, questions, or concerns about our Privacy Policy, please contact us via email at admin@stalkninja.com.
 <br/><br/><b>Online Privacy Standards.</b> While there are no official standards governing privacy practices on the internet, we follow the principles supported by the Federal Trade Commission's Fair Information Practices Principles, currently available at http://www.ftc.gov/reports/privacy3/fairinfo.htm
