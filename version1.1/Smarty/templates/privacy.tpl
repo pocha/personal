@@ -19,7 +19,7 @@
 
 <div id="middel-container">
   <div class="box1" style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif; text-align: left;">
-  <div style="padding:60px 0 0 120px; color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-bottom: 15px;">Privacy Policy</div>
+  <div style="padding:35px 0 0 120px; color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-bottom: 15px;">Privacy Policy</div>
     <div style="color:#7C7A7A; font:16px  Arial, Helvetica, sans-serif; font-weight:bold; float:left" >Summary</div>
 			  <div style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif">
 			 <br/><br/>At StalkNinja, we take the privacy of our members very seriously. Please read this Privacy Policy to learn more about how we treat personally identifiable information. We provide this Privacy Policy because you have a right to know what information we collect, how it is protected and used, and the circumstances under which it may be disclosed. If you have comments, suggestions, questions, or concerns about our Privacy Policy, please contact us via email at admin@stalkninja.com.
@@ -65,7 +65,7 @@ We donot store any cookies on your compute but some of our business partners and
         </div><br/><br/><br/>
 			  <div style="color:#7C7A7A; font:16px  Arial, Helvetica, sans-serif; font-weight:bold; float:left" >YOUR PERSONAL CHOICES</div>
 			  <div   style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif"> <br/><br/>
-<br/><br/><b>Sharing Information With Other Members.</b> You are able to control what personal information about you is shared with other members in your public member profile, and what information you choose to keep private. You can view, add, edit, and delete information in your public member profile by visiting the profile page.
+<b>Sharing Information With Other Members.</b> You are able to control what personal information about you is shared with other members in your public member profile, and what information you choose to keep private. You can view, add, edit, and delete information in your public member profile by visiting the profile page.
 <br/><br/><b>Receiving Communications.</b> If you subscribe to any optional promotional communications, you will be able to unsubscribe from them through the emails we send you.
 <br/><br/><b>Editing, Updating, Or Deleting Member Profile Information.</b> You can view the personally identifiable information we have collected from you in your member profile where you can add, edit, or delete it as you see fit. You may also request deletion of your member account by contacting us at admin[at]stalkninja[dot]com
          </div><br/><br/><br/>
