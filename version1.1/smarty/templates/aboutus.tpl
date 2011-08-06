@@ -1,5 +1,5 @@
 <div style="width:80%; margin: 0 auto">
-<h2>Register below for the workshop at SDMCET, Dharwad </h2>
+<h2>About us</h2>
 
 
 <style type="text/css">
@@ -76,5 +76,6 @@
 	
   </div>
 </div>
+
 </div>
 </div>
