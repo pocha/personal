@@ -44,7 +44,7 @@ width:520px;
 				<a name="top"></a>
 				<h2 class="page-heading"><strong><div style=" color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold;">StalkNinja in Press</div></strong></h2>
 				<img src="img/press.jpg" usemap="#shapes" alt="Our Supporters"/>
-				<br/><br/><br/><br/><br/>
+				<br/><br/>
 				
 				<div class="team"><div style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif">
 			
