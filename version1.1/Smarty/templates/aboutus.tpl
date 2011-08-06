@@ -6,7 +6,11 @@
 		float: left;
 	}
 #middel-container{margin:0 auto; padding:0; width:810px; overflow:hidden; margin-bottom: 25px;}
+<<<<<<< HEAD
 .box1{width:810px; margin:0 auto; padding:0; margin-top:7px; text-align: left;}
+=======
+.box1{width:810px; margin:0 auto; padding:0; margin-top:7px;}
+>>>>>>> dfe477cf0d2fd82b18bfef42f64967926a5be4a5
 .box1 .head1{padding:0; margin:0; height:107px; width:810px; background:#ffffff;}
 .box1  .content{padding:0 50px; margin:0; float:left; width:710px; background:#ffffff; left top repeat-y;}	
 .box1  .content .midtext{padding:0; margin:0; text-align:left; width:700px; }
