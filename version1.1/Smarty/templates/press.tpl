@@ -1,6 +1,6 @@
  <div style="text-align:left; margin: 10px">
 			  
-				<div class="para" style="margin-left: 20px;">
+				<div class="para" style="margin-left: 45px;">
 			  <img src="img/press.jpg" alt="StalkNinja in press"/>
 			  </div>
 
