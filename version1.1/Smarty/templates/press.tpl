@@ -86,6 +86,22 @@ a, a:visited, a:hover, a:focus {
 		</div></a>
 
 <div class="clear"></div><br/><br/><br/>
+<a name="expressbuzz" ></a>
+		<img src="img/express.jpg" class="left"/>
+		<a href="http://expressbuzz.com/education/ready-to-be-a-ninja/278408.html/"><div class="team-content left">
+			<h3 class="left"><b> Expressbuzz</b></h3> <div class="social-links right">
+				
+			</div>
+			<div class="clear"></div>
+			<p>If you are looking forward to intern and gain credible experience of working in major start-ups, Stalk Ninja is just the platform for you. It is a portal where students can freelance for start-ups and new firms can get their work done at an affordable price.
+			</p>
+			<div class="clear"></div>
+			<br/>
+					<a style="float:right;" class="next-tab mover" href="#top">Top ^</a>
+					<span class="clear"></span>
+		</div></a>
+
+<div class="clear"></div><br/><br/><br/>
 <a name="chip"></a>
 		<img src="img/chip.jpg" class="left"/>
 		<a href="https://picasaweb.google.com/108559432150076164220/StalkNinjaPressCoverage?authkey=Gv1sRgCMP0upLTm-b-Qg#5616574192708386610/"><div class="team-content left">
