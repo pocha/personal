@@ -6,7 +6,7 @@
 
 <p><b>1. What is StalkNinja?</b></p>
 
-<p style="float: left;">Stalk Ninja is a student freelance portal where people can float there Tech jobs among the brightest students in India. Project creator can select a student(we call them Ninja) for his project, get project done and pay to student.</p>
+<p>Stalk Ninja is a student freelance portal where people can float there Tech jobs among the brightest students in India. Project creator can select a student(we call them Ninja) for his project, get project done and pay to student.</p>
 
 <p><b>2. What is advantage of using StalkNinja?</b></p>
 
