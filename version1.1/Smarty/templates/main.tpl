@@ -282,13 +282,13 @@ plugins : "",
 		 <div class="grid_12 holder">
 				<span class="copy">2011 &copy; All rights reserved </span>
 				<ul>
-					<li><a href="#">Back to Sq 1</a></li>
-					<li><a href="#">Know Us</a></li>
-					<li><a href="#">Know this too</a></li>
-					<li><a href="#">Our sayings</a></li>
-					<li><a href="#">Rush to</a></li>
-					<li><a href="#">Keeping Ur secret</a></li>
-					<li><a href="#">When in Doubt</a></li>
+					<li><a href="index.php">Home</a></li>
+					<li><a href="aboutus.php">About Us</a></li>
+					<li><a href="pricing.php">Pricing</a></li>
+					<li><a href="faq.php">FAQs</a></li>
+					<li><a href="privacy.php">Privacy Policy</a></li>
+					<li><a href="tnc.php">Terms & Conditions</a></li>
+					<li>Contact: admin[at]stalkninja[dot]com</li>
 				</ul>
 			</div>
 			<div class="clear">&nbsp;</div>
@@ -358,12 +358,12 @@ plugins : "",
 					<td>
 			<div class="tab">
 				<ul> 
-					<li><a target="_top" href="http://www.snapengage.com/" class="active">Home</a></li>
-
-					<li><a target="_top" href="http://www.snapengage.com/plans">How it Works</a></li>
-					<li><a target="_top" href="http://www.snapengage.com/testimonials">What Users Say</a></li>
-					<li><a target="_top" href="http://www.snapengage.com/testimonials">What Press Say</a></li>
-					<li><a target="_top" href="http://www.snapengage.com/features">Pricing</a></li>
+					<li><a target="_top" href="index.php" >Home</a></li>
+					<li><a target="_top" href="aboutus.php">About Us</a></li>
+					<li><a target="_top" href="how-it-works.php">How it Works</a></li>
+					<li><a target="_top" href="press.php">What Press Says</a></li>
+					<li><a target="_top" href="pricing.php">Pricing</a></li>
+					
 				</ul>
 			</div>
 				</td>
