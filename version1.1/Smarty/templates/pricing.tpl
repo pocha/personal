@@ -4,7 +4,7 @@
 				<div class="para">
 			  With StalkNinja, there are no contracts, no setup charges, and no shenanigans... you just pay for the projects you use, when you use it. Enjoy the full freedom on deciding project amount and project duration.
 				</div>
-			  <h3>The Creators</h3>
+			  <h3>The Stalk Ninja Advantage</h3>
 				<div class="para">
 				<table>
 					<tr>
@@ -19,7 +19,7 @@
 					</tr>
 					<tr>
 						<td><img src="/img/premium.png" style="width:100px;"></td>
-						<td><h3> 15%*Project amount, its the StalkNinja premium charge!</h3>
+						<td><h3> 15% of Project amount, its the StalkNinja premium we charge!</h3>
 						<p> The amount charged is for all process we do for successful completion of project at StalkNinja. <br/>
 						<b>Want to float projects in bulk, let us know. We have something special for you.</b></p></td>
 					</tr>
