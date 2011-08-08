@@ -1,6 +1,6 @@
  <div style="text-align:left; margin: 10px">
 			  
-				<div class="para" style="margin-left: 45px; margin-bottom: 10px;">
+				<div class="para" style="margin-left: 45px; margin-bottom: 25px;">
 			  <img src="img/press.jpg" alt="StalkNinja in press"/>
 			  </div>
 
@@ -22,8 +22,8 @@
 					</tr>
 					
 					<tr>
-						<td><img src="img/express.jpg" class="left"/></td>
-						<td><h3 class="left"><b> ExpressBuzz</b></h3>
+						<td><img src="img/express.png" class="left"/></td>
+						<td><h3 class="left"><b> The Indian Express</b></h3>
 						<p>If you are looking forward to intern and gain credible experience of working in major start-ups, Stalk Ninja is just the platform for you. It is a portal where students can freelance for start-ups and new firms can get their work done at an affordable price. <a href="http://expressbuzz.com/education/ready-to-be-a-ninja/278408.html">Read More..</a></p>
 						</td>
 					</tr></a>
