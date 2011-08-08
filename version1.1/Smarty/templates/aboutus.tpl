@@ -5,12 +5,10 @@
 		background-color: #DCDCDC;
 		float: left;
 	}
-#middel-container{margin:0 auto; padding:0; width:810px; overflow:hidden; margin-bottom: 25px;}
-<<<<<<< HEAD
-.box1{width:810px; margin:0 auto; padding:0; margin-top:7px; text-align: left;}
-=======
-.box1{width:810px; margin:0 auto; padding:0; margin-top:7px;}
->>>>>>> dfe477cf0d2fd82b18bfef42f64967926a5be4a5
+#middel-container{margin:0 auto; padding:0; width:810px; overflow:hidden; margin-bottom: 25px; background: #ffffff;}
+
+.box1{width:810px; margin:0 auto; padding:0; margin-top:7px; text-align: left; background: #ffffff;}
+
 .box1 .head1{padding:0; margin:0; height:107px; width:810px; background:#ffffff;}
 .box1  .content{padding:0 50px; margin:0; float:left; width:710px; background:#ffffff; left top repeat-y;}	
 .box1  .content .midtext{padding:0; margin:0; text-align:left; width:700px; }
@@ -22,11 +20,10 @@
 
 
 <div id="middel-container">
-  <div class="box1">
-    <div class="head1">
+  <div class="box1" style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif; text-align: left;">
+  
     
-     <div style="padding:60px 0 0 120px; color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; float: left;">About StalkNinja</div>
-    </div>
+     <div style="padding:35px 0 0 30px; color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-bottom: 15px;">About StalkNinja</div>    
     
       <div class="content">
         <div class="div1-left">
@@ -52,7 +49,7 @@
 				
 				<div style="float:left; margin-left: 45px; margin-top: 45px;"> 
 					<span style="color:#7C7A7A; font:18px  Arial, Helvetica, sans-serif; font-weight:bold; padding-left:30px; margin-bottom: 15px;" > Corporate Office</span><br/>					
-					<span style="color:#000; font:12px  Arial, Helvetica, sans-serif; font-weight:bold; padding-left:30px"><br/>Bangalore</span><br/>
+					<br/>
 					<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">StalkNinja</span><br/>
 					<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">Suraksha Enclave</span><br/>
 					<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">Bangalore</span>
@@ -60,9 +57,9 @@
                
 				<div style="float:left; margin-left: 175px; margin-top: 45px; ">
 				<span style="color:#7C7A7A; font:18px  Arial, Helvetica, sans-serif; font-weight:bold; padding-left:30px; margin-bottom: 15px;" >Regional Office</span>	<br/>		      
-                <div style="float:left;">
-					<span style="color:#000000; font:12px  Arial, Helvetica, sans-serif; font-weight:bold; padding-left:30px"><br/>Jabalpur</span><br/>
-					<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">50-51, Vijay Nagar Extension</span><br/>
+                
+					<br/>
+				<div style="float:left;">	<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">50-51, Vijay Nagar Extension</span><br/>
 					<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">VFJ Turning - 2, Ranjhi</span><br/>
 					<span style="color:#7C7A7A; font:12px  Arial, Helvetica, sans-serif; padding-left:30px">Jabalpur(MP)</span>
 					<br/><br/>

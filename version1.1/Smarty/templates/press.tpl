@@ -48,16 +48,10 @@ a, a:visited, a:hover, a:focus {
 				
 				<div class="about-content" style="width:810px; position: relative; margin-left: 35px; "><!-- About us div -->
 				<a name="top"></a>
-<<<<<<< HEAD
+
 				<h2 class="page-heading"><strong><div style=" color:#7C7A7A; float: left; font:24px  Arial, Helvetica, sans-serif; font-weight:bold; margin-top: 25px; margin-bottom: 15px;">StalkNinja in Press</div></strong></h2>
 				<img src="img/press.jpg" usemap="#shapes" alt="StalkNinja in press"/>
 				<br/><br/>				
-=======
-				<h2 class="page-heading"><strong><div style=" color:#7C7A7A; font:24px  Arial, Helvetica, sans-serif; font-weight:bold;">StalkNinja in Press</div></strong></h2>
-				<img src="img/press.jpg" usemap="#shapes" alt="Our Supporters"/>
-				<br/><br/>
-				
->>>>>>> 2d5cca5df03d73f21dd571f604d483a7915c9455
 				<div class="team"><div style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif">
 			
 <a name="yourstory" ></a>
