@@ -1,6 +1,6 @@
       
 			  <div style="text-align:left; margin: 10px">
-			  <h3>The Story</h3>
+
 				<div class="para">
 			 <h3>Site Terms and Conditions of Use</h3>
 
