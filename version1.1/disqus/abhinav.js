@@ -3,7 +3,7 @@ jQuery(document).ready(function() {
 		$('#mycarousel').append("<li>" + $(this).html() + "</li>");
 	});
 	
-    jQuery('#mycarousel').jcarousel({vertical: true, scroll: -1, auto: 2, wrap: "circular",  initCallback: carousel_callback});
+    jQuery('#mycarousel').jcarousel({vertical: true, scroll: -1, auto: 2, wrap: "circular", animation: "slow",  initCallback: carousel_callback});
 });
 
 function carousel_callback(carousel, state) {

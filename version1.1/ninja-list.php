@@ -43,6 +43,8 @@ include("mysql.php");
 	$smarty->assign("ninjas",$ninjas);
   $smarty->assign("top_message","Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "ninja-list.tpl");
+	$smarty->assign("headermain", "Wall of Fame");
+
 
 
 	$smarty->display("main.tpl")

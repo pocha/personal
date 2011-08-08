@@ -200,12 +200,12 @@ plugins : "",
 <body id="index" class="home">
 
 		
-<div id="contact" class="section" {if $tpl_name ne 'index.tpl'} style="background-color:gray" {/if} >
+<div id="contact" class="section">
 	<div class="contents" style="position:relative;">
 		<div id="logo">
 			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 			<br/>
-			<div class="message" style="{if $tpl_name eq 'index.tpl'} color:#CCCCCC; {/if} font-size: 1em; float:left;">
+			<div class="message" style="color:#CCCCCC; font-size: 1.2em; float:left;">
 				Managed tech outsourcing to college students.
 			</div>
 		</div><!-- /#logo -->
@@ -215,33 +215,28 @@ plugins : "",
 	</div><!-- /.contents -->
 </div><!-- /#contact -->
 
-{include file="$tpl_name"}
 
+<div id="header" class="section">
+	<div class="contents" style="text-align:center; width: 960px">
+		<h2 style="margin:0; padding: 10px; color:white;">{$headermain}</h2>
+		<p style="font-size:small">{$headersecondary}</p> 
+ 	</div><!-- /.contents -->
+</div><!-- /#header -->
 
+<div style="width:960px; margin:0 auto">
+	{include file="$tpl_name"}
+</div>
 
-
-<div id="contact-form" class="section">
-	<div class="flow">
-		<div class="contents" style="padding-top: 10px; text-align:center; padding-bottom:0; font-size: small">
-				<a target="_blank" href="http://pocha.posterous.com">Ashish (Pocha) Sharma</a> (91 95 3838 4545) &amp; <a target="_blank" href="http://twitter.com/sgaurav_baghel">Gaurav Singh</a> initiative. Email - pocha@stalkninja.com
-		 </div>
-				<div style="font-size:small; color:gray; text-align:center;">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. Sorry, we do not care much about Internet Explorer for now.</div>
-				<br/>
-				<div style="clear:both"></div>
-				<table>
-				<tr>
-					<td>
-				<a href="http://twitter.com/stalkninja"><img style="width:100px" src="http://swatantra.info/images/swatantra_info_twitter-follow.png"/></a>
-					</td>
-					<td>
-					<table><tr><td style="border:none;">
+<div class="clearfix png_bg" id="footer">
+		<div class="container_12">
+						
 					
-					
+<div style="margin:10px;">Subscribe to <a href="">ninjaclan@googlegroups.com</a> & get intimated of new project. Its the hangout place for existing & wanna-be Ninjas. </div>
 <!-- Begin MailChimp Signup Form -->
 
 <div id="mc_embed_signup" style="width: 800px;">
 <form action="http://stalkninja.us2.list-manage.com/subscribe/post?u=b16823d4ca5e4753b37046bfd&amp;id=a24e642218" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" style="font: normal 100% Arial, sans-serif;font-size: 12px;">
-	<fieldset style="border: 0px solid #ccc;padding-top: 0.0em;margin: .0em 0;background-color: #000;color: #fff;text-align: left;">
+	<fieldset style="border: 0px solid #ccc;padding-top: 0.0em;margin: .0em 0;background-color: transparent;color: inherit;text-align: left;">
 	
 <div class="mc-field-group" style="margin: 0.0em 1%;clear: both;overflow: hidden;">
 <table style="border:0">
@@ -282,18 +277,28 @@ plugins : "",
 </div>
 
 <!--End mc_embed_signup-->
-					<div style="font-size: small;color: white; padding-left: 25px;">Looking to be a Ninja? Want to receive updates on projects floated via email? Subscribe to <a href="http://groups.google.com/group/ninjaclan/subscribe" target="_blank">ninjaclan@googlegroups.com</a> & Google SMS Channel by sending sms 'ON STALKNINJA' (without quotes) to 9870807070</div>
-					
-					</td>
-					</tr>
-					</table></td></tr></table>
-					
 
-				<div style="clear:both"></div>
+
+		 <div class="grid_12 holder">
+				<span class="copy">2011 &copy; All rights reserved </span>
+				<ul>
+					<li><a href="#">Back to Sq 1</a></li>
+					<li><a href="#">Know Us</a></li>
+					<li><a href="#">Know this too</a></li>
+					<li><a href="#">Our sayings</a></li>
+					<li><a href="#">Rush to</a></li>
+					<li><a href="#">Keeping Ur secret</a></li>
+					<li><a href="#">When in Doubt</a></li>
+				</ul>
+			</div>
+			<div class="clear">&nbsp;</div>
 				
+			<div style="font-style:italic; margin-bottom:10px">The site has been tested to work on Mozilla Firefox & Google Chrome. It should work all right in Safari. Sorry, we do not care much about Internet Explorer for now.</div>
+		
+		</div>
+	
+	</div>
 
-	</div><!-- /.flow -->
-</div><!-- /#contact-form -->
 
 <div class="menu-container">
 		<!--<div class="menu" style="float:left; margin-top: 15px;">

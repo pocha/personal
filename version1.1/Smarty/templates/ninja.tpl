@@ -1,13 +1,10 @@
-<div class="wrapper1" style="padding:0 100px;">
 		<div> 
-   		<h2 style="float:left; margin-left:200px">Ninja Profile: {$ninja.Name}</h2>
-			<a style="float:left; margin-left: 100px; margin-top:40px" href="/ninja-list.php"><div class="btn open" style="text-align:center;">View All Ninja(s)</div></a>
 			<div style="clear:both"></div>
 		</div>
-    <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
-			<table style="text-align:left">
+    <div id="student_block" style="padding: 0 100px">
+			<table style="text-align:left; border:0">
 				<tr>
-					<td><a href="{$ninja.FacebookProfileUrl}" target="_blank"><img src="{$ninja.FacebookPicUrl}"  width="100px"/></a></td>
+					<td><a href="{$ninja.FacebookProfileUrl}" target="_blank"><img src="{$ninja.FacebookPicUrl}"  width="100px"/></a><br/><a style="float:right; margin-top:40px" href="/ninja-list.php"><div class="btn open" style="text-align:center;">View All Ninja(s)</div></a></td>
 					<td>{$ninja.Description}
 					</td>
 				</tr>
@@ -27,7 +24,7 @@
 
 			{foreach from=$projects item=p}
 			<div class="btn {$p.Status}" style="text-align:center;">
-				<table style="width:100%; font-size: medium">
+				<table style="width:100%; font-size: small">
 					<tr>
 						<td><a href="/project/{$p.ProjectId}">{$p.Heading}</a></td>
 					</tr>
@@ -76,7 +73,3 @@
 			There are no past projects/reviews to show for the user
 		{/if}
 	</div>
-
-</div>
-
-

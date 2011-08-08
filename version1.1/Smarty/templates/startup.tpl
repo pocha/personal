@@ -1,5 +1,4 @@
 <div class="wrapper1" style="padding:0 100px;">
-   	<h2>Startup Profile: {$startup.Name}</h2>
     <div id="student_block" style=" border-top: 1px solid black; padding: 0 100px">
 			<table style="text-align: left">
 				<tr>
@@ -21,7 +20,7 @@
 			
 			{foreach from=$projects item=p}
 			<div class="btn {$p.Status}" style="text-align:center;">
-				<table style="width:100%; font-size: medium">
+				<table style="width:100%; font-size: small">
 					<tr>
 						<td> <a href="/project/{$p.Id}">{$p.Heading}</a></td>
 					</tr>

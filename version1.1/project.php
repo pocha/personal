@@ -75,7 +75,7 @@
 	$smarty->assign("reviews",$reviews);
 	$smarty->assign("files",$files);
 
-	$smarty->assign("top_message","Engage a Ninja (student) for your Startup");
+	$smarty->assign("headermain","Project : ".$project['Heading']);
 	$smarty->assign("tpl_name", "project.tpl");
 	$smarty->assign("title","Project : ".$project['Heading']);
 	

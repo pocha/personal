@@ -153,5 +153,6 @@ $smarty->assign("data", $data);
 $smarty->assign("error", $error);
 $smarty->assign("message", $message);
 $smarty->assign("tpl_name", "edit-project.tpl");
+$smarty->assign("headermain", "Forgot to add something ? here you go ..");
 $smarty->display("main.tpl");
 ?>

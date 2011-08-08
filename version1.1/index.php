@@ -16,7 +16,7 @@
 
 	include("smarty.php");
 	
-	$sum = mysql_fetch_assoc(mysql_query("SELECT SUM(Budget) as Sum FROM Project"));
+	/*$sum = mysql_fetch_assoc(mysql_query("SELECT SUM(Budget) as Sum FROM Project"));
 	$sum = number_format($sum['Sum'] * 1.15);
 	$datetime1 = new DateTime('2010-12-18');
 	$datetime2 = new DateTime('now');
@@ -25,13 +25,14 @@
 	$days = $interval->format("%a") - $months * 30;
 	$stats = array("Money" => $sum, "Months" => $months, "Days" => $days);
 	
-	$smarty->assign("stats",$stats);	
+	$smarty->assign("stats",$stats);*/	
 	$smarty->assign("projects",$projects);
-	$smarty->assign("top_message", isset($_GET['done']) ? "Thanks for submitting. You can reach us at admin@stalkninja.com or 91 95 3838 4545" : "Engage a Ninja (student) for your Startup");
 	$smarty->assign("ninjaCount",$ninjaCount);
 	//$smarty->assign("top_message", "Engage a Ninja (student) for your Startup");
 	$smarty->assign("tpl_name", "index.tpl");
 	$smarty->assign("title","Stalk Ninja - Remote Internship, Startup Job, PartTime Job, Student Opportunity, Summer Internship, India");	
+	
+	$smarty->assign("headersecondary","Out of ". (int)($ninjaCount*33.33) ." college students who have attempted <a href='survey-student' target='_blank'>Ninja Challenge</a>, $ninjaCount became Ninjas. Check the list & their skillset <a href='ninja-list.php'>here</a>.");
 
 	$smarty->display("main.tpl")
 ?>

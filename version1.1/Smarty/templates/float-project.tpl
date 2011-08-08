@@ -7,8 +7,7 @@
 {/literal}
 </style>
 
-          <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-	  <script type="text/javascript" src="/js/jquery.validate.js"></script>
+	<script type="text/javascript" src="/js/jquery.validate.js"></script>
 
   <script type="text/javascript">
             {literal}
@@ -94,9 +93,8 @@
 
 
 <p class="message {if $error }error{/if}">{$message}</p>
-<h3>{$heading}</h3>
 <p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms btn blue">how it works</a>.</p>
-<p>Looking to get maximum out of the project ? Read our <a href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea" target="_blank">philosophy cum instructions</a> on our blog.</p>
+<p>Looking to get maximum out of the project ? Read <a href="http://blog.stalkninja.com/looking-to-float-a-project-with-us-please-rea" target="_blank">philosophy cum instructions</a> on our blog.</p>
 <p><span class="message">All fields are compulsory.</p>
 <form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">
@@ -104,9 +102,9 @@
 	<tr style="display:{$top}"><td>Company</td><td><input name="name" value="{$data.Name}"/></td></tr>
 
 	<tr style="display:{$top}"><td>Email</td><td><input name="email" value="{$data.email}"/></td></tr>
-        <tr class="message" style="display:{$top}"><td colspan="2">Already registered with us? provide the same email. First timer ? no problem, any email would do (we meant your email).</td></tr>
+  <tr class="message" style="display:{$top}"><td colspan="2">Already registered with us? provide the same email. First timer ? no problem, any email would do (we meant your email).</td></tr>
 
-        <tr style="display:{$top}"><td>Phone</td><td><input name="contact" value="{$data.contact}"/></td></tr>
+  <tr style="display:{$top}"><td>Phone</td><td><input name="contact" value="{$data.contact}"/></td></tr>
 	<tr class="message"><td colspan="2">System do not accept any space. Only numbers (no '+' or anything) - eg 9538384545 . Include country code if outside India.</td></tr>
 
 	<tr><td>Project Heading</td><td><input name="Heading" value="{$data.Heading}"/></td></tr>

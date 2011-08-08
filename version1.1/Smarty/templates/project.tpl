@@ -56,17 +56,16 @@
 
 
 
-<div style="padding: 0 100px">
+				<!--	
 	<div id="student_tag" style=" border-bottom: 1px solid black;">
 					<h2 style="float:left; width:80%">{$project.Heading}</h2>
 				
-				<!--	
 					<div id="fb_share_1" style="float: right; margin-left: 10px; margin-top:50px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com//project/{$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
 					<div class="tweetmeme_button" style="float: right; margin-left: 10px; margin-top:50px"><iframe src="http://api.tweetmeme.com/button.js?url=http%3a%2f%2fstalkninja.com%2fproject.php%3fid%3d{$project.Id}&amp;source=stalkninja&amp;style=normal" height="61" width="50" frameborder="0" scrolling="no"></iframe></div>
-				-->
 					<div style="clear:both"></div>
 	</div>
+				-->
 					
           
 					<div id="project_table">
@@ -120,14 +119,14 @@
 								{/if}
 								
                 <h3> Description: </h3>
-								{$project.Description}
+								<div class="para">{$project.Description}</div>
 								{if $project.Deliverable}
 								<h3> Deliverable: </h3>
-								{$project.Deliverable}
+								<div class="para">{$project.Deliverable}</div>
 								{/if}
 								{if $project.Task}
 								<h3> Task: </h3>
-									{$project.Task}
+									<div class="para">{$project.Task}</div>
 									<p style="color:black">Only those Ninja(s) would be considered for the project who would be able to do the task. If you are attempting the task, drop a comment in the discussion board. Feel free to ask for any help.</p>
 								{/if}
 
@@ -135,14 +134,14 @@
 									<p>As always :-</p>
 									<ol>
 										<li>Join <a target="_blank" href=http://groups.google.com/group/ninjaclan/subscribe>ninjaclan@goolgegroups.com</a> to get all project updates including this.</li>
-										<li>To get updates via sms, join Stalk Ninja SMS Channel by sending sms <span style="color:black">'ON STALKNINJA' (without quotes) to 9870807070</span></li>
+										<li>Log onto IRC channel ##sn to discuss any issues with the Admins & fellow Ninjas. Details <a target="_blank" href="http://blog.stalkninja.com/irc-channel-for-ninjas">here</a></li>
 									</ol>
 								</div>
 
 								
 								<h3>Skills Required:</h3>
-                <p>{$project.Skills}</p>
-								<div style="padding-bottom:20px; text-align:center; width:100%">
+                <p class="para">{$project.Skills}</p>
+								<div style="padding:20px; text-align:center; border-top: 1px solid black;">
 										<a href="/project/new"><div class="btn red" style="font-size:26px;">&nbsp;Float a New/Similar Project&nbsp;</div></a>
 								</div>
                 <div style="border-top: 1px solid black;"></div>
@@ -321,6 +320,5 @@ $(".popup-close1").click(function(){
 	})
 {/literal}
 </script>
-</div>
 
 

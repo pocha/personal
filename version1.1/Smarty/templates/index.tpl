@@ -1,4 +1,3 @@
-<div id="header" class="section">
 <script type="text/javascript">
 {literal}
 $(document).ready(function() {		
@@ -86,17 +85,12 @@ function gallery() {
 
 {/literal}
 </style>
-	
-	<div class="contents" style="text-align:center; width: 960px">
-			<p style="font-size: 1.2em; width:960px">Stalk Ninja got covered in <a target="_blank" href="http://bit.ly/lNIkRs">Yourstory.in</a>, <a target="_blank" href="http://bitly.com/mBA8N0">The New Indian Express</a> & <a target="_blank" href="http://bitly.com/k2a2n9">CHIP magazine</a></p>
-		<p style="font-size:small">Out of {$ninjaCount*33.33|string_format:"%d"} college students who have attempted <a href="survey-student" target="_blank">Ninja Challenge</a>, {$ninjaCount} became Ninjas. Check the list & their skillset <a href="ninja-list.php">here</a>.</p> 
- 	</div><!-- /.contents -->
-</div><!-- /#header -->
+
+
 <!-- temp float project blue area -->
-<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days* {/if}</p> 
+<p style="font-size:xx-large; margin-bottom:0">Rs. {$stats.Money} worth of projects floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days {/if}*</p> 
 
 <!-- temp float project blue area closes -->
-<div style="width:950px; margin:0 auto">
 
 	<div style="float:left; width: 650px;">
 

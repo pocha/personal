@@ -160,5 +160,7 @@ $smarty->assign("data", $data);
 $smarty->assign("error", $error);
 $smarty->assign("message", $message);
 $smarty->assign("tpl_name", "float-project.tpl");
+$smarty->assign("headermain", "You float the project & We would do the rest..");
+
 $smarty->display("main.tpl");
 ?>

@@ -26,7 +26,7 @@ body {
     position: relative;
     background-color: #ffffff;
 		font-family: "Trebuchet MS","Helvetica Neue", Arial, Helvetica, sans-serif;
-    font-size: 18px;
+    font-size: 14px;
 		color: gray;
     line-height: 1.5; /* Baseline grid of 21px */
     text-align: center;
@@ -550,9 +550,9 @@ a.rss:active {
 /* @group Contact */
 
 #contact {
-    /*background-color: #A0CB29;*/
+    background-color: white;
     color:  #fff;
-		margin-bottom: 1em;
+		padding-bottom: 1em;
 }
 
 #contact .contents {
@@ -866,9 +866,6 @@ margin-top: 40px;
 .red		{background-color: #1E99FF; color: #141414;}
 .red:hover	{background-color: #CCCCCC; color: #ffffff;}
 
-#project-container div {
-	width: 98%;
-}
 
 #project-container div:hover {
 	color: #FFFFFF;
@@ -1043,3 +1040,60 @@ blockquote {
 	border: none;
 }		
 /*################### Temp float project - blue area  closes ########################*/
+
+/* Taken from Above the fold for footer */
+#footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    color: #888888;
+    font: 13px Helvetica,Arial,sans-serif;
+    overflow: hidden;
+		background-color: #BEBEBE
+}
+.clearfix {
+    display: block;
+}
+.container_12, .container_16 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 960px;
+}
+#footer .holder {
+    padding: 17px 0 14px 2px;
+}
+.container_12 .grid_12, .container_16 .grid_16 {
+    width: 940px;
+}
+#footer .copy {
+    float: right;
+}
+#footer .social-networks {
+    float: left;
+    margin: 0 201px 0 0;
+    width: auto;
+}
+#footer ul {
+    margin: 0 auto;
+    overflow: hidden;
+}
+#footer .social-networks li {
+    padding: 0 5px 0 0;
+}
+#footer ul li {
+    float: left;
+    padding: 0 10px 0 0;
+}
+
+#footer ul li a{
+	color: inherit;
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+#footer ul li a:hover{
+	text-decoration: none;
+	background-color: inherit;
+}
+
+.para {
+	padding-left: 2em;
+}

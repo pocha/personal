@@ -1,9 +1,6 @@
-<div class="box" style="max-width:1050px;">
+<div style="max-width:1050px;">
 <style type="text/css">
 {literal}
-	body {
-		background-color: #DCDCDC;
-	}
 	.form > tbody > tr >td:first-child {
 	min-width: 300px;
 }
@@ -45,7 +42,7 @@
 <p>Hello Ninja, submit your details here &amp; it would be updated in our database. You can re-submit data to update later as well.</p>
 <p class="message {if $error }error{/if}">{$message}</p>
 <form id ="edit_profile" action="" method=POST>
-<table class="form" style="text-align:left; max-width: 100%">
+<table class="form" style="text-align:left;">
 	<tr><td>Email</td><td><input name="Email" value="{$data.Email}"/></td></tr>
 	<tr class="message"><td colspan="2">This is the email you sent to us in the questionnaire. If you want to change email, write to us at admin@stalkninja.com</td></tr>
 	<tr><td>Username you would like to have</td><td><input name="UserName" value="{$data.UserName}"/></td></tr>
