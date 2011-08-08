@@ -1,25 +1,8 @@
-<div style="width:80%; margin: 0 auto">
-<style type="text/css">
-{literal}
-	body {
-		background-color: #DCDCDC;
-		float: left;
-	}
-#middel-container{margin:0 auto; padding:0; width:810px; overflow:hidden; margin-bottom: 25px; background: #ffffff;}
-.box1{width:810px; margin:0 auto; padding:0; margin-top:7px; width: 710px;}
-.box1 .head1{padding:0; margin:0; height:107px; width:810px; background:#ffffff;}
-.box1  .content{padding:0 50px; margin:0; float:left; width:710px; background:#ffffff; left top repeat-y;}	
-.box1  .content .midtext{padding:0; margin:0; text-align:left; width:700px; }
-.div1-left{width:600px;  float:left; padding:0 20px 0 50px; margin:0;}
-.div2-left{ width:150px; float:left; margin:0;  padding:20px 0 20px 0px;}
-{/literal}
-</style>
-
-
-
-<div id="middel-container">
-  <div class="box1" style="font-size:12px; color:Gray; font-family:Arial, Helvetica, sans-serif; text-align: left;">
-    <h2>Site Terms and Conditions of Use</h2>
+      
+			  <div style="text-align:left; margin: 10px">
+			  <h3>The Story</h3>
+				<div class="para">
+			 <h3>Site Terms and Conditions of Use</h3>
 
 <p><b>1. User's Acknowledgment and Acceptance of Terms</b></p>
 
@@ -198,7 +181,10 @@
 <p><b>20. Contact Information</b></p>
 
 <p>Except as explicitly noted on this site, the services available through this site are offered by StalkNinja located at Bangalore. Our telephone number is 953-838-4545. If you notice that any user is violating these Terms of Use, please contact us at admin@stalkninja.com.</p>
-				
-  </div>
 </div>
-</div>
+			  
+
+				</div>
+        
+         
+ 
