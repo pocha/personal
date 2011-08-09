@@ -12,11 +12,16 @@
 				<table>
 					<tr>
 						<td><img src="/img/pocha.jpg" style="width:100px;"></td>
-						<td>About pocha here</td>
+						<td><p><b>Ashish (Pocha) Sharma</b>, heads Bussiness Development at StalkNinja. An IIT-M(2005 batch) alumni previously cofounded Minkle with two IIM grads. Prior to Minkle, Pocha was a successful freelancer and holds two patents to his credit.
+						</p>
+						<p><b>Loves:</b> Alternative Rock, Running, Biking, Drum/Guitar and wants to climb Mt. Everest</p>
+						</td>
 					</tr>
 					<tr>
-						<td><img src="/img/pocha.jpg" style="width:100px;"></td>
-						<td>About pocha here</td>
+						<td><img src="/img/gaurav.jpg" style="width:100px;"></td>
+						<td><p><b>Gaurav Singh</b> is Technology Head at StalkNinja. Still pursuing his enginnering, is an avid web surfer and hacker from heart.</p>
+						<p><Loves:</b> Soft Music, Long distance running, Internet and his Android</p>
+						</td>
 					</tr>
 				</table>
 				</div>
