@@ -18,9 +18,9 @@
 						</td>
 					</tr>
 					<tr>
-						<td><img src="/img/gaurav.jpg" style="width:100px;"></td>
+						<td><img src="/img/gaurav.png" style="width:100px;"></td>
 						<td><p><b>Gaurav Singh</b> is Technology Head at StalkNinja. Still pursuing his enginnering, is an avid web surfer and hacker from heart.</p>
-						<p><Loves:</b> Soft Music, Long distance running, Internet and his Android</p>
+						<p><b>Loves:</b> Soft Music, Long distance running, Internet and his Android</p>
 						</td>
 					</tr>
 				</table>
