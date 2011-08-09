@@ -262,49 +262,49 @@ plugins : "",
 			</div> -->
 			
 		<div id="float-project-text" style="display:none">
-			<h3>Project floating - You</h3>
-				Brainstorm to create requirement into project
+			<h2>Project floating - You</h2>
+				<p style="font-size:small">Brainstorm to create requirement into project.</p>
 				
 		</div>
 		
 		<div id="approve-project-text" style="display:none">
-			<h3>Review & Approval - Us</h3>
-				Review project for clarity & feasibility
+			<h2>Review & Approval - Us</h2>
+				<p style="font-size:small">Review project for clarity & feasibility.</p>
 		</div>
 	
 		<div id="deposit-money-text" style="display:none">
-			<h3>Deposit project floating fees - Us</h3>
-				Once project is approved, we intimate the project creator with an invoice
+			<h2>Deposit project floating fees - Us</h2>
+				<p style="font-size:small">Once project is approved, we intimate the project creator with an invoice.</p>
 		</div>
 
 		<div id="propagate-word-text" style="display:none">
-			<h3>Getting maximum eye-balls - Us</h3>
-				We get into action.
+			<h2>Getting maximum eye-balls - Us</h2>
+				<p style="font-size:small">We get into action.</p>
 		</div>
 
 		<div id="project-interaction-text" style="display:none">
-			<h3>The Ninja action & closing in on one - You</h3>
-				Students & Ninjas start attempting the project task
+			<h2>The Ninja action & closing in on one - You</h2>
+				<p style="font-size:small">Students & Ninjas start attempting the project task.</p>
 		</div>
 
 		<div id="project-kick-off-text" style="display:none">
-			<h3>Selected Ninja starts working - You</h3>
-				The Ninja starts the work & reports to project creator regularly
+			<h2>Selected Ninja starts working - You</h2>
+				<p style="font-size:small">The Ninja starts the work & reports to project creator regularly.</p>
 		</div>
 		
 		<div id="we-monitor-text" style="display:none">
-			<h3>Big daddy watches all projects - Us</h3>
-				We monitor all projects personally. All interaction is mandated to be cced to us.
+			<h2>Big daddy watches all projects - Us</h2>
+				<p style="font-size:small">We monitor all projects personally. All interaction is mandated to be cced to us.</p>
 		</div>
 
 		<div id="bug-reporting-text" style="display:none">
-			<h3>Timely elimination of bugs - You</h3>
-				Project creator timely checks for the delivered work & report bugs
+			<h2>Timely elimination of bugs - You</h2>
+				<p style="font-size:small">Project creator timely checks for the delivered work & report bugs</p>
 		</div>
 	
 		<div id="project-done-text" style="display:none">
-			<h3>Hurray, we are done - Us</h3>
-				Once project creator okays the deliverables, the work is marked done
+			<h2>Hurray, we are done - Us</h2>
+				<p style="font-size:small">Once project creator okays the deliverables, the work is marked done</p>
 		</div>
 		
 		<script type="text/javascript">
