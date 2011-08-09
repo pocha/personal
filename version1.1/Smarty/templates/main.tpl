@@ -232,6 +232,7 @@ plugins : "",
 	<table>
 		<tr>
 			<td>
+<div style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px;">
 	<div id="how-it-works" style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px;">
 
 		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
@@ -254,7 +255,8 @@ plugins : "",
 		
 		<img class="arrow" src="/img/arrows/arrow-315.png" style="left:10%;top:5%"/>
 		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
-
+	</div>
+	
 		<div id="text-holder">
 			<div id="default-project-text" >
 			<h2>Project Life Cycle</h2>
@@ -304,7 +306,6 @@ plugins : "",
 		<div id="project-done-text" style="display:none">
 			<h3>Hurray, we are done - Us</h3>
 				Once project creator okays the deliverables, the work is marked done
-
 		</div>
 			
 			
