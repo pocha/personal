@@ -256,10 +256,10 @@ plugins : "",
 		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
 	
 		<div id="text-holder">
-			<div id="default-project-text" >
+			<!-- <div id="default-project-text" >
 			<h2>Project Life Cycle</h2>
 			<p style="font-size:small">Point cursor on images to view description</p>
-			</div>
+			</div> -->
 			
 		<div id="float-project-text" style="display:none">
 			<h3>Project floating - You</h3>
@@ -306,6 +306,7 @@ plugins : "",
 			<h3>Hurray, we are done - Us</h3>
 				Once project creator okays the deliverables, the work is marked done
 		</div>
+		
 		<script type="text/javascript">
 	{literal}
 	$("#how-it-works img.main").each(
@@ -321,7 +322,7 @@ plugins : "",
 	);
 	
 	function hideAll() {
-		$("#text-div-holder div").each(function(){
+		$("#text-holder div").each(function(){
 			$(this).hide();
 		})
 		
