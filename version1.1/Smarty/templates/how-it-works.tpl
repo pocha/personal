@@ -32,7 +32,7 @@
 	</div>
 	</td>
 	<td id="text-div-holder" style="text-align:left; vertical-align:top; width:500px">
-	<div id="float-project-text" style="display:none">
+		<div id="float-project-text" style="display:none">
 			<h3>Project floating - You</h3>
 			<ol>
 				<li>Brainstorm to create requirement into project</li>

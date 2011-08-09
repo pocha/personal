@@ -256,8 +256,78 @@ plugins : "",
 		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
 
 		<div id="text-holder">
+			<div id="default-project-text" >
 			<h2>Project Life Cycle</h2>
 			<p style="font-size:small">Point cursor on images to view description</p>
+			</div>
+		<div id="float-project-text" style="display:none">
+			<h3>Project floating - You</h3>
+				Brainstorm to create requirement into project
+				
+		</div>
+		
+		<div id="approve-project-text" style="display:none">
+			<h3>Review & Approval - Us</h3>
+				Review project for clarity & feasibility
+		</div>
+	
+		<div id="deposit-money-text" style="display:none">
+			<h3>Deposit project floating fees - Us</h3>
+				Once project is approved, we intimate the project creator with an invoice
+		</div>
+
+		<div id="propagate-word-text" style="display:none">
+			<h3>Getting maximum eye-balls - Us</h3>
+				We get into action.
+		</div>
+
+		<div id="project-interaction-text" style="display:none">
+			<h3>The Ninja action & closing in on one - You</h3>
+				Students & Ninjas start attempting the project task
+		</div>
+
+		<div id="project-kick-off-text" style="display:none">
+			<h3>Selected Ninja starts working - You</h3>
+				The Ninja starts the work & reports to project creator regularly
+		</div>
+		
+		<div id="we-monitor-text" style="display:none">
+			<h3>Big daddy watches all projects - Us</h3>
+				We monitor all projects personally. All interaction is mandated to be cced to us.
+		</div>
+
+		<div id="bug-reporting-text" style="display:none">
+			<h3>Timely elimination of bugs - You</h3>
+				Project creator timely checks for the delivered work & report bugs
+		</div>
+	
+		<div id="project-done-text" style="display:none">
+			<h3>Hurray, we are done - Us</h3>
+				Once project creator okays the deliverables, the work is marked done
+		</div>
+		<script type="text/javascript">
+			{literal}
+			$("#how-it-works img.main").each(
+			function(index) {
+			id = $(this).attr('id');
+			$(this).bind('mouseover',function(){
+				hideAll();
+				$("#" + $(this).attr('id') + "-text").show();
+			});
+
+			$(this).bind('blur', hideAll);
+			}
+			);
+	
+	function hideAll() {
+		$("#text-div-holder div").each(function(){
+			$(this).hide();
+		})
+		
+	}
+	{/literal}
+</script>	
+			
 		</div>
 
 	</div>
