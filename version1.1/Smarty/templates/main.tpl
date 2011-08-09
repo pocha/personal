@@ -332,7 +332,7 @@ plugins : "",
 
 	</div>
 			</td>
-			<td id="text-div-holder" style="text-align:left; vertical-align:top; width:600px">
+			<td style="width:600px;">
 	<!-- insert side content here -->
 		<div id="banner-right">
 			<div id="image-1" style="display:none">
