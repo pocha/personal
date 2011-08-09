@@ -215,6 +215,7 @@ plugins : "",
 	</div><!-- /.contents -->
 </div><!-- /#contact -->
 
+{if $tpl_name != 'index.tpl'}
 
 <div id="header" class="section">
 	<div class="contents" style="text-align:center; width: 960px">
@@ -222,6 +223,90 @@ plugins : "",
 		<p style="font-size:small">{$headersecondary}</p> 
  	</div><!-- /.contents -->
 </div><!-- /#header -->
+
+{else}
+
+<div style="background:url('/img/bg-w4.png') repeat-x scroll 0 0; display:block; width:100%; height: 400px;">
+
+<div style="width:960px; margin:0 auto">
+	<table>
+		<tr>
+			<td>
+	<div id="how-it-works" style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px;">
+
+		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
+		<img class="arrow" src="/img/arrows/arrow-45.png" style="left:95%;top:5%"/>
+		<img class="main" id="approve-project" src="/img/thumbs-up.png" style="left:100%; top:25%"/>
+		<img class="arrow" src="/img/arrows/arrow-90.png" style="left:110%;top:45%"/>
+		<img class="main" id="deposit-money" src="/img/deposit.png" style="left:100%; top:60%"/>
+		<img class="arrow" src="/img/arrows/arrow-135.png" style="left:95%;top:85%"/>
+		<img class="main" id="propagate-word" src="/img/propagating-word.png" style="left:75%; top:90%"/>
+		<img class="arrow" src="/img/arrows/arrow-180.png" style="left:50%;top:100%"/>
+		
+		<img class="main" id="project-interaction" src="/img/interaction.png" style="left:30%; top:90%"/>
+		<img class="arrow" src="/img/arrows/arrow-225.png" style="left:10%;top:80%"/>
+
+		<img class="main" id="project-kick-off" src="/img/Work_in_progress.svg.png" style="left:0%; top:60%"/>
+		<img class="arrow" src="/img/arrows/arrow-270.png" style="left:-10%;top:45%"/>
+		<img class="main" id="we-monitor" src="/img/examiner.png" style="height:30%; width:30%;left:-35%; top:40%"/>
+		<img class="arrow" src="/img/arrows/arrow-90.png" style="left:10%;top:45%"/>
+		<img class="main" id="bug-reporting" src="/img/no-bugs.png" style="left:0%; top:25%"/>
+		
+		<img class="arrow" src="/img/arrows/arrow-315.png" style="left:10%;top:5%"/>
+		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
+
+		<div id="text-holder">
+			<h2>Project Life Cycle</h2>
+			<p style="font-size:small">Point cursor on images to view description</p>
+		</div>
+
+	</div>
+			</td>
+			<td style="width:600px;">
+	<!-- insert side content here -->
+		<div id="banner-right">
+			<div id="image-1" style="display:none">
+				<img src="/img/push.gif">
+				<h2>Get your pending tech work pushed</h2>
+			</div>
+			<div id="image-2" style="display:none">
+				<img src="/img/propagating-word.png">
+				<h2>You float, we propagate. Get max eye-balls.</h2>
+			</div>
+			<div id="image-3" style="display:none">
+				<img src="/img/solve-task.png">
+				<h2>Compulsary task in every project.</h2>
+			</div>
+			<div id="image-4" style="display:none">
+				<img src="/img/deposit.png">
+				<h2>We hold the money during the project.</h2>
+			</div>
+			<div id="image-5" style="display:none">
+				<img src="/img/examiner.png">
+				<h2>We refine & monitor all projects.</h2>
+			</div>
+			<div id="image-6" style="display:visible">
+				<img src="/img/Staff.png">
+				<h2>Evaluate freshers & build hiring pipeline.</h2>
+			</div>
+		</div>
+		<div class="image-switch">
+			<span class="box">1</span>
+			<span class="box">2</span>
+			<span class="box">3</span>
+			<span class="box">4</span>
+			<span class="box">5</span>
+			<span class="box">6</span>
+		</div>
+			</td>
+		</tr>
+	</table>
+
+
+</div>
+</div>
+
+{/if}
 
 <div style="width:960px; margin:0 auto">
 	{include file="$tpl_name"}
@@ -356,6 +441,13 @@ plugins : "",
 			<table>
 				<tr>
 					<td>
+		
+			<img style="float:right; height:40px; margin-bottom:10px;" src="/img/contact.gif"/><br/>
+			<!--
+			<div style="font-size:1.5em; margin-bottom:10px;">
+				mailto:admin@stalkninja.com shout@919538384545
+			</div>
+			-->
 			<div class="tab">
 				<ul> 
 					<li><a target="_top" href="index.php" >Home</a></li>

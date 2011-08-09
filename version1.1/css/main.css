@@ -1097,3 +1097,37 @@ blockquote {
 .para {
 	padding-left: 2em;
 }
+
+	#how-it-works img {
+			position:absolute;
+			height:20%;
+			width:20%;
+		}
+		#how-it-works img.main:hover {
+			background-color: #CCCCCC;
+			cursor: pointer;
+		}
+		.arrow {
+			z-index:10;
+		}
+		#how-it-works #text-holder {
+			position:absolute;
+			left:30%; top:30% ; height:50%; width:65%;
+			overflow-y: hidden;
+			font-size: 0.8em;
+		}
+
+.image-switch {
+	margin-top: 10px;
+}
+
+.image-switch span {
+	padding: 4px 8px;
+	font-size: small;
+	margin-right: 10px;
+	background-color: inherit;
+	color:white;
+}
+#banner-right img {
+	height: 200px;
+}

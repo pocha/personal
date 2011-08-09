@@ -1,26 +1,3 @@
-<style type="text/css">
-	{literal}
-		#how-it-works img {
-			position:absolute;
-			height:20%;
-			width:20%;
-		}
-		#how-it-works img.main:hover {
-			background-color: #CCCCCC;
-			cursor: pointer;
-		}
-		.arrow {
-			z-index:10;
-		}
-		#how-it-works #text-holder {
-			position:absolute;
-			left:30%; top:30% ; height:50%; width:65%;
-			overflow-y: hidden;
-			font-size: 0.8em;
-		}
-	{/literal}
-</style>
-
 <table>
 <tr>
 	<td>
