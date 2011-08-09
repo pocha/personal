@@ -256,7 +256,7 @@ plugins : "",
 		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
 
 		<div id="text-holder">
-			<!-- <div id="default-project-text" >
+			<div id="default-project-text" >
 			<h2>Project Life Cycle</h2>
 			<p style="font-size:small">Point cursor on images to view description</p>
 			</div>
@@ -304,29 +304,9 @@ plugins : "",
 		<div id="project-done-text" style="display:none">
 			<h3>Hurray, we are done - Us</h3>
 				Once project creator okays the deliverables, the work is marked done
-		</div>
-		<script type="text/javascript">
-			{literal}
-			$("#how-it-works img.main").each(
-			function(index) {
-			id = $(this).attr('id');
-			$(this).bind('mouseover',function(){
-				hideAll();
-				$("#" + $(this).attr('id') + "-text").show();
-			});
 
-			$(this).bind('blur', hideAll);
-			}
-			);
-	
-	function hideAll() {
-		$("#text-div-holder div").each(function(){
-			$(this).hide();
-		})
-		
-	}
-	{/literal}
-</script>	
+		</div>
+			
 			
 		</div>
 
