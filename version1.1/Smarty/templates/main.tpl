@@ -232,7 +232,7 @@ plugins : "",
 	<table>
 		<tr>
 			<td>
-<div style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px;">
+<div style="position:relative; height: 300px; width: 300px;">
 	<div id="how-it-works" style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px;">
 
 		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
