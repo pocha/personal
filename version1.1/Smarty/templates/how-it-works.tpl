@@ -32,14 +32,14 @@
 	</div>
 	</td>
 	<td id="text-div-holder" style="text-align:left; vertical-align:top; width:500px">
-		<!-- <div id="float-project-text" style="display:none">
+	<div id="float-project-text" style="display:none">
 			<h3>Project floating - You</h3>
 			<ol>
 				<li>Brainstorm to create requirement into project</li>
 				<li>Provide clear description & crisp deliverable</li>
 				<li>A well defined & relevant task helps gauge right Ninja</li>
 			</ol>
-		</div> -->
+		</div>
 		
 		<div id="approve-project-text" style="display:none">
 			<h3>Review & Approval - Us</h3>

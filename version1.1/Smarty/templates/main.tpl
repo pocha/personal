@@ -256,10 +256,10 @@ plugins : "",
 		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
 
 		<div id="text-holder">
-			<div id="default-project-text" >
+			<!-- <div id="default-project-text" >
 			<h2>Project Life Cycle</h2>
 			<p style="font-size:small">Point cursor on images to view description</p>
-			</div>
+			</div> -->
 		<div id="float-project-text" style="display:none">
 			<h3>Project floating - You</h3>
 				Brainstorm to create requirement into project
