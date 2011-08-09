@@ -26,7 +26,6 @@
 				</table>
 				</div>
 
-				<h3>The Address</h3>
 
 				</div>
         
