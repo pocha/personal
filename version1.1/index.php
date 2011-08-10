@@ -16,7 +16,7 @@
 
 	include("smarty.php");
 	
-	/*$sum = mysql_fetch_assoc(mysql_query("SELECT SUM(Budget) as Sum FROM Project"));
+	$sum = mysql_fetch_assoc(mysql_query("SELECT SUM(Budget) as Sum FROM Project"));
 	$sum = number_format($sum['Sum'] * 1.15);
 	$datetime1 = new DateTime('2010-12-18');
 	$datetime2 = new DateTime('now');
@@ -25,7 +25,7 @@
 	$days = $interval->format("%a") - $months * 30;
 	$stats = array("Money" => $sum, "Months" => $months, "Days" => $days);
 	
-	$smarty->assign("stats",$stats);*/	
+	$smarty->assign("stats",$stats);
 	$smarty->assign("projects",$projects);
 	$smarty->assign("ninjaCount",$ninjaCount);
 	//$smarty->assign("top_message", "Engage a Ninja (student) for your Startup");

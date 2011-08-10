@@ -54,14 +54,13 @@
 			<h3>Deposit project floating fees - Us</h3>
 			<ol>
 				<li>Once project is approved, we intimate the project creator with an invoice.</li>
-				<li>Project creator needs to deposit 15% of project budget or INR 500 whichever is less. This is non-refundable project premium.</li>
+				<li>Project creator needs to deposit 15% of project budget. This is non-refundable project premium.</li>
 			</ol>
 		</div>
 
 		<div id="propagate-word-text" style="display:none">
 			<h3>Getting maximum eye-balls - Us</h3>
 			<ol>
-				<li>We get into action.</li>
 				<li>Word is sent to the ninjaclan googlegroup, twitter & facebook page</li>
 				<li>Word is also sent to the places where relevant student hacker flock - facebook page, googlegroups & linkedin groups</li>
 			</ol>

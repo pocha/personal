@@ -206,7 +206,7 @@ plugins : "",
 			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 			<br/>
 			<div class="message" style="color:#CCCCCC; font-size: 1.2em; float:left;">
-				Managed tech outsourcing to college students.
+				Get your tech jobs done from college freelancers.
 			</div>
 		</div><!-- /#logo -->
 
@@ -218,7 +218,7 @@ plugins : "",
 {if $tpl_name != 'index.tpl'}
 
 <div id="header" class="section">
-	<div class="contents" style="text-align:center; width: 960px">
+	<div class="contents" style="text-align:center; width: 960px;  text-align:left">
 		<h2 style="margin:0; padding: 10px; color:white;">{$headermain}</h2>
 		<p style="font-size:small">{$headersecondary}</p> 
  	</div><!-- /.contents -->
@@ -226,7 +226,7 @@ plugins : "",
 
 {else}
 
-<div style="background:url('/img/bg-w4.png') repeat-x scroll 0 0; display:block; width:100%; height: 400px;">
+<div style="background:url('/img/bg-w4.png') repeat-x scroll 0 0; display:block; width:100%;">
 
 <div style="width:960px; margin:0 auto">
 	<table>
@@ -256,55 +256,56 @@ plugins : "",
 		<img class="main" id="project-done" src="/img/project-completion.png" style="left:30%; top:0"/>
 	
 		<div id="text-holder">
-			<!-- <div id="default-project-text" >
-			<h2>Project Life Cycle</h2>
-			<p style="font-size:small">Point cursor on images to view description</p>
-			</div> -->
+
+			<div id="default-project-text" >
+				<h3>Project Life Cycle</h3>
+				<p style="font-size:small">Point cursor on images to view description</p>
+			</div>
 			
 		<div id="float-project-text" style="display:none">
-			<h2>Project floating</h2>
+			<h3>1. You float a project.</h3>
 				<p style="font-size:small">Brainstorm to create requirement into project.</p>
 				
 		</div>
 		
 		<div id="approve-project-text" style="display:none">
-			<h2>Review & Approval</h2>
+			<h3>2. We review & approve.</h3>
 				<p style="font-size:small">Review project for clarity & feasibility.</p>
 		</div>
 	
 		<div id="deposit-money-text" style="display:none">
-			<h2>Deposit project floating fees</h2>
+			<h3>3. You deposit project premium.</h3>
 				<p style="font-size:small">Once project is approved, we intimate the project creator with an invoice.</p>
 		</div>
 
 		<div id="propagate-word-text" style="display:none">
-			<h2>Getting maximum eye-balls</h2>
-				<p style="font-size:small">We get into action.</p>
+			<h3>4. We propagate your project.</h3>
+				<p style="font-size:small">Your project reaches 450+ registered college developers & more than 5000 students via facebook & google groups.</p>
 		</div>
 
 		<div id="project-interaction-text" style="display:none">
-			<h2>The Ninja action & closing in on one</h2>
+			<h3>5. You interact with Ninjas on discussion board.</h3>
 				<p style="font-size:small">Students & Ninjas start attempting the project task.</p>
 		</div>
 
 		<div id="project-kick-off-text" style="display:none">
-			<h2>Selected Ninja starts working</h2>
+			<h3>6. You select a Ninja for the project.</h3>
 				<p style="font-size:small">The Ninja starts the work & reports to project creator regularly.</p>
 		</div>
 		
 		<div id="we-monitor-text" style="display:none">
-			<h2>Big daddy watches all projects</h2>
+			<h3>8. We monitor all the projects.</h3>
 				<p style="font-size:small">We monitor all projects personally. All interaction is mandated to be cced to us.</p>
 		</div>
 
 		<div id="bug-reporting-text" style="display:none">
-			<h2>Timely elimination of bugs</h2>
-				<p style="font-size:small">Project creator timely checks for the delivered work & report bugs</p>
+			<h3>7. You pass on regular feedback.</h3>
+				<p style="font-size:small">Project creator timely checks for the delivered work & report bugs. The Ninja fix them & report back.</p>
 		</div>
 	
 		<div id="project-done-text" style="display:none">
-			<h2>Hurray, we are done</h2>
-				<p style="font-size:small">Once project creator okays the deliverables, the work is marked done</p>
+			<h3>9. The project gets done & Ninja is paid.</h3>
+				<p style="font-size:small">Once project creator okays the deliverables, Ninja is paid post review & rating exchange. </p>
 		</div>
 		
 		<script type="text/javascript">
@@ -317,7 +318,10 @@ plugins : "",
 				$("#" + $(this).attr('id') + "-text").show();
 			});
 
-			$(this).bind('blur', hideAll);
+			$(this).bind('mouseout', function(){
+				hideAll();
+				$("#default-project-text").show();
+			});
 		}
 	);
 	
@@ -344,11 +348,11 @@ plugins : "",
 			</div>
 			<div id="image-2" style="display:none">
 				<img src="/img/propagating-word.png">
-				<h2>You float, we propagate. Get max eye-balls.</h2>
+				<h2>Your project reaches more than 5000 college hackers.</h2>
 			</div>
 			<div id="image-3" style="display:none">
 				<img src="/img/solve-task.png">
-				<h2>Compulsary task in every project.</h2>
+				<h2>Evaluate before you hire via project task.</h2>
 			</div>
 			<div id="image-4" style="display:none">
 				<img src="/img/deposit.png">
@@ -373,6 +377,8 @@ plugins : "",
 		</div>
 			</td>
 		</tr>
+
+	
 	</table>
 
 
@@ -524,10 +530,11 @@ plugins : "",
 			<div class="tab">
 				<ul> 
 					<li><a target="_top" href="index.php" >Home</a></li>
-					<li><a target="_top" href="aboutus.php">About Us</a></li>
 					<li><a target="_top" href="how-it-works.php">How it Works</a></li>
 					<li><a target="_top" href="press.php">What Press Says</a></li>
 					<li><a target="_top" href="pricing.php">Pricing</a></li>
+					<li><a target="_top" href="faq.php">FAQ</a></li>
+					<li><a target="_blank" href="http://blog.stalkninja.com">Blog</a></li>
 					
 				</ul>
 			</div>
