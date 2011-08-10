@@ -446,13 +446,10 @@ plugins : "",
 		 <div class="grid_12 holder">
 				<span class="copy">2011 &copy; All rights reserved </span>
 				<ul>
-					<li><a href="index.php">Home</a></li>
-					<li><a href="aboutus.php">About Us</a></li>
-					<li><a href="pricing.php">Pricing</a></li>
-					<li><a href="faq.php">FAQs</a></li>
-					<li><a href="privacy.php">Privacy Policy</a></li>
-					<li><a href="tnc.php">Terms & Conditions</a></li>
-					<li>Contact: admin[at]stalkninja[dot]com</li>
+					<li><a href="index.php">Back to Sq 1</a></li>
+					<li><a href="aboutus.php">Know Us</a></li>
+					<li><a href="tnc.php">Know this too</a></li>
+					<li><a href="privacy.php">Keeping your secret</a></li>
 				</ul>
 			</div>
 			<div class="clear">&nbsp;</div>
@@ -529,11 +526,11 @@ plugins : "",
 			-->
 			<div class="tab">
 				<ul> 
-					<li><a target="_top" href="index.php" >Home</a></li>
-					<li><a target="_top" href="how-it-works.php">How it Works</a></li>
-					<li><a target="_top" href="press.php">What Press Says</a></li>
-					<li><a target="_top" href="pricing.php">Pricing</a></li>
-					<li><a target="_top" href="faq.php">FAQ</a></li>
+					<li><a {if $tpl_name eq 'index.tpl'}class='active'{/if}  target="_top" href="index.php" >Home</a></li>
+					<li><a {if $tpl_name eq 'how-it-works.tpl'}class='active'{/if}  target="_top" href="how-it-works.php">How it Works</a></li>
+					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="press.php">What Press Says</a></li>
+					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="pricing.php">Pricing</a></li>
+					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="faq.php">FAQ</a></li>
 					<li><a target="_blank" href="http://blog.stalkninja.com">Blog</a></li>
 					
 				</ul>

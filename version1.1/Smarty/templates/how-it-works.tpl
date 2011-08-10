@@ -33,7 +33,7 @@
 	</td>
 	<td id="text-div-holder" style="text-align:left; vertical-align:top; width:500px">
 	<div id="float-project-text" style="display:none">
-			<h3>Project floating - You</h3>
+			<h3>Project floating - Project Creator</h3>
 			<ol>
 				<li>Brainstorm to create requirement into project</li>
 				<li>Provide clear description & crisp deliverable</li>
@@ -51,39 +51,39 @@
 		</div>
 	
 		<div id="deposit-money-text" style="display:none">
-			<h3>Deposit project floating fees - Us</h3>
+			<h3>Deposit project floating fees - Project Creator</h3>
 			<ol>
-				<li>Once project is approved, we intimate the project creator with an invoice.</li>
-				<li>Project creator needs to deposit 15% of project budget. This is non-refundable project premium.</li>
+				<li>Once project is approved, we intimate with an invoice.</li>
+				<li>Deposit 15% of project budget. This is non-refundable project premium. Check <a target="_blank" href="/pricing.php">Pricing Page</a> for details</li>
 			</ol>
 		</div>
 
 		<div id="propagate-word-text" style="display:none">
-			<h3>Getting maximum eye-balls - Us</h3>
+			<h3>Getting maximum eye-balls for the project - Us</h3>
 			<ol>
 				<li>Word is sent to the ninjaclan googlegroup, twitter & facebook page</li>
 				<li>Word is also sent to the places where relevant student hacker flock - facebook page, googlegroups & linkedin groups</li>
+				<li>We reach to more than 500 college developers/hackers</li>
+				<li>Interested guys attempt the task & submit its solution</li>
 			</ol>
 		</div>
 
 		<div id="project-interaction-text" style="display:none">
-			<h3>The Ninja action & closing in on one - You</h3>
+			<h3>The Ninja action & closing in on one - Project Creator</h3>
 			<ol>
-				<li>Students & Ninjas start attempting the project task</li>
-				<li>They put solution/queries on the discussion board</li>
-				<li>You review them to decide on the Ninja</li>
-				<li>You can look into the past performance of the Ninja in the system to make the decision. Once you are done, you let us know of your selection.</li>
+				<li>Review the task solution to decide on the Ninja</li>
+				<li>Look into the past performance of the Ninja in the system to make the decision. Once you are done, let us know of your selection.</li>
 				<li>An email is being sent for both parties to agree on Terms & Conditions.</li>
-				<li>Post approval, project creator deposit rest of the project money with us (escrow) & the project is awarded to the selected Ninja</li>
+				<li>Post approval, deposit rest of the project money with us (escrow) & the project is awarded to the selected Ninja</li>
 
 			</ol>
 		</div>
 
 		<div id="project-kick-off-text" style="display:none">
-			<h3>Selected Ninja starts working - You</h3>
+			<h3>The project commences - Ninja</h3>
 			<ol>
-				<li>The Ninja starts the work & reports to project creator regularly</li>
-				<li>In the event of violation of terms, the Ninja is removed from the project & he does not get paid</li>
+				<li>Starts the work & reports to project creator regularly</li>
+				<li>In the event of violation of terms, he/she is removed from the project & he/she does not get paid</li>
 				<li>In the event of violation of terms by the project creator, the project is treated complete & all the money is released to the Ninja</li>
 			</ol>
 		</div>
@@ -91,14 +91,14 @@
 		<div id="we-monitor-text" style="display:none">
 			<h3>Big daddy watches all projects - Us</h3>
 			<ol>
-				<li>We monitor all projects personally. All interaction is mandated to be cced to us.</li>
+				<li>Monitor all projects personally. All interaction is mandated to be cced to us.</li>
 				<li>In the event of dissatisfaction, either parties can raise their voice & we give a patient hearing</li>
 				<li>Our decision on the project is final</li>
 			</ol>
 		</div>
 
 		<div id="bug-reporting-text" style="display:none">
-			<h3>Timely elimination of bugs - You</h3>
+			<h3>Timely elimination of bugs - Project creator & Ninja</h3>
 			<ol>
 				<li>Project creator timely checks for the delivered work & report bugs</li>
 				<li>Its mandatory on the Ninja part to fix them & report back with changes</li>
@@ -107,7 +107,7 @@
 		</div>
 	
 		<div id="project-done-text" style="display:none">
-			<h3>Hurray, we are done - Us</h3>
+			<h3>Hurray, we are done - all of us</h3>
 			<ol>
 				<li>Once project creator okays the deliverables, the work is marked done</li>
 				<li>Both parties pass a rating out of 10 & review of the other party to us, which gets published on their respective profiles</li>
