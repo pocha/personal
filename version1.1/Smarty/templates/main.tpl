@@ -380,19 +380,19 @@ plugins : "",
 		</div>
 		<script type="text/javascript">
 			{literal}
-			start_slideshow(1, 6, 2000);
+			start_slideshow(1, 6, 5000);
     
 			function start_slideshow(start_frame, end_frame, delay) {
-			setTimeout(switch_slides(start_frame,start_frame,end_frame, delay), delay);
+				//setTimeout(switch_slides(start_frame,start_frame,end_frame, delay), delay);
+        setTimeout("switch_slides("+start_frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
 			}
                             
 			function switch_slides(frame, start_frame, end_frame, delay) {
-			return (function() {
-            Effect.Fade('slideshow' + frame);
+            //Effect.Fade('slideshow' + frame);
+            $('#slideshow' + frame).fadeOut();
             if (frame == end_frame) { frame = start_frame; } else { frame = frame + 1; }
-            setTimeout("Effect.Appear('slideshow" + frame + "');", 850);
-            setTimeout(switch_slides(frame, start_frame, end_frame, delay), delay + 850);
-			})
+            setTimeout("$('#slideshow" + frame + "').fadeIn()", 850);
+            setTimeout("switch_slides("+frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
 			}
 			{/literal}
 			</script>
@@ -468,10 +468,10 @@ plugins : "",
 		 <div class="grid_12 holder">
 				<span class="copy">2011 &copy; All rights reserved </span>
 				<ul>
-					<li><a href="index.php">Back to Sq 1</a></li>
-					<li><a href="aboutus.php">Know Us</a></li>
-					<li><a href="tnc.php">Know this too</a></li>
-					<li><a href="privacy.php">Keeping your secret</a></li>
+					<li><a href="/">Back to Sq 1</a></li>
+					<li><a href="/aboutus.php">Know Us</a></li>
+					<li><a href="/tnc.php">Know this too</a></li>
+					<li><a href="/privacy.php">Keeping your secret</a></li>
 				</ul>
 			</div>
 			<div class="clear">&nbsp;</div>
@@ -548,11 +548,11 @@ plugins : "",
 			-->
 			<div class="tab">
 				<ul> 
-					<li><a {if $tpl_name eq 'index.tpl'}class='active'{/if}  target="_top" href="index.php" >Home</a></li>
-					<li><a {if $tpl_name eq 'how-it-works.tpl'}class='active'{/if}  target="_top" href="how-it-works.php">How it Works</a></li>
-					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="press.php">What Press Says</a></li>
-					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="pricing.php">Pricing</a></li>
-					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="faq.php">FAQ</a></li>
+					<li><a {if $tpl_name eq 'index.tpl'}class='active'{/if}  target="_top" href="/" >Home</a></li>
+					<li><a {if $tpl_name eq 'how-it-works.tpl'}class='active'{/if}  target="_top" href="/how-it-works.php">How it Works</a></li>
+					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="/press.php">What Press Says</a></li>
+					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="/pricing.php">Pricing</a></li>
+					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="/faq.php">FAQ</a></li>
 					<li><a target="_blank" href="http://blog.stalkninja.com">Blog</a></li>
 					
 				</ul>
