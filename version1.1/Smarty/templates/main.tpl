@@ -340,32 +340,35 @@ plugins : "",
 	</div>
 			</td>
 			<td style="width:600px;">
+			
 	<!-- insert side content here -->
+
 		<div id="banner-right">
-			<div id="image-1" style="display:none">
+			<div id="slideshow1" class = "slide" style="display:visible">
 				<img src="/img/push.gif">
 				<h2>Get your pending tech work pushed</h2>
 			</div>
-			<div id="image-2" style="display:none">
+			<div id="slideshow2" class = "slide" style="display:none">
 				<img src="/img/propagating-word.png">
 				<h2>Your project reaches more than 5000 college hackers.</h2>
 			</div>
-			<div id="image-3" style="display:none">
+			<div id="slideshow3" class = "slide" style="display:none">
 				<img src="/img/solve-task.png">
 				<h2>Evaluate before you hire via project task.</h2>
 			</div>
-			<div id="image-4" style="display:none">
+			<div id="slideshow4" class = "slide" style="display:none">
 				<img src="/img/deposit.png">
 				<h2>We hold the money during the project.</h2>
 			</div>
-			<div id="image-5" style="display:none">
+			<div id="slideshow5" class = "slide" style="display:none">
 				<img src="/img/examiner.png">
 				<h2>We refine & monitor all projects.</h2>
 			</div>
-			<div id="image-6" style="display:visible">
+			<div id="slideshow6" class = "slide" style="display:none">
 				<img src="/img/Staff.png">
 				<h2>Evaluate freshers & build hiring pipeline.</h2>
 			</div>
+						
 		</div>
 		<div class="image-switch">
 			<span class="box">1</span>
@@ -375,6 +378,25 @@ plugins : "",
 			<span class="box">5</span>
 			<span class="box">6</span>
 		</div>
+		<script type="text/javascript">
+			{literal}
+			start_slideshow(1, 6, 2000);
+    
+			function start_slideshow(start_frame, end_frame, delay) {
+			setTimeout(switch_slides(start_frame,start_frame,end_frame, delay), delay);
+			}
+                            
+			function switch_slides(frame, start_frame, end_frame, delay) {
+			return (function() {
+            Effect.Fade('slideshow' + frame);
+            if (frame == end_frame) { frame = start_frame; } else { frame = frame + 1; }
+            setTimeout("Effect.Appear('slideshow" + frame + "');", 850);
+            setTimeout(switch_slides(frame, start_frame, end_frame, delay), delay + 850);
+			})
+			}
+			{/literal}
+			</script>
+
 			</td>
 		</tr>
 
