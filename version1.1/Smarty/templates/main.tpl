@@ -368,8 +368,17 @@ plugins : "",
 				<img src="/img/Staff.png">
 				<h2>Evaluate freshers & build hiring pipeline.</h2>
 			</div>
-			
-					<script type="text/javascript">
+						
+		</div>
+		<div class="image-switch">
+			<span class="box">1</span>
+			<span class="box">2</span>
+			<span class="box">3</span>
+			<span class="box">4</span>
+			<span class="box">5</span>
+			<span class="box">6</span>
+		</div>
+		<script type="text/javascript">
 			{literal}
 			start_slideshow(1, 6, 2000);
     
@@ -387,17 +396,6 @@ plugins : "",
 			}
 			{/literal}
 			</script>
-			
-		</div>
-		<div class="image-switch">
-			<span class="box">1</span>
-			<span class="box">2</span>
-			<span class="box">3</span>
-			<span class="box">4</span>
-			<span class="box">5</span>
-			<span class="box">6</span>
-		</div>
-		
 
 			</td>
 		</tr>
