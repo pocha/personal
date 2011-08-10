@@ -389,7 +389,6 @@ plugins : "",
 				//setTimeout(switch_slides(start_frame,start_frame,end_frame, delay), delay);
         setTimeout("switch_slides("+start_frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
 			}
-			
 			function switch_slides(frame, start_frame, end_frame, delay) {
             $('#slideshow' + frame).fadeOut();
 						$('#slideshow-mark-'+frame).removeClass('active');
@@ -402,6 +401,7 @@ plugins : "",
 			}
 	
 		
+			{/literal}
 			</script>
 
 			</td>
