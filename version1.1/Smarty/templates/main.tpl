@@ -264,22 +264,21 @@ plugins : "",
 		<div id="float-project-text" style="display:none">
 			<h2>Project floating</h2>
 				<p style="font-size:small">Brainstorm to create requirement into project.</p>
-				
 		</div>
 		
 		<div id="approve-project-text" style="display:none">
 			<h2>Review & Approval</h2>
-				<p style="font-size:small">Review project for clarity & feasibility.</p>
+				<p style="font-size:small">We review project for clarity & feasibility.</p>
 		</div>
 	
 		<div id="deposit-money-text" style="display:none">
 			<h2>Deposit project floating fees</h2>
-				<p style="font-size:small">Once project is approved, we intimate the project creator with an invoice.</p>
+				<p style="font-size:small">Once project is approved, we intimate you with an invoice.</p>
 		</div>
 
 		<div id="propagate-word-text" style="display:none">
 			<h2>Getting maximum eye-balls</h2>
-				<p style="font-size:small">We get into action.</p>
+				<p style="font-size:small">StalkNinja get into action.</p>
 		</div>
 
 		<div id="project-interaction-text" style="display:none">
