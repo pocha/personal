@@ -2,11 +2,11 @@
 			  <div style="text-align:left; margin: 10px">
 
 				<div class="para">
-			 <h3>FAQ's about Stalk Ninja</h3>
-
+			 <h3>For people looking to float a project</h3>
+<div class="para">
 <p><b>1. What is StalkNinja?</b></p>
 
-<p>Stalk Ninja is a student freelance portal where people can float there Tech jobs among the brightest students in India. Project creator can select a student(we call them Ninja) for his project, get project done and pay to student.</p>
+<p class="para">Stalk Ninja is a student freelance portal where people can float there Tech jobs among the brightest students in India. Project creator can select a student(we call them Ninja) for his project, get project done and pay to student.</p>
 
 <p><b>2. What is advantage of using StalkNinja?</b></p>
 
@@ -38,7 +38,7 @@
 <p><b>7. How to become a Ninja?</b></p>
 
 <p>To become a ninja, solve the "task" of any of the listed projects on home page and send us the code at admin[at]stalkninja[dot]com, else solve the <b>Ninja Challenge</b> and let us know.</p>
-
+</div>
 <h4> Still stuck, have more queries? Shoot us a mail at admin[at]StalkNinja[dot]com
 </div>
 			  
