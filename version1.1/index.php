@@ -16,13 +16,14 @@
 
 	include("smarty.php");
 	
-	$sum = mysql_fetch_assoc(mysql_query("SELECT SUM(Budget) as Sum FROM Project"));
-	$sum = number_format($sum['Sum'] * 1.15);
+	$sum = mysql_fetch_assoc(mysql_query("SELECT Count(*) as count FROM Project"));
+	$sum = $sum['count'];
 	$datetime1 = new DateTime('2010-12-18');
 	$datetime2 = new DateTime('now');
 	$interval = date_diff($datetime2, $datetime1);
 	$months = $interval->format("%m");
 	$days = $interval->format("%a") - $months * 30;
+	
 	$stats = array("Money" => $sum, "Months" => $months, "Days" => $days);
 	
 	$smarty->assign("stats",$stats);
