@@ -1121,12 +1121,21 @@ blockquote {
 	margin-top: 10px;
 }
 
-.image-switch span {
+.image-switch a {
 	padding: 4px 8px;
 	font-size: small;
 	margin-right: 10px;
 	background-color: inherit;
 	color:white;
+}
+.image-switch a:hover, .image-switch a.active {
+	background-color: white;
+	color:inherit;
+}
+
+#banner-right {
+	height: 300px;
+	max-height: 300px;
 }
 #banner-right img {
 	height: 200px;

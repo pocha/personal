@@ -344,7 +344,7 @@ plugins : "",
 	<!-- insert side content here -->
 
 		<div id="banner-right">
-			<div id="slideshow1" class = "slide" style="display:visible">
+			<div id="slideshow1" class = "slide" >
 				<img src="/img/push.gif">
 				<h2>Get your pending tech work pushed</h2>
 			</div>
@@ -371,30 +371,37 @@ plugins : "",
 						
 		</div>
 		<div class="image-switch">
-			<span class="box">1</span>
-			<span class="box">2</span>
-			<span class="box">3</span>
-			<span class="box">4</span>
-			<span class="box">5</span>
-			<span class="box">6</span>
+			<a id="slideshow-mark-1" class="box active">1</a>
+			<a id="slideshow-mark-2" class="box">2</a>
+			<a id="slideshow-mark-3" class="box">3</a>
+			<a id="slideshow-mark-4" class="box">4</a>
+			<a id="slideshow-mark-5" class="box">5</a>
+			<a id="slideshow-mark-6" class="box">6</a>
 		</div>
 		<script type="text/javascript">
 			{literal}
+			
+			var slideshow_t1, slideshow_t2;
+
 			start_slideshow(1, 6, 5000);
     
 			function start_slideshow(start_frame, end_frame, delay) {
 				//setTimeout(switch_slides(start_frame,start_frame,end_frame, delay), delay);
         setTimeout("switch_slides("+start_frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
 			}
-                            
+			
 			function switch_slides(frame, start_frame, end_frame, delay) {
-            //Effect.Fade('slideshow' + frame);
             $('#slideshow' + frame).fadeOut();
+						$('#slideshow-mark-'+frame).removeClass('active');
+
             if (frame == end_frame) { frame = start_frame; } else { frame = frame + 1; }
-            setTimeout("$('#slideshow" + frame + "').fadeIn()", 850);
-            setTimeout("switch_slides("+frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
+            
+						slideshow_t1 = setTimeout("$('#slideshow" + frame + "').fadeIn(); $('#slideshow-mark-"+frame+"').addClass('active');", 850);
+            
+						slideshow_t2 = setTimeout("switch_slides("+frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
 			}
-			{/literal}
+	
+		
 			</script>
 
 			</td>
