@@ -88,7 +88,7 @@ function gallery() {
 
 <p style="font-size:1.5em;">{$stats.Money}* projects have floated in past {$stats.Months} months {if $stats.Days > 0} {$stats.Days} days {/if} & {$ninjaCount} students have solved task of at least one of the projects to get themselves featured on <a href="/ninja-list.php" target="_blank">Wall of Ninjas</a></p> 
 <p style="font-size:small; font-style:italic; text-align:left; margin-top:0">* The figure includes canceled projects too.</p>
-<div class="box" style="margin-top: 2em; margin-bottom:2em; font-size:2em; background-color:#EFEFEF" >Ready with your requirement ? <a class="btn blue" target="_blank" href="/project/new">Float Project</a> 
+<div class="box" style="margin-top: 2em; margin-bottom:2em; font-size:2em; background-color:#EFEFEF" >Ready with your requirement ? <a class="btn blue" target="_blank" href="/project/new">Float Project for free.*</a><p style="font-size:medium; font-style:italic;">*You need to pay once we approve your project not while floating the project.</p>
 <p style="font-size: small; margin-top:0.1em">We would ideally like you to go through at least one project before you float one. We spend quite a bit of time reviewing new projects.</p>
 <p style="font-size:medium">Looking to be one of the {$ninjaCount} Ninja(s) ? Solve the <a target="_blank" href="/survey-student">Ninja Challenge</a></p>
 </div>
