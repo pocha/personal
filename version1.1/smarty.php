@@ -20,6 +20,7 @@
 		$logged_in = 1;
 		if ($logging_necessary == true ) {//send mail for attempts
 			//To-do - dump into database
+ 			$header = "From: admin@stalkninja.com\r\n";
 			mail("admin@stalkninja.com","Visitor to ".$_SESSION['url'],$_COOKIE['Id'],$header);	
 		}
 	}
