@@ -1,4 +1,5 @@
 <?php
+$logging_necessary = true;
 
 $error = false;
 $message = "";
@@ -152,7 +153,6 @@ else {
         $smarty->display("main.tpl");
         exit;
     }
-
 
 
 //$smarty->assign("files", $files);

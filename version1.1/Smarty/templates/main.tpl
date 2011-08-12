@@ -561,7 +561,6 @@ plugins : "",
 					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="/pricing.php">Pricing</a></li>
 					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="/faq.php">FAQ</a></li>
 					<li><a target="_blank" href="http://blog.stalkninja.com">Blog</a></li>
-					
 				</ul>
 			</div>
 				</td>
@@ -575,7 +574,8 @@ plugins : "",
 		<div style="clear:both"></div>
 		</div>
 
-
+<a class="rpxnow" onclick="return false;" style="display:none" id="sign-in-button"
+href="https://stalkninja.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fstalkninja.com%2Frpx.php"> Sign In </a> 
 
 </body>
 <script type="text/javascript">
@@ -589,6 +589,15 @@ plugins : "",
     ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
     var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
   })();
+{/literal}
+</script>
+
+<!-- sign in stuff here -->
+<script type="text/javascript">
+{literal}
+  var rpxJsHost = (("https:" == document.location.protocol) ? "https://" : "http://static.");
+  document.write(unescape("%3Cscript src='" + rpxJsHost +
+"rpxnow.com/js/lib/rpx.js' type='text/javascript'%3E%3C/script%3E"));
 {/literal}
 </script>
 

@@ -1,7 +1,8 @@
 <?php
 
 
-
+ $logging_necessary = true;
+ include ("smarty.php");
  include("mysql.php");
 
 	$projects = array();
@@ -12,7 +13,6 @@
 		$projects[] = $line;
 	}
 
- include ("smarty.php");
  $smarty->assign("tpl_name","survey-student.tpl");
  $smarty->assign("projects",$projects);
  $smarty->display("main.tpl");
