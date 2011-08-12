@@ -424,7 +424,7 @@ plugins : "",
 		<div class="container_12">
 						
 					
-<div style="margin:10px;">Subscribe to <a href="">ninjaclan@googlegroups.com</a> & get intimated of new project. Its the hangout place for existing & wanna-be Ninjas. </div>
+<div style="margin:10px;">Subscribe to <a href="http://groups.google.com/group/ninjaclan">ninjaclan@googlegroups.com</a> & get intimated of new project. Its the hangout place for existing & wanna-be Ninjas. </div>
 <!-- Begin MailChimp Signup Form -->
 
 <div id="mc_embed_signup" style="width: 800px;">
