@@ -37,7 +37,7 @@ $post_data = array('token' => $token,
 			break;
 
 		}*/
-		setcookie('Id', $auth_info['profile']['url'],);
+		setcookie('Id', $auth_info['profile']['url']);
 
 		mail("admin@stalkninja.com","Authentication Passed",$auth_info['profile']['url']." from - ".$_SESSION['previous_url']." to - ".$_SESSION['url'], $header);
 		header('Location: '.$_SESSION['url']);
