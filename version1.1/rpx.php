@@ -47,7 +47,11 @@ $post_data = array('token' => $token,
 ?>
 <script type="text/javascript">
 		alert('login failed. Redirecting back');
-		window.location = "<?php $_SESSION['previous_url'] ?>"
+<?php		if (isset($_SESSION['previous_url'])) { ?>
+			window.location = "<?php $_SESSION['previous_url'] ?>"
+<?php		} else { ?>
+			window.location = "/pre-login.php"
+<?php } ?>
 </script>
 <?php 
 	}

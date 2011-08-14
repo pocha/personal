@@ -26,7 +26,8 @@
 	}
 	else {
 		if ($logging_necessary == true ){	//redirect to login page
-			header('Location: https://stalkninja.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fstalkninja.com%2Frpx.php');
+			header("Location: /pre-login.php");
+			//header('Location: https://stalkninja.rpxnow.com/openid/v2/signin?token_url=http%3A%2F%2Fstalkninja.com%2Frpx.php');
 		}
 	}
 
