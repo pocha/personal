@@ -1,4 +1,5 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" 
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
 <html xmlns="http://www.w3.org/1999/xhtml">
 
 <html>
@@ -6,6 +7,9 @@
 	<title>{$title}</title>
 	<link rel="stylesheet" href="/css/main.css" type="text/css" media="all">
 	<script type="text/javascript" src="/js/jquery-1.4.2.js"></script>
+	
+
+
 
 
 <script type="text/javascript" src="/js/jscripts/tiny_mce/tiny_mce.js"></script>
@@ -575,21 +579,15 @@ plugins : "",
 		</div>
 
 
+<!-- irc chat widget -->
+<!--<div style="position:fixed; right:0; bottom:0; width:647px; height: 400px;">
+	<iframe src="http://webchat.freenode.net?randomnick=1&channels=%23%23sn" width="647" height="400"></iframe>
+</div>-->
+<a class="btn" target="_blank" style="position:fixed; right: 10px; bottom: 30px; font-weight:normal; background-color:#2A2A2A; background-image:none; color:white;" href="http://webchat.freenode.net?randomnick=1&channels=%23%23sn">
+	<span style="font-size:small">Chat with Admin(s) & Ninja(s)</span><br/><span style="font-size:x-small">##sn irc chatroom</span>
+</a>
+
 </body>
-<script type="text/javascript">
-{literal}
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-19358575-3']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-{/literal}
-</script>
-
 
 <!--
 <script type="text/javascript">
