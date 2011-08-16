@@ -5,6 +5,7 @@
 
 		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
 		<img class="arrow" src="/img/arrows/arrow-45.png" style="left:95%;top:5%"/>
+		<img class="arrow" src="/img/arrows/arrow-225.png" style="left:80%;top:20%"/>
 		<img class="main" id="approve-project" src="/img/thumbs-up.png" style="left:100%; top:25%"/>
 		<img class="arrow" src="/img/arrows/arrow-90.png" style="left:110%;top:45%"/>
 		<img class="main" id="deposit-money" src="/img/deposit.png" style="left:100%; top:60%"/>

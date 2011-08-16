@@ -177,26 +177,6 @@ plugins : "",
 {/literal}
 </style>
 
-  <script type="text/javascript" charset="utf-8">
-        {literal}
-  var is_ssl = ("https:" == document.location.protocol);
-  var asset_host = is_ssl ? "https://s3.amazonaws.com/getsatisfaction.com/" : "http://s3.amazonaws.com/getsatisfaction.com/";
-  document.write(unescape("%3Cscript src='" + asset_host + "javascripts/feedback-v2.js' type='text/javascript'%3E%3C/script%3E"));
-  {/literal}
-</script>
-
-<script type="text/javascript" charset="utf-8">
-{literal}
-  var feedback_widget_options = {};
-
-  feedback_widget_options.display = "overlay";  
-  feedback_widget_options.company = "stalkninja";
-  feedback_widget_options.placement = "right";
-  feedback_widget_options.color = "#222";
-  feedback_widget_options.style = "idea";
-  var feedback_widget = new GSFN.feedback_widget(feedback_widget_options);
-  {/literal}
-</script>
 
 
 </head>
@@ -210,7 +190,7 @@ plugins : "",
 			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 			<br/>
 			<div class="message" style="color:#CCCCCC; font-size: 1.2em; float:left;">
-				Get your tech jobs done from college freelancers.
+				Get tech projects done from college freelancers.
 			</div>
 		</div><!-- /#logo -->
 
@@ -240,6 +220,7 @@ plugins : "",
 
 		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
 		<img class="arrow" src="/img/arrows/arrow-45.png" style="left:95%;top:5%"/>
+		<img class="arrow" src="/img/arrows/arrow-225.png" style="left:80%;top:20%"/>
 		<img class="main" id="approve-project" src="/img/thumbs-up.png" style="left:100%; top:25%"/>
 		<img class="arrow" src="/img/arrows/arrow-90.png" style="left:110%;top:45%"/>
 		<img class="main" id="deposit-money" src="/img/deposit.png" style="left:100%; top:60%"/>
@@ -266,48 +247,48 @@ plugins : "",
 				<p style="font-size:small">Point cursor on images to view description</p>
 			</div>
 			
-		<div id="float-project-text" style="display:none">
+		<div id="float-project-text" style="display:none;" class="box">
 			<h3>1. You float a project.</h3>
 				<p style="font-size:small">Brainstorm to create requirement into project.</p>
 				
 		</div>
 		
-		<div id="approve-project-text" style="display:none">
+		<div id="approve-project-text" style="display:none;" class="box">
 			<h3>2. We review & approve.</h3>
 				<p style="font-size:small">Review project for clarity & feasibility.</p>
 		</div>
 	
-		<div id="deposit-money-text" style="display:none">
+		<div id="deposit-money-text" style="display:none;" class="box">
 			<h3>3. You deposit project premium.</h3>
 				<p style="font-size:small">Once project is approved, we intimate the project creator with an invoice.</p>
 		</div>
 
-		<div id="propagate-word-text" style="display:none">
+		<div id="propagate-word-text" style="display:none;" class="box">
 			<h3>4. We propagate your project.</h3>
 				<p style="font-size:small">Your project reaches 450+ registered college developers & more than 5000 students via facebook & google groups.</p>
 		</div>
 
-		<div id="project-interaction-text" style="display:none">
+		<div id="project-interaction-text" style="display:none;" class="box">
 			<h3>5. You interact with Ninjas on discussion board.</h3>
 				<p style="font-size:small">Students & Ninjas start attempting the project task.</p>
 		</div>
 
-		<div id="project-kick-off-text" style="display:none">
+		<div id="project-kick-off-text" style="display:none;" class="box">
 			<h3>6. You select a Ninja for the project.</h3>
 				<p style="font-size:small">The Ninja starts the work & reports to project creator regularly.</p>
 		</div>
 		
-		<div id="we-monitor-text" style="display:none">
+		<div id="we-monitor-text" style="display:none;" class="box">
 			<h3>8. We monitor all the projects.</h3>
 				<p style="font-size:small">We monitor all projects personally. All interaction is mandated to be cced to us.</p>
 		</div>
 
-		<div id="bug-reporting-text" style="display:none">
+		<div id="bug-reporting-text" style="display:none;" class="box">
 			<h3>7. You pass on regular feedback.</h3>
 				<p style="font-size:small">Project creator timely checks for the delivered work & report bugs. The Ninja fix them & report back.</p>
 		</div>
 	
-		<div id="project-done-text" style="display:none">
+		<div id="project-done-text" style="display:none;" class="box">
 			<h3>9. The project gets done & Ninja is paid.</h3>
 				<p style="font-size:small">Once project creator okays the deliverables, Ninja is paid post review & rating exchange. </p>
 		</div>
@@ -583,11 +564,31 @@ plugins : "",
 <!--<div style="position:fixed; right:0; bottom:0; width:647px; height: 400px;">
 	<iframe src="http://webchat.freenode.net?randomnick=1&channels=%23%23sn" width="647" height="400"></iframe>
 </div>-->
-<a class="btn" target="_blank" style="position:fixed; right: 10px; bottom: 30px; font-weight:normal; background-color:#2A2A2A; background-image:none; color:white;" href="http://webchat.freenode.net?randomnick=1&channels=%23%23sn">
+<a id="irc-chatroom" class="btn" target="_blank" style="position:fixed; right: 10px; bottom: 30px; font-weight:normal; background-color:#2A2A2A; background-image:none; color:white;" href="http://webchat.freenode.net?randomnick=1&channels=%23%23sn">
 	<span style="font-size:small">Chat with Admin(s) & Ninja(s)</span><br/><span style="font-size:x-small">##sn irc chatroom</span>
 </a>
 
+<a class="iframe" style="background-color:black; background-image: url('/img/contact-us.png'); height: 102px; right:0; margin-right: -7px; position:fixed; text-indent: -10000px; top: 40%; width:42px; z-index: 10000" id="contact-us" href="/contact.php">Contact Us</a>
+<style type="text/css">
+{literal}
+	a.iframe:hover {
+		padding-right: 5px;
+	}
+{/literal}
+</style>
+
 </body>
+
+<script type="text/javascript" src="/fancybox/jquery.fancybox-1.3.4.pack.js"></script>
+<link rel="stylesheet" href="/fancybox/jquery.fancybox-1.3.4.css" type="text/css" media="screen" />
+<script type="text/javascript">
+{literal}
+	$(document).ready(function(){
+		$("a#contact-us").fancybox({
+		});	
+	})
+{/literal}
+</script>
 
 <!--
 <script type="text/javascript">

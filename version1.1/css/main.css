@@ -1112,9 +1112,11 @@ blockquote {
 		}
 		#how-it-works #text-holder {
 			position:absolute;
-			left:30%; top:30% ; height:50%; width:65%;
-			overflow-y: hidden;
+			left:30%; top:25% ; height:50%; width:65%;
 			font-size: 0.8em;
+		}
+		#how-it-works #text-holder div{
+		 padding: 0
 		}
 
 .image-switch {
