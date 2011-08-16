@@ -210,7 +210,7 @@ plugins : "",
 		<p style="font-size:small">{$headersecondary}</p> 
 				</td>
 				{if $tpl_name != 'float-project.tpl' && $tpl_name != 'pre-login.tpl'}
-				<td style="text-align:right">
+				<td style="text-align:right; width:300px;">
 					<a href="/project/new" class="btn blue" style="font-size:1.5em; margin:1em;">Float a new Project</a>
 				</td>
 				{/if}
