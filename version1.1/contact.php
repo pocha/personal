@@ -58,7 +58,7 @@ Twitter - @pocha
 		curl_setopt($session, CURLOPT_HEADER, false);
 		curl_setopt($session, CURLOPT_RETURNTRANSFER, true);
 		 
-		$respose = curl_exec($session);
+		$response = curl_exec($session);
 		curl_close($session);
 		
 		if (preg_match("/error/",$response)) {
