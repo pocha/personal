@@ -203,8 +203,19 @@ plugins : "",
 
 <div id="header" class="section">
 	<div class="contents" style="text-align:center; width: 960px;  text-align:left">
+		<table>
+			<tr>
+				<td>
 		<h2 style="margin:0; padding: 10px; color:white;">{$headermain}</h2>
 		<p style="font-size:small">{$headersecondary}</p> 
+				</td>
+				{if $tpl_name != 'float-project.tpl' && $tpl_name != 'pre-login.tpl'}
+				<td style="text-align:right">
+					<a href="/project/new" class="btn blue" style="font-size:1.5em; margin:1em;">Float a new Project</a>
+				</td>
+				{/if}
+			</tr>
+		</table>
  	</div><!-- /.contents -->
 </div><!-- /#header -->
 
