@@ -5,7 +5,7 @@
 	
 	if (isset($_POST['Email'])) {
 		
-		$url = 'http://sendgrid.com/';
+		$url = 'https://sendgrid.com/';
 		$user = 'stalkninja';
 		$pass = 'stalkninja123';
 		 
@@ -29,7 +29,7 @@ Ashish Sharma - Founder & Biz Head,
 pocha@stalkninja.com +91 95 3838 4545
 http://linkedin.com/in/thinkingpocha
 Twitter - @pocha
-"
+",
 
 				'from'      => 'admin@stalkninja.com',
 			);
