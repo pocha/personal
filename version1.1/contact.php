@@ -20,10 +20,10 @@ We want you to know that we have received your email. If you need to follow-up, 
 
 We get quite a few funding related queries. If you have similar intention (we would get to know it better after checking your email), we would write back shortly.
 
-We currently are looking out for mentors who like what we are doing & would like to come on our advisory board.
+We currently are looking out for mentors who like what we are doing & would like to come on our advisory board. If you know of someone who fit the bill, do refer us to them. 
 
 
-Thanks.
+Thanks for taking time to write & the next time we meet, coffee/beer is on us :). We are in Bangalore, India btw. 
 
 Ashish Sharma - Founder & Biz Head,
 pocha@stalkninja.com +91 95 3838 4545
