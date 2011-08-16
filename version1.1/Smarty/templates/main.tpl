@@ -576,7 +576,7 @@ plugins : "",
 	<iframe src="http://webchat.freenode.net?randomnick=1&channels=%23%23sn" width="647" height="400"></iframe>
 </div>-->
 <a id="irc-chatroom" class="btn" target="_blank" style="position:fixed; right: 10px; bottom: 30px; font-weight:normal; background-color:#2A2A2A; background-image:none; color:white;" href="http://webchat.freenode.net?randomnick=1&channels=%23%23sn">
-	<span style="font-size:small">Chat with Admin(s) & Ninja(s)</span><br/><span style="font-size:x-small">##sn irc chatroom</span>
+	<span style="font-size:small">Chat with StalkNinja users</span><br/><span style="font-size:x-small">irc chatroom (channel ##sn)</span>
 </a>
 
 <a class="iframe" style="background-color:black; background-image: url('/img/contact-us.png'); height: 102px; right:0; margin-right: -7px; position:fixed; text-indent: -10000px; top: 40%; width:42px; z-index: 10000" id="contact-us" href="/contact.php">Contact Us</a>
