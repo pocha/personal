@@ -18,7 +18,7 @@
 
 We want you to know that we have received your email. If you need to follow-up, feel free to reply to this email.
 
-We get quite a few funding related queries. If you have similar intention (we would get to know it better after checking your email), we would write back shortly.
+We get quite a few funding related queries. If you have similar intention (we would know it better after checking your email), you might get a canned response shortly, but we follow it up with a personal message soon.
 
 We currently are looking out for mentors who like what we are doing & would like to come on our advisory board. If you know of someone who fit the bill, do refer us to them. 
 
@@ -27,9 +27,9 @@ Thanks for taking time to write & the next time we meet, coffee/beer is on us :)
 
 Ashish Sharma - Founder & Biz Head,
 pocha@stalkninja.com +91 95 3838 4545
-
-Gaurav Singh - Founder & Tech Head,
-gaurav@stalkninja.com",
+http://linkedin.com/in/thinkingpocha
+Twitter - @pocha
+"
 
 				'from'      => 'admin@stalkninja.com',
 			);
