@@ -23,6 +23,10 @@
 	$interval = date_diff($datetime2, $datetime1);
 	$months = $interval->format("%m");
 	$days = $interval->format("%a") - $months * 30;
+	if ($days > 31) {
+		$days = 0;
+		$months++;
+	}
 	
 	$stats = array("Money" => $sum, "Months" => $months, "Days" => $days);
 	
