@@ -932,6 +932,7 @@ blockquote {
 		margin-top: 0px;
 		padding-top: 0px;
 		font-size: small;
+		color: #CCCCCC;
 	}
 	.message, .message td{
 		border: 0;
