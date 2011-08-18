@@ -160,11 +160,11 @@ h5, h6 {
 
 /* @group Lists */
 
-.prose ul, ul.bullets, ul.bullets ul {	/* unordered lists more often DON'T require bullets except in extended bits of writing - use the .prose class or apply directly with .bullets */
+.prose ul, ul.bullets, ul.bullets ul, .project_desc ul {	/* unordered lists more often DON'T require bullets except in extended bits of writing - use the .prose class or apply directly with .bullets */
 	list-style-type: disc;
 	margin-left: 1.385em; /* 18px */
 }
-.bullets li {
+.bullets li, .project_desc li {
 	margin-top: 0.5em;			/*  8px */
 	margin-bottom: 1.25em;		/* 18px */
 }
