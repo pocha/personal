@@ -40,7 +40,7 @@
                 },
                 Task: {
                 required: true,
-                minlength: 250
+                minlength: 100
                 },
                 
 	        },

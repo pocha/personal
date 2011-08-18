@@ -505,13 +505,13 @@ plugins : "",
 			<style type="text/css">
 			{literal}
 .tab {
-    background: url("http://snapengage.com/img/site/tab-l2.png") no-repeat scroll 0 0 transparent;
+    background: url("/img/menu-tab-right.png") no-repeat scroll 0 0 transparent;
     float: right;
     height: 36px;
     padding-left: 10px;
 }
 .tab ul {
-    background: url("http://snapengage.com/img/site/tab-r2.png") no-repeat scroll right center #F5F5F5;
+    background: url("/img/menu-tab-left.png") no-repeat scroll right center #F5F5F5;
     font: bold 20px Arial,Helvetica,sans-serif;
     height: 36px;
     padding-right: 10px;
@@ -561,6 +561,7 @@ plugins : "",
 			</div>
 				</td>
 				<td>
+			<img src="/img/india-flag-icon.png"/><br/>
 			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=buttton_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:30px;padding-top:10px; padding-bottom:5px" allowTransparency="true"></iframe>
 			<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1308486732491&amp;count=horizontal&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdev.stalkninja.com%2F&amp;related=pocha&amp;text=Enabling%20startups%20to%20outsource%20jobs%20to%20students&amp;url=http%3A%2F%2Fstalkninja.com&amp;via=stalkninja" class="twitter-share-button twitter-count-horizontal" style="height: 20px; width: 60px; display: block;" title="Twitter For Websites: Tweet Button"></iframe>
 			</td>
