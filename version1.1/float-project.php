@@ -84,7 +84,7 @@ if ($_GET['token'] == NULL) {
         $to = "admin@stalkninja.com, $email";
         $subject = "$title: Submitted at StalkNinja ";
         $header = "From: admin@stalkninja.com\r\n";
-        $message = "Name: $name \n Email: $email \n Thanks for submitting Project $title at StalkNinja.\n Link to edit project -  http://stalkninja.com/project/edit/$token \n Link to view project - http://stalkninja.com/project/$id";
+        $message = "Name: $name \n Email: $email \n Phone: $contact \n Thanks for submitting Project $title at StalkNinja.\n Link to edit project -  http://stalkninja.com/project/edit/$token \n Link to view project - http://stalkninja.com/project/$id";
         mail($to, $subject, $message, $header);
         //put upload data
         if (!is_dir($dir)) {
