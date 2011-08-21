@@ -190,7 +190,7 @@ plugins : "",
 			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 			<br/>
 			<div class="message" style="color:#8FA52D; font-size: 1.2em; float:left;">
-				Get tech projects done from college hackers.
+				Get tech projects done from college developers.
 			</div>
 		</div><!-- /#logo -->
 
