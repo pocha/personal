@@ -88,9 +88,12 @@
 
                 <table class="project_table">
                     <tr>
+												<td style="width:120px">
+													<iframe frameborder=0 width=120 height=80 style="margin:0; padding:0" src="/gapi/use-me.php?url=/project/{$project.Id}"></iframe>
+												</td>
 
 										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
-                        <td width="400"><label style="text-align: center;"> Awarded to: {foreach from=$takers item=n} {if $n.Status}<a href="/ninja/{$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
+                        <td width="200"><label style="text-align: center;"> Awarded to: {foreach from=$takers item=n} {if $n.Status}<a href="/ninja/{$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>
                         <td>
 																	<div id="fb_share_1" style="float: right; margin-left: 10px;"><a name="fb_share" type="box_count" share_url="http://stalkninja.com//project/{$project.Id}" href="http://www.facebook.com/sharer.php" onclick="javascript:_gaq.push(['_trackEvent','outbound-article','www.facebook.com/sharer.php']);">Share</a></div><div><script src="http://static.ak.fbcdn.net/connect.php/js/FB.Share" type="text/javascript"></script></div>
 					
