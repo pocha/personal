@@ -472,9 +472,9 @@ plugins : "",
 				<span class="copy">2011 &copy; All rights reserved </span>
 				<ul>
 					<li><a href="/">Back to Sq 1</a></li>
-					<li><a href="/aboutus.php">Know Us</a></li>
-					<li><a href="/tnc.php">Know this too</a></li>
-					<li><a href="/privacy.php">Keeping your secret</a></li>
+					<li><a href="/aboutus">Know Us</a></li>
+					<li><a href="/tnc">Know this too</a></li>
+					<li><a href="/privacy">Keeping your secret</a></li>
 				</ul>
 			</div>
 			<div class="clear">&nbsp;</div>
@@ -552,10 +552,10 @@ plugins : "",
 			<div class="tab">
 				<ul> 
 					<li><a {if $tpl_name eq 'index.tpl'}class='active'{/if}  target="_top" href="/" >Home</a></li>
-					<li><a {if $tpl_name eq 'how-it-works.tpl'}class='active'{/if}  target="_top" href="/how-it-works.php">How it Works</a></li>
-					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="/press.php">What Press Says</a></li>
-					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="/pricing.php">Pricing</a></li>
-					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="/faq.php">FAQ</a></li>
+					<li><a {if $tpl_name eq 'how-it-works.tpl'}class='active'{/if}  target="_top" href="/how-it-works">How it Works</a></li>
+					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="/press">What Press Says</a></li>
+					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="/pricing">Pricing</a></li>
+					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="/faq">FAQ</a></li>
 					<li><a target="_blank" href="http://blog.stalkninja.com">Blog</a></li>
 				</ul>
 			</div>
@@ -580,7 +580,7 @@ plugins : "",
 	<span style="font-size:small">Chat with StalkNinja users</span><br/><span style="font-size:x-small">irc chatroom (channel ##sn)</span>
 </a>
 
-<a class="iframe" style="background-color:black; background-image: url('/img/contact-us.png'); height: 102px; right:0; margin-right: -7px; position:fixed; text-indent: -10000px; top: 40%; width:42px; z-index: 10000" id="contact-us" href="/contact.php">Contact Us</a>
+<a class="iframe" style="background-color:black; background-image: url('/img/contact-us.png'); height: 102px; right:0; margin-right: -7px; position:fixed; text-indent: -10000px; top: 40%; width:42px; z-index: 10000" id="contact-us" href="/contact">Contact Us</a>
 <style type="text/css">
 {literal}
 	a.iframe:hover {
