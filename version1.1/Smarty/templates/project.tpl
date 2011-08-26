@@ -130,7 +130,7 @@
 								{if $project.Task}
 								<h3> Task: </h3>
 									<div class="para">{$project.Task}</div>
-									<ul style="color:black">
+									<ul style="color:black; font-size:small; font-style:italic">
 										<li>Only those Ninja(s) would be considered for the project who would be able to do the task.</li>
 										<li>If you are attempting the task, drop a comment in the discussion board. Feel free to ask for any help.</li>
 										<li>Post task completion, send the code to admin@stalkninja.com & drop a comment on the discussion board of task completion</li>
