@@ -1,4 +1,10 @@
-
+<style type="text/css">
+{literal}
+	body {
+		background-color: #EFEFEF;
+	}
+{/literal}
+</style>
 <br/>
 	<div style="text-align:left">
             <h3 style="margin-top: 5px;">Total {$ninjas|@count} Ninja's available to be engaged.</h3>

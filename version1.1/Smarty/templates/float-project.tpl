@@ -2,7 +2,7 @@
 <style type="text/css">
 {literal}
 	body {
-		background-color: #DCDCDC;
+		background-color: #EFEFEF;
 	}
 {/literal}
 </style>
