@@ -1,19 +1,9 @@
-GAPI is the Google Analytics PHP5 Interface. 
+This widget just shows you page views. You need to pass the page as parameter
 
-http://code.google.com/p/gapi-google-analytics-php-interface/
+Usage - http://path/to/this/folder/use-me.php?url=/page/url
 
-Features:
+For my case it worked as 
 
-* Supports CURL and fopen HTTP access methods, with autodetection
-* PHP arrays for Google Analytics metrics and dimensions
-* Account data object mapping - get methods for parameters
-* Report data object mapping - get methods for metrics and parameters
-* Easy filtering, using a GAPI query language for Google Analytics filters
-* Full PHP5 Object Oriented code, ready for use in your PHP application 
+	http://stalkninja.com/gapi/use-me.php?url=/project/108
 
-Version Log:
-
-1.3 - This version contains fixes for the handling of very large metric values represented in scientific notation. Thanks to austinrehab for raising this issue. 
-1.2 - Custom filtering for GAPI. Fix for reverse sorting.
-1.1 - Object based storage for account data.
-0.9 - GAPI Beta. Object based storage for report data.
+Dont forget to change the start date in iframe.php . I have set it to '2010-12-18' - the first day of my website www.stalkninja.com launch.

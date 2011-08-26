@@ -1,3 +1,4 @@
+<script type="text/javascript" src="js/jquery.appear-1.1.1.min.js"></script>
 <style type="text/css">
 {literal}
 #gallery {
@@ -135,7 +136,19 @@
 		{/literal}
 		</style>
 
-
-
-
 <br/><br/>
+
+<div id="projects-neeche" style="text-align:center; width:100px; height:150px; position:fixed; bottom:10px; left:0; margin:0; padding:0">	
+	<img src="img/scroll-down-for-project.png" style="height:65%"/>
+	<br/>
+	<img src="img/arrow-animated.gif" style="height:30%"/>
+</div>
+<script type="text/javascript">
+{literal}
+	$(document).ready(function() {
+		$("#footer").appear(function(){
+			$("#projects-neeche").hide();
+		});
+	});
+{/literal}
+</script>
