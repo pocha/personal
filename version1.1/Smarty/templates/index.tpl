@@ -1,4 +1,3 @@
-<script type="text/javascript" src="js/jquery.appear-1.1.1.min.js"></script>
 <style type="text/css">
 {literal}
 #gallery {
@@ -145,10 +144,19 @@
 </div>
 <script type="text/javascript">
 {literal}
-	$(document).ready(function() {
-		$("#footer").appear(function(){
-			$("#projects-neeche").hide();
-		});
-	});
+$(document).ready(function(){
+	$('#footer').bind('inview', function (event, visible) {
+	//alert("m here");
+		if (visible == true) {
+			$("#projects-neeche").hide('slow');
+			//alert("visible");
+		} else {
+			// element has gone out of viewport
+			$("#projects-neeche").show();
+			//alert("non visible");
+		}
+	});	
+});
 {/literal}
 </script>
+<script type="text/javascript" src="js/jquery.inview.js"></script>
