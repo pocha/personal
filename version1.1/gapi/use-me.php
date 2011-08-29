@@ -7,7 +7,7 @@
 <p style="font-size:10px; color:#999999"><img src="google.png" align="top" style="height:15px"/> Analytics</p>
 <img id=loading src="loading.gif" style="height:25px;"/>
 <p><iframe id='iframe' src="iframe.php?url=<?php echo $_GET['url']; ?>" frameborder=0 height="25" width=100  onload="hideloading(this)" style="display:none;font-size:40px"></iframe></p>
-<p style="color:#999999;font-size:15px;">Page Views</p>
+<p style="color:#999999;font-size:15px;">Unique Visits</p>
 </div>
 <script type="text/javascript">
 	function hideloading() {
