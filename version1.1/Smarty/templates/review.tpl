@@ -114,6 +114,7 @@ a.slidePrev, a.slideNext {
 .quote-container {
 	margin-left: 45px;
 	float:left;
+	max-width: 400px;
 }
 
 .quote .quoteBox-1 {
@@ -199,7 +200,7 @@ a.slidePrev, a.slideNext {
 												</div>
 											</div>
 						<div class="quoteAuthor">
-						<p class="name">{$r.Ninja.Name}, {$r.Ninja.Year} year, {$r.Ninja.College}</p>
+						<p class="name">{$r.Ninja.Name}, {$r.Ninja.Year}, {$r.Ninja.College}</p>
 						<p class="details">Has rating {$r.Ninja.Rating}, {$r.Ninja.TotalProjects} projects completed, INR {$r.Ninja.TotalEarned} cash earned</p>
 						</div>
 
