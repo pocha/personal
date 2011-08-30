@@ -155,7 +155,7 @@ a.slidePrev, a.slideNext {
 <div id="testimonials">
 	<div id="Slideshow">
 			<div id="SlideTop"></div>
-	<h2 style="margin:0">What project creators & doers say :-</h2>
+	<h2>What project creators & doers say :-</h2>
 			<div id="SlideRepeat"></div>
 			<div id="SlideBottom"></div>
 			<div id="Slides">
