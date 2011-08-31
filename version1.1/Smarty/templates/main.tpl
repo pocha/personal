@@ -224,10 +224,7 @@ plugins : "",
 <div style="background:url('/img/bg-w4.png') repeat-x scroll 0 0; display:block; width:100%;">
 
 <div style="width:960px; margin:0 auto">
-	<table>
-		<tr>
-			<td>
-	<div id="how-it-works" style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px;">
+	<div id="how-it-works" style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px; float:left;">
 
 		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
 		<img class="arrow" src="/img/arrows/arrow-45.png" style="left:95%;top:5%"/>
@@ -334,77 +331,13 @@ plugins : "",
 		</div>
 
 	</div>
-			</td>
-			<td style="width:600px;">
 			
 	<!-- insert side content here -->
+	<div style="float:right;">
+		{include file="feature.tpl"}	
+	</div>
 
-		<div id="banner-right">
-			<div id="slideshow1" class = "slide" >
-				<img src="/img/push.gif">
-				<h2>Get your pending tech work pushed</h2>
-			</div>
-			<div id="slideshow2" class = "slide" style="display:none">
-				<img src="/img/propagating-word.png">
-				<h2>Your project reaches more than 5000 college hackers.</h2>
-			</div>
-			<div id="slideshow3" class = "slide" style="display:none">
-				<img src="/img/solve-task.png">
-				<h2>Evaluate before you hire via project task.</h2>
-			</div>
-			<div id="slideshow4" class = "slide" style="display:none">
-				<img src="/img/deposit.png">
-				<h2>We hold the money during the project.</h2>
-			</div>
-			<div id="slideshow5" class = "slide" style="display:none">
-				<img src="/img/examiner.png">
-				<h2>We refine & monitor all projects.</h2>
-			</div>
-			<div id="slideshow6" class = "slide" style="display:none">
-				<img src="/img/Staff.png">
-				<h2>Evaluate freshers & build hiring pipeline.</h2>
-			</div>
-						
-		</div>
-		<div class="image-switch">
-			<a id="slideshow-mark-1" class="box active">1</a>
-			<a id="slideshow-mark-2" class="box">2</a>
-			<a id="slideshow-mark-3" class="box">3</a>
-			<a id="slideshow-mark-4" class="box">4</a>
-			<a id="slideshow-mark-5" class="box">5</a>
-			<a id="slideshow-mark-6" class="box">6</a>
-		</div>
-		<script type="text/javascript">
-			{literal}
-			
-			var slideshow_t1, slideshow_t2;
-
-			start_slideshow(1, 6, 5000);
-    
-			function start_slideshow(start_frame, end_frame, delay) {
-				//setTimeout(switch_slides(start_frame,start_frame,end_frame, delay), delay);
-        setTimeout("switch_slides("+start_frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
-			}
-			function switch_slides(frame, start_frame, end_frame, delay) {
-            $('#slideshow' + frame).fadeOut();
-						$('#slideshow-mark-'+frame).removeClass('active');
-
-            if (frame == end_frame) { frame = start_frame; } else { frame = frame + 1; }
-            
-						slideshow_t1 = setTimeout("$('#slideshow" + frame + "').fadeIn(); $('#slideshow-mark-"+frame+"').addClass('active');", 850);
-            
-						slideshow_t2 = setTimeout("switch_slides("+frame+","+start_frame+","+end_frame+","+ delay+")", delay + 850);
-			}
-	
-		
-			{/literal}
-			</script>
-
-			</td>
-		</tr>
-
-	
-	</table>
+	<div style="clear:both"></div>
 
 
 </div>
