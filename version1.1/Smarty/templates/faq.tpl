@@ -13,18 +13,18 @@
 <p class="para">
 	<ol class="para">
 		<li>The takers are college students who are cost-effective than regular freelancers.</li>
-		<li>Being a non-professional, they need to complete the task in the project to proove they can do the project.</li>
+		<li>The project creator has the opportunity to test guys via a task before you decide to pick them for the project.</li>
 		<li>Unlike the bidding process, the project creator decide the project budget & duration. We review each project that is floated for clarity of description, feasibility of deliverables/task and appropriateness of budget & duration.</li>
 		<li>We propagate the word of your project to more than 5000 college hackers/developers.</li>
 		<li>We monitor each project to make sure both parties stay fair to each other. We have personal connect on both sides so that both parties work in a trusted environment.</li>
-		<li>Lastly, we hold the money till the project gets completed.</li>
+		<li>Lastly, we hold the money till the project gets completed to make sure that the Ninja gets paid on time as well as the project creator does not face any loss because of incomplete work.</li>
 	</ol><br/>
 		Well, quite a few differentiators we think :).</p>
 
 
 <p><b>2. How do I decide project budget/duration?</b></p>
 
-<p class="para">You are free to come up with a budget/duration. Typically a project spanning 5-7 days of work would cost Rs 2-3k. Once a project is submitted we review it to for appropriate deliverables, budget and timeline. If budget is too low or too high we assist you in deciding the apt value. Usually if budget is as per market standards then it fetches best ninjas and maximum responses.
+<p class="para">You are free to come up with a budget/duration. Typically a project spanning 5-7 days of work would cost Rs 4-5k. Once a project is submitted we review it if deliverables, budget and timeline are appropriate & well defined. If budget is too low or too high we assist you in deciding the apt value. Usually if budget is as per market standards then it fetches best ninjas and maximum responses.
 </p>
 
 <p><b>3. I am unable to understand 'Task' on the project floating page?</b></p>
@@ -33,6 +33,9 @@
 
 <p><b>4. When should I pay for the project?</b></p>
 <p class="para">Once we approve the project & intimate you, you would need to deposit project premium (15% of project budget) with us. You can choose to deposit complete project amount & premium in a single go, else you need to deposit the project amount before the selected Ninja starts the work. We would refund you the project amount if you choose to cancel the project before selecting a Ninja. We would also refund you the premium if the project does not get any taker.</p>
+
+<p><b>5. What are possible modes of payment?</b></p>
+<p class="para">If you have an Indian bank account, you would need to make a payment via bank transfer, cheque or DD. We would give you the details of account in the invoice that we send you. If you are outside, you can do a paypal transfer. We do not have a payment gateway setup yet, so we currently are unable to take payment via credit/debit cards.</p>
 
 <p><b>5. I have floated project, what next?</b></p>
 
