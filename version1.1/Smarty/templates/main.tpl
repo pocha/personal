@@ -72,7 +72,7 @@ plugins : "",
 	.menu-container {
 		position: absolute;
 		z-index: 100;
-		right: 150px;
+		left: 50%;
 		top: 0;
 	}
   .menu  {
