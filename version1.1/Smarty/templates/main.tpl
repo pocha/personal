@@ -513,7 +513,7 @@ plugins : "",
 	<span style="font-size:small">Chat with StalkNinja users</span><br/><span style="font-size:x-small">irc chatroom (channel ##sn)</span>
 </a>
 
-<a class="iframe" style="background-color:black; background-image: url('/img/contact-us.png'); height: 102px; right:0; margin-right: -7px; position:fixed; text-indent: -10000px; top: 40%; width:42px; z-index: 10000" id="contact-us" href="/contact">Contact Us</a>
+<!--<a class="iframe" style="background-color:black; background-image: url('/img/contact-us.png'); height: 102px; right:0; margin-right: -7px; position:fixed; text-indent: -10000px; top: 40%; width:42px; z-index: 10000" id="contact-us" href="/contact.php">Contact Us</a>-->
 <style type="text/css">
 {literal}
 	a.iframe:hover {
@@ -534,7 +534,9 @@ plugins : "",
 	})
 {/literal}
 </script>
-
+{include file="ga.tpl"}
+<script type="text/javascript">var _kiq = _kiq || [];</script>
+<script type="text/javascript" src="//s3.amazonaws.com/ki.js/23678/4HM.js" async="true"></script>
 <!--
 <script type="text/javascript">
 {literal}

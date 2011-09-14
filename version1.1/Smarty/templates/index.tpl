@@ -42,9 +42,6 @@
 
 		<div style="overflow: hidden" id="project-container">
 			{foreach from=$projects item=p}
-			<div style="float:left">
-				<iframe frameborder=0 width=120 height=80 style="margin:0; padding:0" src="/gapi/use-me.php?url=/project/{$p.Id}"></iframe>
-			</div>
 			<div class="btn {$p.Status}" style="text-align:center; width:500px; margin-bottom: 10px; font-size: small; float:left">
 				<a href="/project/{$p.Id}">
 				<table style="width:100%;">

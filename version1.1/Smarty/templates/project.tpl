@@ -88,9 +88,6 @@
 
                 <table class="project_table">
                     <tr>
-												<td style="width:120px">
-													<iframe frameborder=0 width=120 height=80 style="margin:0; padding:0" src="/gapi/use-me.php?url=/project/{$project.Id}"></iframe>
-												</td>
 
 										{if $project.Status != "under-moderation" && $project.Status != "pending-approval" && $project.Status != "cancelled"}
                         <td width="200"><label style="text-align: center;"> Awarded to: {foreach from=$takers item=n} {if $n.Status}<a href="/ninja/{$n.NinjaId}">{$n.Ninja.Name}</a>&nbsp;{/if}{/foreach}</label></td>

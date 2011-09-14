@@ -16,7 +16,7 @@
 
 
 	$projects = array();
-	$result = mysql_query("SELECT * FROM Project JOIN Review ON Project.Id = Review.ProjectId WHERE Review.NinjaId=".mysql_escape_string($_GET['id'])."");
+	$result = mysql_query("SELECT * FROM Project JOIN Review ON Project.Id = Review.ProjectId WHERE Status != 'pending-approval' AND Review.NinjaId=".mysql_escape_string($_GET['id'])."");
 
 	while ($line = mysql_fetch_assoc($result)){
 		
