@@ -118,14 +118,14 @@
 									{/foreach}
 								{/if}
 								
-                <h3> Description: </h3>
+                <h3 id="description"> Description: </h3>
 								<div class="para">{$project.Description}</div>
 								{if $project.Deliverable}
-								<h3> Deliverable: </h3>
+								<h3 id="deliverable"> Deliverable: </h3>
 								<div class="para">{$project.Deliverable}</div>
 								{/if}
 								{if $project.Task}
-								<h3> Task: </h3>
+								<h3 id="task"> Task: </h3>
 									<div class="para">{$project.Task}</div>
 									<ul style="color:black; font-size:small; font-style:italic">
 										<li>Only those Ninja(s) would be considered for the project who would be able to do the task.</li>
@@ -202,7 +202,8 @@
                 </table>
  					</div>
 					
-					{if $project.Status == "completed" }
+					{if $project.Status == "completed"}
+					{if isset($project.ProgressSheet) }
 					<div class="progress_sheet" style="text-align: left;  border-top: 1px solid black;">
 						<h3>Progress Sheet</h3>
 						<div style=" width:80%; margin: 0 auto;">
@@ -210,8 +211,9 @@
 							<!--<textarea style="height: 100px"></textarea>-->
 						</div>
 					</div>
+					{/if}
 
-					<div class="project_reviews" style="text-align: left;  border-top: 1px solid black;">
+					<div id="reviews" class="project_reviews" style="text-align: left;  border-top: 1px solid black; margin-top: 20px;">
 						<h3>Reviews:</h3>
 
 						<table style="font-size:medium">
