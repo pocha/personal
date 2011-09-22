@@ -5,7 +5,7 @@
 	include("functions.php");
 
 	$projects = array();
-	$result = mysql_query("SELECT * FROM Project WHERE Status != 'cancelled' AND Status != 'pending-approval' ORDER BY DateCreated DESC, Id DESC");
+	$result = mysql_query("SELECT * FROM Project WHERE Status = 'open' OR Status = 'in-progress' OR Status = 'completed' ORDER BY DateCreated DESC, Id DESC");
 	while ($line = mysql_fetch_assoc($result)){
 		$data = mysql_fetch_assoc(mysql_query("SELECT * FROM Startup WHERE Id=".$line['StartupId'].""));
 		$line['StartupName'] = $data['Name'];
