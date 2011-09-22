@@ -534,8 +534,6 @@ plugins : "",
 	})
 {/literal}
 </script>
-<script type="text/javascript">var _kiq = _kiq || [];</script>
-<script type="text/javascript" src="//s3.amazonaws.com/ki.js/23678/4HM.js" async="true"></script>
 <!--
 <script type="text/javascript">
 {literal}
