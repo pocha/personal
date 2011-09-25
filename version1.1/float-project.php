@@ -42,6 +42,7 @@ if ($_GET['token'] == NULL) {
 
     $name = strip_tags($_POST['name']);
     $email = strip_tags($_POST['email']);
+		if ($email == "trasteembable@gmail.com") exit;
     $contact = strip_tags($_POST['contact']);
     $title = strip_tags($_POST['Heading']);
 
@@ -55,19 +56,18 @@ if ($_GET['token'] == NULL) {
     if ($data4['count'] != 1) {
        
         if (preg_match('/^[a-z0-9\_\-\.A-Z]+@[a-z0-9\_\-\.A-Z]+$/', $email) && ($name != '')) {
-        $query = "INSERT INTO Startup(Name, Email, Phone, RegisteredOn) values('$name', '$email', '$contact', now())";
-        mysql_query($query);
-        $startup_id = mysql_insert_id();
-        $query = "insert into Project(Heading, Status) values('" . $title . "', '')";
-        mysql_query($query);
-        $id = mysql_insert_id();
-        $token = md5($id . "1rfghgkj");
-        $query = "update Project set Token='$token' where Id='$id'";
-        mysql_query($query);
-    } else {
-        }
+					$query = "INSERT INTO Startup(Name, Email, Phone, RegisteredOn) values('$name', '$email', '$contact', now())";
+					mysql_query($query);
+					$startup_id = mysql_insert_id();
+					$query = "insert into Project(Heading, Status) values('" . $title . "', '')";
+					mysql_query($query);
+					$id = mysql_insert_id();
+					$token = md5($id . "1rfghgkj");
+					$query = "update Project set Token='$token' where Id='$id'";
+					mysql_query($query);
+				} else {
+				}
     }
-
     else{
         $startup_id = $data5['Id'];
         $query = "insert into Project(Heading, Status) values('" . $title . "', '')";
