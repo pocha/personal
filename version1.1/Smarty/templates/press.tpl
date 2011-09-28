@@ -6,12 +6,20 @@
 				<div class="para">
 				<table>
 					
+					<tr>
+						<td><img src="http://www.infokairali.com/images/logoblock.gif" class="left"/></td>
+						<td><h3 class="left"><b>Show your skill & get a job</b></h3>
+						<p>New IT companies require skilled programmers. Its a big time headache for them.And people hesitate to work in startups for this reason. Stalk Ninja is a solution for students who passout from the college and for the startups. <a href="http://blog.stalkninja.com/71712352">Read More..</a></p>
+						<p style="font-size: 1.2em; color:#AAAAAA">Sojan Jose, Editor, Info Kairali Magazine<span style="float:right">Sep 2011 edition</span></p>
+						</td>
+					</tr>
+
 				
 					<tr>
 						<td><img src="img/chip.jpg" class="left"/></td>
 						<td><h3 class="left"><b>Freelance opportunities for student.</b></h3>
 						<p>Freelancing when studying is always a good idea. Not only do you get to earn money, but you can also hone you skills. It also adds to your knowledge & makes for an impressive addition to your resume <a href="https://picasaweb.google.com/108559432150076164220/StalkNinjaPressCoverage?authkey=Gv1sRgCMP0upLTm-b-Qg#5616574192708386610">Read More..</a></p>
-						<p style="font-size: 1.2em; color:#AAAAAA">Priyanka T, Editor, CHIP Magzine<span style="float:right">June 2011 edition</span></p>
+						<p style="font-size: 1.2em; color:#AAAAAA">Priyanka T, Editor, CHIP Magazine<span style="float:right">June 2011 edition</span></p>
 						</td>
 					</tr>
 					
