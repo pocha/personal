@@ -33,8 +33,8 @@
 							<table>
 								<tr>
 									<td>Status: {$p.Status}</td>
-									<td>Floated By: {$p.Startup.Name}</td>
-									<td>Floated On: {$p.DateCreated}</td>
+									<td>Posted By: {$p.Startup.Name}</td>
+									<td>Posted On: {$p.DateCreated}</td>
 								</tr>
 							</table>
 						</td>

@@ -75,7 +75,7 @@
                         <td><label class="btn {$project.Status}">Status: {$project.Status}</label></td>
                         <td><label>Budget: Rs. {$project.Budget}</label></td>
                         <td><label>Duration: {$project.Duration} days</label></td>
-                        <td><label>Floated by: <a href="/startup/{$project.StartupId}">{$project.Startup.Name}</a> {if $project.Startup.projectCount != 0} (Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)) {else} (No visible rating yet) {/if}</label></td>
+                        <td><label>Posted by: <a href="/startup/{$project.StartupId}">{$project.Startup.Name}</a> {if $project.Startup.projectCount != 0} (Rated {$project.Startup.Rating}/10 in {$project.Startup.projectCount} Project(s)) {else} (No visible rating yet) {/if}</label></td>
                     </tr></table>
                   <table class="project_table" width="1000" height="50">
                    <tr>
@@ -147,7 +147,7 @@
 								<h3>Skills Required:</h3>
                 <p class="para">{$project.Skills}</p>
 								<div style="padding:20px; text-align:center; border-top: 1px solid black;">
-										<a href="/project/new"><div class="btn red" style="font-size:26px;">&nbsp;Float a New/Similar Project&nbsp;</div></a>
+										<a href="/project/new"><div class="btn red" style="font-size:26px;">&nbsp;Post New/Similar Project&nbsp;</div></a>
 								</div>
                 <div style="border-top: 1px solid black;"></div>
 									<h3 style="float:left">Takers: </h3>

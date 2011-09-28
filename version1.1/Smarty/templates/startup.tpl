@@ -14,7 +14,7 @@
 
     </div>
    <div style="border-top: 1px solid black;"></div>
-    <h3 style="text-align: left; padding-left: 40px;  margin-top: 45px;">Projects Floated:</h3>
+    <h3 style="text-align: left; padding-left: 40px;  margin-top: 45px;">Projects Posted:</h3>
 
 		<div style="overflow: hidden; margin-bottom: 50px" id="project-container">
 			
@@ -29,7 +29,7 @@
 							<table>
 								<tr>
 									<td>Status: {$p.Status}</td>
-									<td>Floated On: {$p.DateCreated}</td>
+									<td>Posted On: {$p.DateCreated}</td>
 								</tr>
 							</table>
 						</td>

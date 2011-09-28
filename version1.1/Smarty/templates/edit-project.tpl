@@ -80,7 +80,6 @@
 
 <p class="message {if $error }error{/if}">{$message}</p>
 <h3>{$heading}</h3>
-<p>Clueless ? ...  Floating project for the first time ? ... please read <a href="javascript:void(0)" class="terms btn blue">how it works</a>.</p>
 <p><span class="message">All fields are compulsory.</p>
 <form id="float-project" action="" method=POST onsubmit="return checkCOC()" enctype="multipart/form-data">
 <table class="form" style="text-align:left; width: 100%">

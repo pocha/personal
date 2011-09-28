@@ -189,8 +189,8 @@ plugins : "",
 		<div id="logo">
 			<a href="/"><img src="/img/stalk-ninja.png" alt="Stalk Talent"></a>
 			<br/>
-			<div class="message" style="color:#8FA52D; font-size: 1.2em; float:left;">
-				Get tech projects done from college developers.
+			<div style="color:#666666; font-size: 1.2em; float:left;">
+				Place to source Indian college hackers via projects.
 			</div>
 		</div><!-- /#logo -->
 
@@ -204,14 +204,14 @@ plugins : "",
 <div id="header" class="section">
 	<div class="contents" style="text-align:center; width: 960px;  text-align:left">
 		<table style="border:0">
-			<tr style="border:0" >
-				<td style="border:0; padding:0">
-		<h2 style="color: white; font-family: 'helvetica neue',helvetica,arial,sans-serif; line-height: 1.2em; font-size: 35px; margin: 0pt;">{$headermain}</h2>
+			<tr style="border:0; " >
+				<td style="border:0; padding:0;">
+		<h2 style="color: white; font-family: 'helvetica neue',helvetica,arial,sans-serif; line-height: 1.2em; font-size: 35px; margin:0.5em;">{$headermain}</h2>
 		{if $headersecondary}<p style="font-size:small">{$headersecondary}</p>{/if} 
 				</td>
 				{if $tpl_name != 'float-project.tpl' && $tpl_name != 'pre-login.tpl'}
 				<td style="text-align:right; width:300px; border:0">
-					<a href="/project/new" class="btn blue" style="font-size:1.5em; margin:1em;">Float a new Project</a>
+					<a href="/project/new" class="btn blue" style="font-size:1.5em;">Post Project</a>
 				</td>
 				{/if}
 			</tr>
@@ -223,7 +223,10 @@ plugins : "",
 
 <div style="background:url('/img/bg-w4.png') repeat-x scroll 0 0; display:block; width:100%;">
 
-<div style="width:960px; margin:0 auto">
+<div style="width:960px; margin:0 auto; position:relative;">
+ 	
+	<div style="position:absolute; top:380px; left:50px; "><a class="btn blue" style="font-size:1.5em" target="_blank" href="/project/new">Post Project for free.*</a></div>
+	
 	<div id="how-it-works" style="position:relative; height: 300px; width: 300px; margin:0 0 20% 0; top:20px; float:left;">
 
 		<img class="main" id="float-project" src="/img/Brainstorming.gif" style="left:70%; top:0"/>
@@ -331,6 +334,7 @@ plugins : "",
 		</div>
 
 	</div>
+
 			
 	<!-- insert side content here -->
 	<div style="float:right;">
@@ -457,7 +461,7 @@ plugins : "",
     color: #75A8FF;
 }
 .tab ul li a {
-    color: #777777;
+  	color: #777777;
     display: block;
     float: left;
     height: 36px;
@@ -465,9 +469,10 @@ plugins : "",
     padding: 3px 10px;
     text-decoration: none;
 		font-size: 0.7em;
+	background-color:inherit;
 }
 .tab ul li a:hover {
-	color: #8DC23A;
+  color: #75A8FF;
 	background-color:inherit;
 }
 			{/literal}
@@ -486,7 +491,8 @@ plugins : "",
 				<ul> 
 					<li><a {if $tpl_name eq 'index.tpl'}class='active'{/if}  target="_top" href="/" >Home</a></li>
 					<li><a {if $tpl_name eq 'how-it-works.tpl'}class='active'{/if}  target="_top" href="/how-it-works">How it Works</a></li>
-					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="/press">What Press Says</a></li>
+					<li><a {if $tpl_name eq 'ninja-list.tpl'}class='active'{/if}  target="_top" href="/ninja-list">Wall of Fame</a></li>
+					<li><a {if $tpl_name eq 'press.tpl'}class='active'{/if}  target="_top" href="/press">Press</a></li>
 					<li><a {if $tpl_name eq 'pricing.tpl'}class='active'{/if}  target="_top" href="/pricing">Pricing</a></li>
 					<li><a {if $tpl_name == 'faq.tpl'}class='active'{/if}  target="_top" href="/faq">FAQ</a></li>
 					<li><a target="_blank" href="http://blog.stalkninja.com">Blog</a></li>
