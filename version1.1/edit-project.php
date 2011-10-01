@@ -75,7 +75,7 @@ $title = strip_tags($_POST['Heading']);
             if (preg_match("/delete-(.*)/", $key, $match)) {
                 //echo $key; echo $value;
                 if ($value == "on") {
-                    $file = preg_replace("/_(\w*)$/", ".$1", $match[1]);
+                    $file = preg_replace("/(.+)_(\w+)$/", "$1.$2", $match[1]);
                     //echo $file;
                     @unlink($dir . "/" . $file);
                 }
