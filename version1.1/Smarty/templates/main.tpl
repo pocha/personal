@@ -357,7 +357,24 @@ plugins : "",
 		<div class="container_12">
 						
 					
-<div style="margin:10px;">Subscribe to <a href="http://groups.google.com/group/ninjaclan">ninjaclan@googlegroups.com</a> & get intimated of new project. Its the hangout place for existing & wanna-be Ninjas. </div>
+<div style="float:left; margin-top:20px">Subscribe to <a href="http://groups.google.com/group/ninjaclan">ninjaclan@googlegroups.com</a> & get intimated of new project. Its the hangout place for existing & wanna-be Ninjas. </div>
+
+<div style="float:right">
+	<div id="fb-root"></div>
+	<script>{literal}(function(d, s, id) {
+		var js, fjs = d.getElementsByTagName(s)[0];
+		if (d.getElementById(id)) {return;}
+		js = d.createElement(s); js.id = id;
+		js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
+		fjs.parentNode.insertBefore(js, fjs);
+	}(document, 'script', 'facebook-jssdk'));{/literal}</script>
+
+	<div class="fb-like" data-href="http://www.facebook.com/pages/Stalk-Ninja/139273162793864" data-send="false" data-layout="button_count" data-width="80" data-show-faces="false" style="padding-top:10px; padding-bottom:5px"></div>
+
+	<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1308486732491&amp;count=horizontal&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdev.stalkninja.com%2F&amp;related=pocha&amp;text=Enabling%20startups%20to%20outsource%20jobs%20to%20students&amp;url=http%3A%2F%2Fstalkninja.com&amp;via=stalkninja" class="twitter-share-button twitter-count-horizontal" style="height: 20px; width: 100px; display: block;" title="Twitter For Websites: Tweet Button"></iframe>
+</div>
+<div style="clear:both"></div>
+
 <!-- Begin MailChimp Signup Form -->
 
 <div id="mc_embed_signup" style="width: 800px;">
@@ -481,6 +498,7 @@ plugins : "",
 				<tr>
 					<td>
 		
+			<img style="float:right;" src="/img/india-flag-icon.png"/>
 			<img style="float:right; height:40px; margin-bottom:10px;" src="/img/contact.gif"/><br/>
 			<!--
 			<div style="font-size:1.5em; margin-bottom:10px;">
@@ -499,12 +517,7 @@ plugins : "",
 				</ul>
 			</div>
 				</td>
-				<td>
-			<img src="/img/india-flag-icon.png"/><br/>
-			<iframe src="http://www.facebook.com/plugins/like.php?href=http%3A%2F%2Fwww.facebook.com%2Fpages%2FStalk-Ninja%2F139273162793864&amp;layout=buttton_count&amp;show_faces=true&amp;width=60&amp;action=like&amp;colorscheme=light&amp;height=30" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:55px; height:30px;padding-top:10px; padding-bottom:5px" allowTransparency="true"></iframe>
-			<iframe scrolling="no" frameborder="0" allowtransparency="true" src="http://platform0.twitter.com/widgets/tweet_button.html?_=1308486732491&amp;count=horizontal&amp;id=twitter_tweet_button_0&amp;lang=en&amp;original_referer=http%3A%2F%2Fdev.stalkninja.com%2F&amp;related=pocha&amp;text=Enabling%20startups%20to%20outsource%20jobs%20to%20students&amp;url=http%3A%2F%2Fstalkninja.com&amp;via=stalkninja" class="twitter-share-button twitter-count-horizontal" style="height: 20px; width: 60px; display: block;" title="Twitter For Websites: Tweet Button"></iframe>
-			</td>
-			</tr>
+				</tr>
 		</table>
 		</div>
 		<div style="clear:both"></div>
